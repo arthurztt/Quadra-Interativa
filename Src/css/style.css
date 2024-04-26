@@ -8,12 +8,33 @@ body{
     height: 100%;
     background:  #809B6A;
 } 
-/* Secão do menu lateral*/
-.lateral-menu{
+/*Menu Menor. Copia do menu maior só que menor e com icones resumindo o menu maior */ 
+.menu-menor{
+    width: 70px;
+    height: 100%;
+    background: #395224;
+    position: fixed;
+    float: left;
+    box-shadow: 8px 16px 14px 0px rgba(5,5,5,0.6);
+}
+/*Deixando os icones no meio de com display flex */ 
+.menu-icons{ 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: center;
+}
+/* Deixando os icones com um tamanho definido. A definir com o figma (Arthur/Bea ) */
+.icons{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+/* Secão do menu lateral*/
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between ;
     position: fixed;
     float: left;
     background: #395224;
@@ -21,17 +42,23 @@ body{
     width: 15%;
     box-shadow: 8px 16px 14px 0px rgba(5,5,5,0.6);
 }
+/* Classe que fecha tanto o menu maior quanto o menor, bem util para o JS */ 
+.menu-fechado{
+    display: none;
+}
 /* Classe da lista ornadada UL */
 .list-ordenato{
     list-style: none;
     display: flex;
     flex-direction: column;
-    position: relative;
-    top: 50%;
 }
 /* Distancia da lista */ 
 .list{
-    margin: 7px 0px;
+    display: flex;
+    justify-content: center;
+    background: white;
+    border-radius: 5px;
+    margin: 10px 0px;
 }
 /* Classe dos links para zeralos ao comum */ 
 .links{
