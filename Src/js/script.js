@@ -1,20 +1,24 @@
-function abrirMenu(){
-    let menuInicial = document.getElementById("menu-menor");
-    let menuFinal  = document.getElementById("menu");
-    //if para validação da função (Coloquei mais por medo de dar errado)
-    if (menuFinal.classList.contains("menu-fechado")){
-        menuFinal.classList.remove("menu-fechado");
-        menuFinal.classList.add("menu");
-        menuInicial.classList.add("menu-fechado");
-    }
-}
-function fecharMenu(){
-    let menuInicial = document.getElementById("menu-menor");
-    let menuFinal  = document.getElementById("menu");
-    //Mesmo caso do anterior, colocado para validação. Condicional simples.
-    if (menuFinal.classList.contains("menu")){
-        menuFinal.classList.remove("menu");
-        menuFinal.classList.add("menu-fechado");
-        menuInicial.classList.remove("menu-fechado");
-    }
+function abrirMenu() {
+  let menu = document.getElementById("menu");
+  let text = document.querySelectorAll(".text, .text-ok");
+  //Fazendo a verificação e deixando a barra lateral maior
+  if (menu.style.width == "5%") {
+    menu.style.transition = "all 0.5s ease";
+    menu.style.width = "15%";
+    //para cada classe text dentro da function text ela adiciona as classes
+    text.forEach(function (text) {
+      text.style.transition = "all 0.5s ease";
+      text.classList.remove("text");
+      text.classList.add("text-ok");
+    });
+  } else {
+    menu.style.transition = "all 0.5s ease";
+    menu.style.width = "5%";
+    //para cada classe text dentro da function text ela remove as classes
+    text.forEach(function (text) {
+      text.style.transition = "all 0.5s ease";
+      text.classList.add("text");
+      text.classList.remove("text-ok");
+    });
+  }
 }

@@ -8,43 +8,35 @@ body{
     height: 100%;
     background:  #809B6A;
 } 
-/*Menu Menor. Copia do menu maior só que menor e com icones resumindo o menu maior */ 
-.menu-menor{
-    width: 70px;
+/*Menu Menor. Já responsivo e ajeitado */ 
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 5%;
     height: 100%;
     background: #395224;
     position: fixed;
     float: left;
     box-shadow: 8px 16px 14px 0px rgba(5,5,5,0.6);
 }
-/*Deixando os icones no meio de com display flex */ 
-.menu-icons{ 
+/* Parte do texto ao lado */ 
+.menu .logo{
     display: flex;
-    flex-direction: column;
     align-items: center;
+}
+/*Parte do perfil no topo. ================================AINDA DEVE SER COLOCADA A DEVIDA RESPONSIVIDADE*/ 
+.perfil{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 /* Deixando os icones com um tamanho definido. A definir com o figma (Arthur/Bea ) */
 .icons{
     width: 30px;
     height: 30px;
     margin: 10px;
-}
-/* Secão do menu lateral*/
-.menu{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between ;
-    position: fixed;
-    float: left;
-    background: #395224;
-    height: 100%;
-    width: 15%;
-    box-shadow: 8px 16px 14px 0px rgba(5,5,5,0.6);
-}
-/* Classe que fecha tanto o menu maior quanto o menor, bem util para o JS */ 
-.menu-fechado{
-    display: none;
 }
 /* Classe da lista ornadada UL */
 .list-ordenato{
@@ -54,11 +46,22 @@ body{
 }
 /* Distancia da lista */ 
 .list{
+    width: auto;
     display: flex;
+    align-items: center;
     justify-content: center;
-    background: white;
     border-radius: 5px;
     margin: 10px 0px;
+}
+/* ==========Texto com transitição e aparecendo o texto ========= */ 
+.text-ok{
+    display: block;
+    transition: all 0.5s ease ;
+    opacity: 1;
+}
+/* ==========Desaparecendo com o texto ========= */ 
+.text{
+display: none;
 }
 /* Classe dos links para zeralos ao comum */ 
 .links{
