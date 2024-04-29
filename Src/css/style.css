@@ -1,15 +1,17 @@
-*{
+* {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
 }
-body{
+
+body {
     width: 100%;
     height: 100%;
-    background:  #809B6A;
-} 
-/*Menu Menor. Já responsivo e ajeitado */ 
-.menu{
+    background: #809B6A;
+}
+
+/* ==========Menu Menor. Já responsivo e ajeitado========== */
+.menu {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,33 +21,49 @@ body{
     background: #395224;
     position: fixed;
     float: left;
-    box-shadow: 8px 16px 14px 0px rgba(5,5,5,0.6);
+    box-shadow: 8px 16px 14px 0px rgba(5, 5, 5, 0.6);
 }
-/* Parte do texto ao lado */ 
-.menu .logo{
+
+/* ==========Parte do texto ao lado========== */
+.menu .logo {
     display: flex;
     align-items: center;
 }
-/*Parte do perfil no topo. ================================AINDA DEVE SER COLOCADA A DEVIDA RESPONSIVIDADE*/ 
-.perfil{
+
+/* ==========Parte do perfil no topo ========== AINDA DEVE SER COLOCADA A DEVIDA RESPONSIVIDADE ========== */
+.perfil {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
 }
+
+/** Página do usuário */
+.icons-perfil {
+    width: 25px;
+}
+
+.usuario {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 /* Deixando os icones com um tamanho definido. A definir com o figma (Arthur/Bea ) */
-.icons{
+.icons {
     width: 30px;
     height: 30px;
     margin: 10px;
 }
+
 /* Classe da lista ornadada UL */
-.list-ordenato{
+.list-ordenato {
     list-style: none;
     display: flex;
     flex-direction: column;
+    align-items: last baseline;
 }
-/* Distancia da lista */ 
-.list{
+
+/* Distancia da lista */
+.list {
     width: auto;
     display: flex;
     align-items: center;
@@ -53,26 +71,93 @@ body{
     border-radius: 5px;
     margin: 10px 0px;
 }
-/* ==========Texto com transitição e aparecendo o texto ========= */ 
-.text-ok{
+
+/** ==========Texto com transitição e aparecendo o texto ========= */
+.text-ok {
     display: block;
-    transition: all 0.5s ease ;
+    transition: all 0.5s ease;
     opacity: 1;
 }
-/* ==========Desaparecendo com o texto ========= */ 
-.text{
-display: none;
+
+/** ==========Desaparecendo com o texto =========  */
+.text {
+    display: none;
 }
-/* Classe dos links para zeralos ao comum */ 
-.links{
+
+/** Classe dos links para zeralos ao comum */
+.links {
     color: black;
     text-decoration: none;
     font-size: 15pt;
 }
-/* Classe da seção da à direita do header. #CUIDADO */ 
-main{
+
+/* ==========Classe da seção da à direita do header.========== #CUIDADO */
+main {
     width: 85%;
     float: right;
 }
 
+/* ==========Switch para mudar o tema da página========== */
+.icons-tema {
+    display: flex;
+}
 
+.switch__container {
+    margin: 30px auto;
+    width: 60px;
+}
+
+.switch {
+    visibility: hidden;
+    position: absolute;
+}
+
+.switch+label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+
+.switch--shadow+label {
+    padding: 2px;
+    width: 60px;
+    height: 20px;
+    background-color: #000000;
+    border-radius: 20px;
+}
+
+.switch--shadow+label:before,
+.switch--shadow+label:after {
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    content: "";
+}
+
+.switch--shadow+label:before {
+    right: 1px;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    transition: background 0.4s;
+}
+
+.switch--shadow+label:after {
+    width: 20px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s;
+}
+
+.switch--shadow:checked+label:before {
+    background-color: #000000;
+}
+
+.switch--shadow:checked+label:after {
+    transform: translateX(39px);
+}
+/* ==========Fim do switch ================= */ 
