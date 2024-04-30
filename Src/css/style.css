@@ -193,7 +193,7 @@ main {
     width: 20px;
     background-color: #fff;
     border-radius: 100%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.163);
     transition: all 0.4s;
 }
 
