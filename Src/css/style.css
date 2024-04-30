@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap'); /*tuts*/
+
 * {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    font-family: "Inter", sans-serif; /*tuts*/
+    font-weight: 400; /*tuts*/
 }
 
 body {
@@ -70,7 +74,47 @@ body {
     justify-content: center;
     border-radius: 5px;
     margin: 10px 0px;
+    color: #fff; /*tuts*/
 }
+
+/*tuts*/
+.list > img {
+    filter: brightness(0) saturate(100%) invert(99%) sepia(71%) saturate(234%) hue-rotate(26deg) brightness(97%) contrast(94%);
+}
+
+li > span{
+    padding: 0px 20px 0px 0px;
+}
+
+.list{
+    background-color: #57822e85;
+    border-radius: 5px;
+}
+
+/*Diferença de paddings nos Items do Menu Lateral*/
+
+.padding-diff-1{
+    padding: 0px 102px 0px 0px;
+}
+
+.padding-diff-2{
+    padding: 0px 94px 0px 0px;
+}
+
+.padding-diff-3{
+    padding: 0px 79px 0px 0px;
+}
+
+.padding-diff-4{
+    padding: 0px 66px 0px 0px;
+}
+
+.padding-diff-5{
+    padding: 0px 44px 0px 0px;
+}
+
+
+
 
 /** ==========Texto com transitição e aparecendo o texto ========= */
 .text-ok {
