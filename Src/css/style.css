@@ -11,7 +11,7 @@
 body {
     width: 100%;
     height: 100%;
-    background: #809B6A;
+    background: #3F5122;
 }
 
 /* ==========Menu Menor. Já responsivo e ajeitado========== */
@@ -20,18 +20,22 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 5%;
+    width: 7%;
     height: 100%;
     background: #395224;
     position: fixed;
     float: left;
-    box-shadow: 8px 16px 14px 0px rgba(5, 5, 5, 0.6);
+    box-shadow: 2px 0px 12px 0px rgba(0,0,0,0.35);
+}
+
+.logo > span > img {
+    width: 65px;
+    height: 45px;
 }
 
 /* ==========Parte do texto ao lado========== */
 .menu .logo {
     display: flex;
-    align-items: center;
 }
 
 /* ==========Parte do perfil no topo ========== AINDA DEVE SER COLOCADA A DEVIDA RESPONSIVIDADE ========== */
@@ -39,16 +43,6 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-}
-
-/** Página do usuário */
-.icons-perfil {
-    width: 25px;
-}
-
-.usuario {
-    padding-left: 5px;
-    padding-right: 5px;
 }
 
 /* Deixando os icones com um tamanho definido. A definir com o figma (Arthur/Bea ) */
@@ -77,7 +71,7 @@ body {
     color: #fff; /*tuts*/
 }
 
-/*tuts*/
+/*Estilização dos ícones e boxes dos elementos*/
 .list > img {
     filter: brightness(0) saturate(100%) invert(99%) sepia(71%) saturate(234%) hue-rotate(26deg) brightness(97%) contrast(94%);
 }
@@ -113,14 +107,12 @@ li > span{
     padding: 0px 44px 0px 0px;
 }
 
-
-
-
 /** ==========Texto com transitição e aparecendo o texto ========= */
 .text-ok {
     display: block;
     transition: all 0.5s ease;
     opacity: 1;
+    color: rgba(255, 255, 255, 0.907);
 }
 
 /** ==========Desaparecendo com o texto =========  */
@@ -205,3 +197,29 @@ main {
     transform: translateX(39px);
 }
 /* ==========Fim do switch ================= */ 
+
+/** Página do usuário */
+
+.perfil{
+    background-color: #314522e0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.icons-perfil {
+    width: 24px;
+    filter: brightness(0) saturate(100%) invert(96%) sepia(10%) saturate(1119%) hue-rotate(28deg) brightness(91%) contrast(87%);
+}
+
+.usuario {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.usuario > span {
+    font-size: 0.9rem;
+    color: white;
+}
