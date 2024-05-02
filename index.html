@@ -8,16 +8,15 @@
 </head>
 <body>
   <!--Seção do menu lateral menor com os icones, classe está sujeit a mudanças. Onclick usado para fechar o menu menor e abrir o maior-->
-  <section class="menu" onclick="abrirMenu()" id="menu" width="5%">
+  <section class="menu" onclick="abrirMenu()" id="menu">
     <!-- ============= logo ============= -->
-    <div class="logo">
-      <span class="image"> <!-- ============= NECESSITO DA LOGO  ============= -->
-        <img src="src/images/logo.png" alt="" />
+    <div class="logo" >
+      <span > <!-- ============= NECESSITO DA LOGO  ============= -->
+        <img src="src/images/logo.png" alt="" id="image-span" />
       </span>
-    <div class="text header-text">
-        <span class="text" id="text">Quadra <br>Interativa </span>
-      </div>
+      <h3 class="text main-menu-text">Quadra Interativa</h3>
     </div>
+    <hr>
     <div class="menu-icons">
       <!-- ============= PARTE COM OS ICONES E DPS COM O TEXTO + ICONES   ============= -->
       <ul class="list-ordenato">
@@ -35,13 +34,13 @@
     </div>
     <!-- ============= DIV QUE SERA COLOCADA O INPUT QUE TROCARA O FUNDO DE COR   ============= -->
     <div class="icons-tema" >
-     <img src="src/images/sun.svg"> 
-      <div class="switch__container">
+     <img src="src/images/sun.svg" class="sun-img"> 
+      <div class="switch__container text">
         <!-- Switch criado pela bia para mudança de cor, requer onclick do js-->
         <input id="switch-shadow" class="switch switch--shadow" type="checkbox">
         <label for="switch-shadow"></label>
       </div>      
-      <img src="src/images/moon.svg">
+      <img src="src/images/moon.svg" class="text moon-img">
     </div>
      <!-- ============= Parte do login que ainda deve ser responsivo  ============= -->
     <div class="perfil">
