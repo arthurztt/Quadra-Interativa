@@ -130,7 +130,7 @@ li > span{
 }
 
 .padding-diff-5{
-    padding: 0px 44px 0px 0px;
+    padding: 0px 107px 0px 0px;
 }
 
 /** ==========Texto com transitição e aparecendo o texto ========= */
@@ -162,6 +162,7 @@ main {
 /* ==========Switch para mudar o tema da página========== */
 .icons-tema {
     display: flex;
+    height: 50px;
 }
 
 .icons-tema>img:hover {
@@ -173,6 +174,7 @@ main {
 
 .icons-tema > img {
     filter: brightness(0) saturate(100%) invert(86%) sepia(6%) saturate(2355%) hue-rotate(38deg) brightness(109%) contrast(80%);
+    padding-top: 20px;
     width: 25px;
     margin: 0px 10px 0px 10px;
 }
