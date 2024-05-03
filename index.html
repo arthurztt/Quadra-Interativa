@@ -8,16 +8,16 @@
 </head>
 <body>
   <!--Seção do menu lateral menor com os icones, classe está sujeit a mudanças. Onclick usado para fechar o menu menor e abrir o maior-->
-  <section class="menu" onclick="abrirMenu()" id="menu">
+  <section class="menu"  id="menu">
     <!-- ============= logo ============= -->
-    <div class="logo" >
-      <span > <!-- ============= NECESSITO DA LOGO  ============= -->
-        <img src="src/images/logo.png" alt="" id="image-span" />
+    <div class="logo">
+      <span> <!-- ============= NECESSITO DA LOGO  ============= -->
+        <img src="src/images/logo.png" alt="" id="image-span"/>
       </span>
       <h3 class="text main-menu-text">Quadra Interativa</h3>
     </div>
     <div class="openButton">
-      <span class="lateralButton"></span>
+      <span class="lateralButton" onclick="abrirMenu()" id="lateralButton" ><img src="Src/images/arrow-left-circle-fill.svg"></span>
     </div>
     <hr>
     <div class="menu-icons">

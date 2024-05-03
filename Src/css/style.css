@@ -29,6 +29,23 @@ body {
     user-select: none;
 }
 
+.openButton{
+    position: relative;
+    left: 67px;
+    bottom: 90px;
+}
+
+.lateralButton > img{
+    filter: brightness(0) saturate(100%) invert(94%) sepia(96%) saturate(0%) hue-rotate(290deg) brightness(109%) contrast(101%);
+    width: 20px;
+}
+
+.lateralButton > img:hover{
+    filter: brightness(0) saturate(100%) invert(94%) sepia(96%) saturate(0%) hue-rotate(290deg) brightness(95%) contrast(101%) opacity(85%);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
 .logo > span > img {
     width: 75px;
     height: 55px;
