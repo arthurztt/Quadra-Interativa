@@ -2,11 +2,14 @@ function abrirMenu() {
   let menu = document.querySelector("section.menu");
   let text = document.querySelectorAll(".text, .text-ok");
   const lateralButton = document.getElementById("lateralButton");
+  const iconButton = document.querySelector(".button-img")
   //Fazendo a verificação e deixando a barra lateral maior
   if (menu.style.width == "7%") {
     menu.style.transition = "all 0.4s ease"; // Alterei o tempo de transição para que a barra maior acompanhe as caixas to texto
     menu.style.width = "15%";
     //Botão para a direira
+    iconButton.src =("Src/images/arrow-left-circle-fill.svg") 
+    
     lateralButton.style.marginLeft = "378%";
     lateralButton.style.transition = "all 0.4s ease";
     //para cada classe text dentro da function text ela adiciona as classes
@@ -19,6 +22,7 @@ function abrirMenu() {
     menu.style.transition = "all 0.4s ease";
     menu.style.width = "7%";
     //Botão para a esquerda 
+    iconButton.src =("Src/images/arrow-right-circle-fill.svg") 
     lateralButton.style.marginLeft ="0%"
     //para cada classe text dentro da function text ela remove as classes
     text.forEach(function (text) {
