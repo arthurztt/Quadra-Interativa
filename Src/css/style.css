@@ -14,6 +14,7 @@ body {
     background: #3F5122;
 }
 
+
 /* ==========Menu Menor. Já responsivo e ajeitado========== */
 .menu {
     display: flex;
@@ -169,13 +170,6 @@ li > span{
     text-decoration: none;
     font-size: 15pt;
 }
-
-/* ==========Classe da seção da à direita do header.========== #CUIDADO */
-main {
-    width: 85%;
-    float: right;
-}
-
 /* ==========Switch para mudar o tema da página========== */
 .icons-tema {
     display: flex;
@@ -281,4 +275,9 @@ main {
 .usuario > span {
     font-size: 0.9rem;
     color: white;
+}
+/* ==========Classe da seção da à direita do header.========== #CUIDADO */
+main {
+    width: 93%;
+    float: right;
 }
