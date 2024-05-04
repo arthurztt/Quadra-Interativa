@@ -30,8 +30,8 @@ aside {
 }
 .openButton{
     position: relative;
-    left: 67px;
-    bottom: 85px;
+    left: 57px;
+    bottom: 50px;
 }
 .lateralButton > img{
     filter: brightness(0) saturate(100%) invert(94%) sepia(96%) saturate(0%) hue-rotate(290deg) brightness(109%) contrast(101%);
