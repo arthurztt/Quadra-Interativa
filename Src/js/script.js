@@ -10,7 +10,7 @@ function abrirMenu() {
     //Botão para a direira
     iconButton.src =("Src/images/arrow-left-circle-fill.svg") 
     
-    lateralButton.style.marginLeft = "378%";
+    lateralButton.style.marginLeft = "300%";
     lateralButton.style.transition = "all 0.4s ease";
     //para cada classe text dentro da function text ela adiciona as classes
     text.forEach(function (text) {
