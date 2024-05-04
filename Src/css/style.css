@@ -11,17 +11,16 @@
 body {
     width: 100%;
     height: 100%;
-    background: #3F5122;
+    background: #3F5122; /* background total do body, deve ser mudado caso a seção tenha outra cor  */
 }
 
-
 /* ==========Menu Menor. Já responsivo e ajeitado========== */
-.menu {
+aside {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 7%;
+    width: 132px;
     height: 100%;
     background: #395224;
     position: fixed;
@@ -29,13 +28,11 @@ body {
     box-shadow: 2px 0px 12px 0px rgba(0,0,0,0.35);
     user-select: none;
 }
-
 .openButton{
     position: relative;
     left: 67px;
     bottom: 85px;
 }
-
 .lateralButton > img{
     filter: brightness(0) saturate(100%) invert(94%) sepia(96%) saturate(0%) hue-rotate(290deg) brightness(109%) contrast(101%);
     width: 20px;
@@ -51,7 +48,7 @@ body {
     height: 55px;
 }
 
-/* ==========Parte do texto ao lado========== */
+/* ==========Texto ao lado da logo========== */
 .logo {
     display: flex;
     justify-content: center;
@@ -66,6 +63,7 @@ body {
     font-style: normal;
     width: 110px;
 }
+/*Parte da logo do código */ 
 
 hr{
     margin-bottom: 20px;
@@ -73,12 +71,6 @@ hr{
     filter: brightness(0) saturate(100%) invert(94%) sepia(20%) saturate(193%) hue-rotate(34deg) brightness(98%) contrast(94%) opacity(40%);
 }
 
-/* ==========Parte do perfil no topo ========== AINDA DEVE SER COLOCADA A DEVIDA RESPONSIVIDADE ========== */
-.perfil {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
 
 /* Deixando os icones com um tamanho definido. A definir com o figma (Arthur/Bea ) */
 .icons {
@@ -87,7 +79,7 @@ hr{
     margin: 10px;
 }
 
-/* Classe da lista ornadada UL */
+/* Classe da lista ordenada UL */
 .list-ordenato {
     list-style: none;
     display: flex;
@@ -151,7 +143,7 @@ li > span{
     padding: 0px 107px 0px 0px;
 }
 
-/** ==========Texto com transitição e aparecendo o texto ========= */
+/** ==========Texto com transitição e aparecendo o texto ========= JS CLASS ======== */
 .text-ok {
     display: block;
     transition: all 0.5s ease;
@@ -159,17 +151,12 @@ li > span{
     color: rgba(255, 255, 255, 0.907);
 }
 
-/** ==========Desaparecendo com o texto =========  */
 .text {
     display: none;
 }
+/** ==========Desaparecendo com o texto =========  */
 
-/** Classe dos links para zeralos ao comum */
-.links {
-    color: black;
-    text-decoration: none;
-    font-size: 15pt;
-}
+
 /* ==========Switch para mudar o tema da página========== */
 .icons-tema {
     display: flex;
@@ -247,12 +234,17 @@ li > span{
 
 .switch--shadow:checked+label:after {
     transform: translateX(39px);
-
+    
 }
 /* ==========Fim do switch ================= */ 
 
-/** Página do usuário */
+/*  Footer do menu lateral  */
 
+/*.perfil {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}*/
 .perfil{
     background-color: #314522e0;
     width: 100%;
@@ -260,7 +252,7 @@ li > span{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
 }
 .icons-perfil {
     width: 24px;
@@ -278,6 +270,6 @@ li > span{
 }
 /* ==========Classe da seção da à direita do header.========== #CUIDADO */
 main {
-    width: 93%;
+    width: 92vw;
     float: right;
 }

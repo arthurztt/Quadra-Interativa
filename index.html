@@ -1,61 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Quadra Interativa</title>
   <link rel="stylesheet" href="src/css/style.css" />
 </head>
+
 <body>
   <!--Seção do menu lateral menor com os icones, classe está sujeit a mudanças. Onclick usado para fechar o menu menor e abrir o maior-->
-  <section class="menu"  id="menu">
+  <aside class="menu" id="menu">
     <!-- ============= logo ============= -->
     <div class="logo">
       <span> <!-- ============= NECESSITO DA LOGO  ============= -->
-        <img src="src/images/logo.png" alt="" id="image-span"/>
+        <img src="src/images/logo.png" alt="" id="image-span" />
       </span>
       <h3 class="text main-menu-text">Quadra Interativa</h3>
     </div>
     <div class="openButton">
-      <span class="lateralButton" onclick="abrirMenu()" id="lateralButton" ><img src="Src/images/arrow-right-circle-fill.svg" class="button-img"></span>
+      <span class="lateralButton" onclick="abrirMenu()" id="lateralButton"><img
+          src="Src/images/arrow-right-circle-fill.svg" class="button-img"></span>
     </div>
     <hr>
     <div class="menu-icons">
       <!-- ============= PARTE COM OS ICONES E DPS COM O TEXTO + ICONES   ============= -->
       <ul class="list-ordenato">
         <li class="list"><img src="src/images/house.svg" alt="" id="icons" class="icons" />
-          <span class="text padding-diff-1" id="text">Home</span></li>
+          <span class="text padding-diff-1" id="text">Home</span>
+        </li>
         <li class="list"><img src="src/images/calendar.svg" alt="" id="icons" class="icons" />
-          <span class="text padding-diff-2" id="text">Evento</span></li>
-        <li class="list"><img src="src/images//person-fill-add.svg" alt="" id="icons" class="icons" /><span class="text padding-diff-3"
-            id="text">Reservar</span></li>
+          <span class="text padding-diff-2" id="text">Evento</span>
+        </li>
+        <li class="list"><img src="src/images//person-fill-add.svg" alt="" id="icons" class="icons" /><span
+            class="text padding-diff-3" id="text">Reservar</span></li>
         <li class="list"><img src="src/images//chat-left-dots-fill.svg" alt="" id="icons" class="icons" /><span
             class="text padding-diff-4" id="text">Sugestões</span></li>
-        <li class="list"><img src="Src/images/person-fill.svg" alt="" id="icons" class="icons" /><span class="text padding-diff-5"
-            id="text">Perfil</span></li>
+        <li class="list"><img src="Src/images/person-fill.svg" alt="" id="icons" class="icons" /><span
+            class="text padding-diff-5" id="text">Perfil</span></li>
       </ul>
     </div>
     <!-- ============= DIV QUE SERA COLOCADA O INPUT QUE TROCARA O FUNDO DE COR   ============= -->
-    <div class="icons-tema" >
-     <img src="src/images/sun.svg" class="sun-img"> 
+    <div class="icons-tema">
+      <img src="src/images/sun.svg" class="sun-img">
       <div class="switch__container text">
         <!-- Switch criado pela bia para mudança de cor, requer onclick do js-->
         <input id="switch-shadow" class="switch switch--shadow" type="checkbox">
         <label for="switch-shadow"></label>
-      </div>      
+      </div>
       <img src="src/images/moon.svg" class="text moon-img">
     </div>
-     <!-- ============= Parte do login que ainda deve ser responsivo  ============= -->
+    <!-- ============= Parte do login que ainda deve ser responsivo  ============= -->
     <div class="perfil">
-      <img src="src/images/person.svg" class="icons-perfil"/>
-    <div class="usuario">
-      <span class="text" id="text">Fulano da Silva </span>
-      <span class="text" id="text">Informática 3 </span>
-    </div>
+      <img src="src/images/person.svg" class="icons-perfil" />
+      <div class="usuario">
+        <span class="text" id="text">Fulano da Silva </span>
+        <span class="text" id="text">Informática 3 </span>
+      </div>
       <img src="src/images/exit.svg" class="icons-perfil" />
     </div>
     <!-- ============= Final da seção da barra lateral  ============= -->
-  </section>
+  </aside>
   <!--Seção do menu lateral, classe está sujeit a mudanças. Onclick fechando esse menu e abrindo o menu menor-->
   <!--Seção experimental para teste do conteúdo ao lado do menu lateral -->
   <main>
@@ -68,5 +73,5 @@
   </main>
 </body>
 <script src="src/js/script.js"></script>
-</html>
 
+</html>
