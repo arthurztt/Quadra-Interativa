@@ -14,11 +14,11 @@ function abrirMenu() {
     iconButton.src =("Src/images/arrow-left-circle-fill.svg") 
     
     //Tamanho do main 
-    main.style.transition = "all  0.4s ease ";
-    main.style.width = "83vw";
+    main.style.transition = "all  0.5s ease ";
+    main.style.width = "1070px";
     //Alteração da posição do botão 
     lateralButton.style.marginLeft = "150px";
-    lateralButton.style.transition = "all 0.4s ease";
+    lateralButton.style.transition = "all 0.3s ease";
     //para cada classe text dentro da function text ela adiciona as classes
     text.forEach(function (text) {
       text.style.transition = "all 0.5s ease";
@@ -33,7 +33,7 @@ function abrirMenu() {
     iconButton.src =("Src/images/arrow-right-circle-fill.svg") 
     lateralButton.style.marginLeft ="0px"
     //Alterações mains
-    main.style.width = "92vw";
+    main.style.width = "1220px";
     //para cada classe text dentro da function text ela remove as classes
     text.forEach(function (text) {
       text.style.transition = "all 0.5s ease";
