@@ -1,17 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');/*tuts*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*tuts*/
 
 * {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    font-family: "Inter", sans-serif; /*tuts*/
-    font-weight: 400; /*tuts*/
+    font-family: "Inter", sans-serif;
+    /*tuts*/
+    font-weight: 400;
+    /*tuts*/
 }
 
 body {
     width: 100%;
     height: 100%;
-    background: #3F5122; /* background total do body, deve ser mudado caso a seção tenha outra cor  */
+    background: #3F5122;
+    /* background total do body, deve ser mudado caso a seção tenha outra cor  */
 }
 
 /* ==========Menu Menor. Já responsivo e ajeitado========== */
@@ -25,25 +29,28 @@ aside {
     background: #395224;
     position: fixed;
     float: left;
-    box-shadow: 2px 0px 12px 0px rgba(0,0,0,0.35);
+    box-shadow: 2px 0px 12px 0px rgba(0, 0, 0, 0.35);
     user-select: none;
 }
-.openButton{
+
+.openButton {
     position: relative;
     left: 67px;
-    bottom: 85px;
+    bottom: 50px;
 }
-.lateralButton > img{
+
+.lateralButton>img {
     filter: brightness(0) saturate(100%) invert(94%) sepia(96%) saturate(0%) hue-rotate(290deg) brightness(109%) contrast(101%);
     width: 20px;
 }
-.lateralButton > img:hover{
+
+.lateralButton>img:hover {
     filter: brightness(0) saturate(100%) invert(94%) sepia(96%) saturate(0%) hue-rotate(290deg) brightness(95%) contrast(101%) opacity(85%);
     cursor: pointer;
     transition: 0.3s;
 }
 
-.logo > span > img {
+.logo>span>img {
     width: 75px;
     height: 55px;
 }
@@ -57,15 +64,16 @@ aside {
     margin-top: 45px;
 }
 
-.main-menu-text{
+.main-menu-text {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
     width: 110px;
 }
-/*Parte da logo do código */ 
 
-hr{
+/*Parte da logo do código */
+
+hr {
     margin-bottom: 20px;
     width: 75%;
     filter: brightness(0) saturate(100%) invert(94%) sepia(20%) saturate(193%) hue-rotate(34deg) brightness(98%) contrast(94%) opacity(40%);
@@ -95,19 +103,20 @@ hr{
     justify-content: center;
     border-radius: 5px;
     margin: 10px 0px;
-    color: #fff; /*tuts*/
+    color: #fff;
+    /*tuts*/
 }
 
 /*Estilização dos ícones e boxes dos elementos*/
-.list > img {
+.list>img {
     filter: brightness(0) saturate(100%) invert(99%) sepia(71%) saturate(234%) hue-rotate(26deg) brightness(97%) contrast(94%);
 }
 
-li > span{
+li>span {
     padding: 0px 20px 0px 0px;
 }
 
-.list{
+.list {
     background-color: #57822e85;
     border-radius: 5px;
 }
@@ -123,23 +132,23 @@ li > span{
 
 /*Diferença de paddings nos Items do Menu Lateral*/
 
-.padding-diff-1{
+.padding-diff-1 {
     padding: 0px 102px 0px 0px;
 }
 
-.padding-diff-2{
+.padding-diff-2 {
     padding: 0px 94px 0px 0px;
 }
 
-.padding-diff-3{
+.padding-diff-3 {
     padding: 0px 79px 0px 0px;
 }
 
-.padding-diff-4{
+.padding-diff-4 {
     padding: 0px 66px 0px 0px;
 }
 
-.padding-diff-5{
+.padding-diff-5 {
     padding: 0px 107px 0px 0px;
 }
 
@@ -154,6 +163,7 @@ li > span{
 .text {
     display: none;
 }
+
 /** ==========Desaparecendo com o texto =========  */
 
 
@@ -170,7 +180,7 @@ li > span{
     transition: 0.3s;
 }
 
-.icons-tema > img {
+.icons-tema>img {
     filter: brightness(0) saturate(100%) invert(86%) sepia(6%) saturate(2355%) hue-rotate(38deg) brightness(109%) contrast(80%);
     padding-top: 20px;
     width: 25px;
@@ -234,26 +244,28 @@ li > span{
 
 .switch--shadow:checked+label:after {
     transform: translateX(39px);
-    
+
 }
-/* ==========Fim do switch ================= */ 
+
+/* ==========Fim do switch ================= */
 
 /*  Footer do menu lateral  */
 
-/*.perfil {
+/* .perfil {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-}*/
-.perfil{
+} */
+.perfil {
     background-color: #314522e0;
     width: 100%;
     height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
+
 .icons-perfil {
     width: 24px;
     filter: brightness(0) saturate(100%) invert(96%) sepia(10%) saturate(1119%) hue-rotate(28deg) brightness(91%) contrast(87%);
@@ -264,12 +276,99 @@ li > span{
     padding-right: 5px;
 }
 
-.usuario > span {
+.usuario>span {
     font-size: 0.9rem;
     color: white;
 }
+
 /* ==========Classe da seção da à direita do header.========== #CUIDADO */
 main {
-    width: 92vw;
+    width: 1220px;
     float: right;
+    display: flex;
+}
+
+/* Tamanho do header */
+/* Primeira seção do main demoninada home por ser do começo */
+.section-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Div pai do carrossel */
+.slider {
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Div dos inputs e imagens do carrossel */
+.slides-inpts {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides-inpts input {
+    display: none;
+}
+
+/* Div de cada imagem separadamente */
+.slides-img {
+    width: 20%;
+    transition: 2s;
+}
+
+.slides-img img {
+    width: 800px;
+    height: 500px;
+}
+
+/* ================================Slides labels para navegação manual ==================*/
+/* Defininando a div geral dos labels e onde vão ficar */
+.slides-labels {
+    width: 800px;
+    height: 100px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+
+}
+
+/* Tamanho, cor e distancia de cada label */
+.slides-btn {
+    width: 100px;
+    height: 1px;
+    padding: 5px;
+    border: 1px solid white;
+    background-color: black;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+/* Movimentação do carrossel */
+.slides-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio-slides1:checked~.first {
+    margin-left: 0;
+}
+
+#radio-slides2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio-slides3:checked~.first {
+    margin-left: -40%;
+}
+
+/* Div do select para interatividade do site */
+.div-selects {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }

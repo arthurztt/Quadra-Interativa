@@ -63,16 +63,58 @@
   </aside>
   <!--Seção do menu lateral, classe está sujeit a mudanças. Onclick fechando esse menu e abrindo o menu menor-->
   <!--Seção experimental para teste do conteúdo ao lado do menu lateral -->
+  <!--CUIDADO, ESSE MAIN DEIXA O CONTEÚDO AO LADO DO MENU LATERAL, TUDO DO "BODY" TEM QUE ESTAR DENTRO DELE-->
   <main>
-    <!--CUIDADO, ESSE MAIN DEIXA O CONTEÚDO AO LADO DO MENU LATERAL, TUDO DO "BODY" TEM QUE ESTAR DENTRO DELE-->
-    <section class="section-main">
-      <div class="container-father">
-        <span>Renato</span>
+    <!-- Primeira seção do main-->
+    <section class="section-home">
+      <!--div do carrossel (A ser feito)-->
+      <div class="slider">
+        <div class="slides-inpts">
+          <!--Radio buttons of carrossel -->
+          <input type="radio" name="radio-slides" id="radio-slides1">
+          <input type="radio" name="radio-slides" id="radio-slides2">
+          <input type="radio" name="radio-slides" id="radio-slides3">
+          <!--Imagens do carrossel-->
+          <div class="slides-img first">
+            <img src="Src/images/carrossel-img1.jpeg" alt="Imagem um">
+          </div>
+          <div class="slides-img">
+            <img src="Src/images/carrossel-img2.jpeg" alt="Imagem dois">
+          </div>
+          <div class="slides-img ">
+            <img src="Src/images/carrossel-img3.jpeg" alt="Imagem três">
+          </div>
+          <!--Fim das imagens do carrossel-->
+        </div>
+        <!--Labels do carrossel para serem butões clicaveis e mexíveis-->
+        <div class="slides-labels">
+          <label for="radio-slides1" class="slides-btn">
+          </label>
+          <label for="radio-slides2" class="slides-btn">
+          </label>
+          <label for="radio-slides3" class="slides-btn">
+          </label>
+        </div>
+        <!--FIm dos labels do carrossel-->
       </div>
+      <!--Fim do carrossel-->
+      <!--Select da interatividade-->
+      <div class="div-selects">
+        <select name="" id="">
+          <option value="Eve">Eventos</option>
+        </select>
+        <select name="" id="">
+          <option value="esp">Esportes</option>
+        </select>
+        <select name="" id="">
+          <option value="res">Reservar</option>
+        </select>
+      </div>
+      <!--Fim do select-->
     </section>
+    <!--Fim da primeira seção do main-->
   </main>
 </body>
 <script src="src/js/script.js"></script>
 
 </html>
- 
