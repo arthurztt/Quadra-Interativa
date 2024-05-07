@@ -12,12 +12,12 @@ function abrirMenu() {
     menu.style.width = "282px";
     //Botão para a direita
     iconButton.src =("Src/images/arrow-left-circle-fill.svg") 
-    
+     
     //Tamanho do main 
     main.style.transition = "all  0.5s ease ";
-    main.style.width = "1070px";
+    main.style.width = "100%";
     //Alteração da posição do botão 
-    lateralButton.style.marginLeft = "150px";
+    lateralButton.style.left = "250px";
     lateralButton.style.transition = "all 0.3s ease";
     //para cada classe text dentro da function text ela adiciona as classes
     text.forEach(function (text) {
@@ -31,9 +31,9 @@ function abrirMenu() {
     menu.style.width = "132px";
     //Botão para a esquerda 
     iconButton.src =("Src/images/arrow-right-circle-fill.svg") 
-    lateralButton.style.marginLeft ="0px"
+    lateralButton.style.left ="0px"
     //Alterações mains
-    main.style.width = "1220px";
+    main.style.width = "100%";
     //para cada classe text dentro da function text ela remove as classes
     text.forEach(function (text) {
       text.style.transition = "all 0.5s ease";
