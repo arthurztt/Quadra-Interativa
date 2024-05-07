@@ -281,11 +281,13 @@ li>span {
 
 /* ==========Classe da seção da à direita do header.========== #CUIDADO */
 main {
+    margin-top: 50px;
     width: 100%;
     height: 100%;
     float: right;
     display: flex;
     justify-content: center;
+    background-color: #374621;
 }
 
 /* Tamanho do header */
@@ -301,7 +303,7 @@ main {
 .slider {
     margin-top: 100px;
     width: 800px;
-    height: 800px;
+    height: 510px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -332,13 +334,10 @@ main {
 /* Defininando a div geral dos labels e onde vão ficar */
 .slides-labels {
     width: 800px;
-    height: 100px;
-    margin-top: 650px;
-    
+    height: 20px;
     display: flex;
-    justify-content: space-around;
-    position: absolute;
-
+    justify-content: center;
+    gap: 35px;
 }
 
 /* Tamanho, cor e distancia de cada label */
@@ -346,17 +345,11 @@ main {
     width: 100px;
     height: 1px;
     padding: 5px;
-    border: 1px solid white;
     background-color: black;
     border-radius: 10px;
-    transition: 1s;
 }
 
 /* Movimentação do carrossel */
-.slides-btn:not(:last-child) {
-    margin-right: 40px;
-}
-
 #radio-slides1:checked~.first {
     margin-left: 0;
 }
