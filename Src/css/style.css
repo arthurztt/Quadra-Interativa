@@ -286,7 +286,9 @@ main {
     height: 100%;
     float: right;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: #374621;
 }
 
