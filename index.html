@@ -139,77 +139,152 @@
     <!--Calendario em tabela-->
     <section class="section-calendar">
       <table>
-        <tbody>
-          <tr>
-            <td colspan="7" class="mes">
-              <fieldset>
-                <legend>Maio</legend>
-              </fieldset>
-            </td>
-          </tr>
-          <tr>
-            <td>Domingo</td>
-            <td>Segunda</td>
-            <td>Terça</td>
-            <td>Quarta</td>
-            <td>Quinta</td>
-            <td>Sexta</td>
-            <td>Sabado</td>
-          </tr>
-          <tr>
-            <td colspan="7">
-              <hr>
-            </td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-          </tr>
-          <tr>
-            <td>8</td>
-            <td>9</td>
-            <td>10</td>
-            <td>11</td>
-            <td>12</td>
-            <td>13</td>
-            <td>14</td>
-          </tr>
-          <tr>
-            <td>15</td>
-            <td>16</td>
-            <td>17</td>
-            <td>18</td>
-            <td>19</td>
-            <td>20</td>
-            <td>21</td>
-          </tr>
-          <tr>
-            <td>22</td>
-            <td>23</td>
-            <td>24</td>
-            <td>25</td>
-            <td>26</td>
-            <td>27</td>
-            <td>28</td>
-          </tr>
-          <tr>
-            <td>29</td>
-            <td>30</td>
-            <td>31</td>
-          </tr>
-          <tr>
-            <td colspan="7">
-              <hr>
-            </td>
-          </tr>
-        </tbody>
+        <tr>
+          <td colspan="7" class="mes">
+            <fieldset>
+              <legend>Maio</legend>
+            </fieldset>
+          </td>
+        </tr>
+        <tr>
+          <td>Domingo</td>
+          <td>Segunda</td>
+          <td>Terça</td>
+          <td>Quarta</td>
+          <td>Quinta</td>
+          <td>Sexta</td>
+          <td>Sabado</td>
+        </tr>
+        <tr>
+          <td colspan="7">
+            <hr>
+          </td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>9</td>
+          <td>10</td>
+          <td>11</td>
+          <td>12</td>
+          <td>13</td>
+          <td>14</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>16</td>
+          <td>17</td>
+          <td>18</td>
+          <td>19</td>
+          <td>20</td>
+          <td>21</td>
+        </tr>
+        <tr>
+          <td>22</td>
+          <td>23</td>
+          <td>24</td>
+          <td>25</td>
+          <td>26</td>
+          <td>27</td>
+          <td>28</td>
+        </tr>
+        <tr>
+          <td>29</td>
+          <td>30</td>
+          <td>31</td>
+        </tr>
+        <tr>
+          <td colspan="7">
+            <hr>
+          </td>
+        </tr>
+
       </table>
+      <table>
+        <tr>
+          <td> Futsal</td>
+          <td> Vôlei </td>
+          <td> Carimba </td>
+        </tr>
+        <tr>
+          <td>
+            <hr>
+          </td>
+        </tr>
+        <tr>
+          <td> intervalo da manha</td>
+          <td> almoço </td>
+          <td>intervalo da tarde </td>
+        </tr>
+      </table>
+
     </section>
+    <!-- Seção da parte de reservar a quadra em certos horários  -->
+    <section class="section-reserves">
+      <h2>Horários Possíveis</h2>
+      <!-- Caixinha de cada drop falando dos horarios -->
+      <div class="drop-horarios">
+        <img src="" alt="icone"> <span>Intervalo da Manhã</span><span>barra</span>
+      </div>
+      <!-- Caixinha contendo o conteúdo do dropdown cujo no css contem display none para não influenciar, ainda será adicionado com o passar do tempo. MEXERE COM JS -->
+      <div class="informacoes">
+        <span>inf</span>
+      </div>
+      <div class="drop-horarios">
+        <img src="" alt="icone"> <span>Intervalo da Manhã</span><span>barra</span>
+      </div>
+      <div class="drop-horarios">
+        <img src="" alt="icone"> <span>Intervalo da Manhã</span><span>barra</span>
+      </div>
+      <div class="drop-horarios">
+        <img src="" alt="icone"> <span>Intervalo da Manhã</span><span>barra</span>
+      </div>
+      <div class="drop-horarios">
+        <img src="" alt="icone"> <span>Intervalo da Manhã</span><span>barra</span>
+      </div>
+    </section>
+    <!-- Fim da seção dos horarios. -->
+    <!-- Seção das questões e comentarios -->
+    <section class="section-questions">
+      <!-- Div das perguntas. Falta grande parte da estilização -->
+      <div class="div-questions">
+        <h2>Perguntas Frequentes</h2>
+        <h3>Quem pode adicionar eventos?</h3><img src="" alt="icon">
+        <h3>Quero marcar jogo de algum esporte que não está na lisa, como faço?</h3><img src="" alt="icon">
+        <!-- Falta a ul aqui que será feita junto do dropdown -->
+        <h3>Choveu ou tera algum evento na quadra, o que acontece com o horário da quadra?</h3><img src="" alt="icon">
+      </div>
+      <!-- Div dos comentarios. Já tem como base os dois comentarios do figma -->
+      <div class="coments">
+        <img src="" alt="">
+        <span>Beatriz lima</span>
+        <span>infor3</span>
+        <img src="" alt="Icon-estrelinha">
+        <img src="" alt="curtir">
+        <img src="" alt="não curtir">
+        <hr>
+        <span>"Aplicativo Lento"</span>
+      </div>
+      <div class="coments">
+        <img src="" alt="">
+        <span>João Vitor</span>
+        <span>infor3</span>
+        <img src="" alt="Icon-estrelinha">
+        <img src="" alt="curtir">
+        <img src="" alt="não curtir">
+        <hr>
+        <span>"Adorei o aplicativo, muito interativo"</span>
+      </div>
+    </section>
+    <!-- Fim da seção das questões e perguntas. -->
   </main>
   <script src="src/js/script.js"></script>
 </body>

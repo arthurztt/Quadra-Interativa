@@ -28,6 +28,7 @@ aside {
     float: left;
     box-shadow: 2px 0px 12px 0px rgba(0, 0, 0, 0.35);
     user-select: none;
+    z-index: 1;
 }
 
 .openButton {
@@ -278,7 +279,7 @@ li>span {
 
 /* ==========Classe da seção da à direita do header.========== #CUIDADO */
 main {
-    margin-top: 50px;
+    margin-top: 20px;
     width: 100%;
     height: 100%;
     float: right;
@@ -286,7 +287,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #374621;
+    position: absolute;
+    z-index: 0;
 }
 
 /* Tamanho do header */
@@ -296,12 +298,15 @@ main {
     flex-direction: column;
     align-items: center;
     width: 1310px;
-    width: 1070;
+    margin-top: 1000px;
+    padding-bottom: 50px;
+    background-color: #374621;
+    border-radius: 10px;
 }
 
 /*Div pai do carrossel */
 .slider {
-    margin-top: 200px;
+    margin-top: 25px;
     width: 1097px;
     height: 541px;
     border-radius: 10px;
@@ -402,3 +407,50 @@ main {
     opacity: 1;
     transition: 2s;
 }
+
+/* Seção do horarios de reservar */
+.section-reserves {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    background: #3E5E27;
+}
+
+/* Caixinha de cada horarío um pouco estilizado */
+.drop-horarios {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0px;
+    width: 1041px;
+    height: 87px;
+    background: #D9D9D9;
+}
+
+/* CUIDADO AO MEXER. Classe contendo dropwdown ainda a ser colocado. inico do drop com display none. Ser necessário Js */
+.informacoes {
+    display: none;
+}
+
+/*Fim do dropdowmn */
+/* Fim da seção dos horarios da reserva */
+/* Inicio da seção das duvidas */
+.section-questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 1000px;
+    background: #374621;
+}
+
+/*Algumas estilização da caixa das dúvidas, necessita-se de muita estilização */
+.div-questions {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+/* Fim da seção das dúvidas e comentarios. */
