@@ -1,57 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');/*tuts*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    font-family: "Inter", sans-serif; /*tuts*/
-    font-weight: 400; /*tuts*/
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
 }
 
 body {
     width: 100%;
     height: 100%;
     background: #3F5122;
+    /* background total do body, deve ser mudado caso a seção tenha outra cor  */
 }
 
-
 /* ==========Menu Menor. Já responsivo e ajeitado========== */
-.menu {
+aside {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 7%;
+    width: 132px;
     height: 100%;
     background: #395224;
     position: fixed;
     float: left;
-    box-shadow: 2px 0px 12px 0px rgba(0,0,0,0.35);
+    box-shadow: 2px 0px 12px 0px rgba(0, 0, 0, 0.35);
     user-select: none;
 }
 
-.openButton{
+.openButton {
     position: relative;
-    left: 67px;
-    bottom: 85px;
+    left: 57px;
+    bottom: 50px;
 }
 
-.lateralButton > img{
+.lateralButton>img {
     filter: brightness(0) saturate(100%) invert(94%) sepia(96%) saturate(0%) hue-rotate(290deg) brightness(109%) contrast(101%);
     width: 20px;
+    position: relative;
 }
-.lateralButton > img:hover{
+
+.lateralButton>img:hover {
     filter: brightness(0) saturate(100%) invert(94%) sepia(96%) saturate(0%) hue-rotate(290deg) brightness(95%) contrast(101%) opacity(85%);
     cursor: pointer;
     transition: 0.3s;
 }
 
-.logo > span > img {
-    width: 75px;
-    height: 55px;
+.logo-img {
+    width: 95px;
+    height: 75px;
+    margin-left: 25px;
+    ;
 }
 
-/* ==========Parte do texto ao lado========== */
+
+/* ==========Texto ao lado da logo========== */
 .logo {
     display: flex;
     justify-content: center;
@@ -60,25 +65,21 @@ body {
     margin-top: 45px;
 }
 
-.main-menu-text{
+.main-menu-text {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
     width: 110px;
 }
 
-hr{
+/*Parte da logo do código */
+
+hr {
     margin-bottom: 20px;
     width: 75%;
     filter: brightness(0) saturate(100%) invert(94%) sepia(20%) saturate(193%) hue-rotate(34deg) brightness(98%) contrast(94%) opacity(40%);
 }
 
-/* ==========Parte do perfil no topo ========== AINDA DEVE SER COLOCADA A DEVIDA RESPONSIVIDADE ========== */
-.perfil {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
 
 /* Deixando os icones com um tamanho definido. A definir com o figma (Arthur/Bea ) */
 .icons {
@@ -87,7 +88,7 @@ hr{
     margin: 10px;
 }
 
-/* Classe da lista ornadada UL */
+/* Classe da lista ordenada UL */
 .list-ordenato {
     list-style: none;
     display: flex;
@@ -103,24 +104,24 @@ hr{
     justify-content: center;
     border-radius: 5px;
     margin: 10px 0px;
-    color: #fff; /*tuts*/
+    color: #fff;
 }
 
-/*Estilização dos ícones e boxes dos elementos*/
-.list > img {
+/* Estilização dos ícones e boxes dos elementos */
+.list>img {
     filter: brightness(0) saturate(100%) invert(99%) sepia(71%) saturate(234%) hue-rotate(26deg) brightness(97%) contrast(94%);
 }
 
-li > span{
+li>span {
     padding: 0px 20px 0px 0px;
 }
 
-.list{
+.list {
     background-color: #57822e85;
     border-radius: 5px;
 }
 
-/*Hover dos elementos da bara lateral*/
+/* Hover dos elementos da bara lateral */
 
 .list:hover {
     background-color: #73a43e9b;
@@ -129,29 +130,29 @@ li > span{
 }
 
 
-/*Diferença de paddings nos Items do Menu Lateral*/
+/* Diferença de paddings nos Items do Menu Lateral */
 
-.padding-diff-1{
+.padding-diff-1 {
     padding: 0px 102px 0px 0px;
 }
 
-.padding-diff-2{
+.padding-diff-2 {
     padding: 0px 94px 0px 0px;
 }
 
-.padding-diff-3{
+.padding-diff-3 {
     padding: 0px 79px 0px 0px;
 }
 
-.padding-diff-4{
+.padding-diff-4 {
     padding: 0px 66px 0px 0px;
 }
 
-.padding-diff-5{
+.padding-diff-5 {
     padding: 0px 107px 0px 0px;
 }
 
-/** ==========Texto com transitição e aparecendo o texto ========= */
+/** ==========Texto com transitição e aparecendo o texto ========= JS CLASS ======== */
 .text-ok {
     display: block;
     transition: all 0.5s ease;
@@ -159,17 +160,13 @@ li > span{
     color: rgba(255, 255, 255, 0.907);
 }
 
-/** ==========Desaparecendo com o texto =========  */
 .text {
     display: none;
 }
 
-/** Classe dos links para zeralos ao comum */
-.links {
-    color: black;
-    text-decoration: none;
-    font-size: 15pt;
-}
+/** ==========Desaparecendo com o texto =========  */
+
+
 /* ==========Switch para mudar o tema da página========== */
 .icons-tema {
     display: flex;
@@ -183,7 +180,7 @@ li > span{
     transition: 0.3s;
 }
 
-.icons-tema > img {
+.icons-tema>img {
     filter: brightness(0) saturate(100%) invert(86%) sepia(6%) saturate(2355%) hue-rotate(38deg) brightness(109%) contrast(80%);
     padding-top: 20px;
     width: 25px;
@@ -249,11 +246,12 @@ li > span{
     transform: translateX(39px);
 
 }
-/* ==========Fim do switch ================= */ 
 
-/** Página do usuário */
+/* ==========Fim do switch ================= */
 
-.perfil{
+/*  Footer do menu lateral  */
+
+.perfil {
     background-color: #314522e0;
     width: 100%;
     height: 70px;
@@ -262,6 +260,7 @@ li > span{
     align-items: center;
 
 }
+
 .icons-perfil {
     width: 24px;
     filter: brightness(0) saturate(100%) invert(96%) sepia(10%) saturate(1119%) hue-rotate(28deg) brightness(91%) contrast(87%);
@@ -272,12 +271,134 @@ li > span{
     padding-right: 5px;
 }
 
-.usuario > span {
+.usuario>span {
     font-size: 0.9rem;
     color: white;
 }
+
 /* ==========Classe da seção da à direita do header.========== #CUIDADO */
 main {
-    width: 93%;
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
     float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #374621;
+}
+
+/* Tamanho do header */
+/* Primeira seção do main demoninada home por ser do começo */
+.section-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1310px;
+    width: 1070;
+}
+
+/*Div pai do carrossel */
+.slider {
+    margin-top: 200px;
+    width: 1097px;
+    height: 541px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Div dos inputs e imagens do carrossel */
+.slides-inpts {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides-inpts input {
+    display: none;
+}
+
+/* Div de cada imagem separadamente */
+.slides-img {
+    width: 20%;
+    transition: 2s;
+}
+
+.slides-img img {
+    width: 1097px;
+    height: 541px;
+}
+
+/* ================================Slides labels para navegação manual ==================*/
+/* Defininando a div geral dos labels e onde vão ficar */
+.slides-labels {
+    width: 800px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+/* Tamanho, cor e distancia de cada label */
+.slides-btn {
+    width: 91px;
+    height: 4px;
+    background: #E3E3E3;
+    flex-wrap: wrap;
+}
+
+/* Movimentação do carrossel */
+#radio-slides1:checked~.first {
+    margin-left: 0;
+}
+
+#radio-slides2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio-slides3:checked~.first {
+    margin-left: -40%;
+}
+
+/* Div do select para interatividade do site */
+.dropdown-list {
+    width: 1275px;
+    height: 351px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    background: #3E5E27;
+}
+
+/* Estilo de cada caixa de lista */
+.dropdown {
+    width: 323px;
+    height: 259px;
+    border-radius: 35px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Classe para deixar a lista do dropword sem a visualização */
+.list-close {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: 1s;
+}
+
+/* Classe para deixar a lista do dropword com a visualização */
+.list-open {
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    transition: 2s;
 }
