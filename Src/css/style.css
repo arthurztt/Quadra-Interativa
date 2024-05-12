@@ -28,6 +28,7 @@ aside {
     float: left;
     box-shadow: 2px 0px 12px 0px rgba(0, 0, 0, 0.35);
     user-select: none;
+    z-index: 1;
 }
 
 .openButton {
@@ -47,10 +48,12 @@ aside {
     cursor: pointer;
     transition: 0.3s;
 }
-.logo-img{
+
+.logo-img {
     width: 95px;
     height: 75px;
-    margin-left: 25px;;
+    margin-left: 25px;
+    ;
 }
 
 
@@ -105,7 +108,7 @@ hr {
     color: #fff;
 }
 
-/*Estilização dos ícones e boxes dos elementos*/
+/* Estilização dos ícones e boxes dos elementos */
 .list>img {
     filter: brightness(0) saturate(100%) invert(99%) sepia(71%) saturate(234%) hue-rotate(26deg) brightness(97%) contrast(94%);
 }
@@ -119,7 +122,7 @@ li>span {
     border-radius: 5px;
 }
 
-/*Hover dos elementos da bara lateral*/
+/* Hover dos elementos da bara lateral */
 
 .list:hover {
     background-color: #73a43e9b;
@@ -128,7 +131,7 @@ li>span {
 }
 
 
-/*Diferença de paddings nos Items do Menu Lateral*/
+/* Diferença de paddings nos Items do Menu Lateral */
 
 .padding-diff-1 {
     padding: 0px 102px 0px 0px;
@@ -249,11 +252,6 @@ li>span {
 
 /*  Footer do menu lateral  */
 
-/* .perfil {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-} */
 .perfil {
     background-color: #314522e0;
     width: 100%;
@@ -281,7 +279,7 @@ li>span {
 
 /* ==========Classe da seção da à direita do header.========== #CUIDADO */
 main {
-    margin-top: 50px;
+    margin-top: 20px;
     width: 100%;
     height: 100%;
     float: right;
@@ -289,7 +287,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #374621;
+    position: absolute;
+    z-index: 0;
 }
 
 /* Tamanho do header */
@@ -297,15 +296,19 @@ main {
 .section-home {
     display: flex;
     flex-direction: column;
-    align-items: start;
-
+    align-items: center;
+    width: 1310px;
+    margin-top: 1000px;
+    padding-bottom: 50px;
+    background-color: #374621;
+    border-radius: 10px;
 }
 
 /*Div pai do carrossel */
 .slider {
-    margin-top: 100px;
-    width: 800px;
-    height: 510px;
+    margin-top: 25px;
+    width: 1097px;
+    height: 541px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -328,8 +331,8 @@ main {
 }
 
 .slides-img img {
-    width: 800px;
-    height: 500px;
+    width: 1097px;
+    height: 541px;
 }
 
 /* ================================Slides labels para navegação manual ==================*/
@@ -339,16 +342,18 @@ main {
     height: 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 35px;
+    position: relative;
+    flex-wrap: wrap;
 }
 
 /* Tamanho, cor e distancia de cada label */
 .slides-btn {
-    width: 100px;
-    height: 1px;
-    padding: 5px;
-    background-color: black;
-    border-radius: 10px;
+    width: 91px;
+    height: 4px;
+    background: #E3E3E3;
+    flex-wrap: wrap;
 }
 
 /* Movimentação do carrossel */
@@ -365,8 +370,87 @@ main {
 }
 
 /* Div do select para interatividade do site */
-.div-selects {
+.dropdown-list {
+    width: 1275px;
+    height: 351px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-around;
+    border-radius: 20px;
+    background: #3E5E27;
 }
+
+/* Estilo de cada caixa de lista */
+.dropdown {
+    width: 323px;
+    height: 259px;
+    border-radius: 35px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Classe para deixar a lista do dropword sem a visualização */
+.list-close {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: 1s;
+}
+
+/* Classe para deixar a lista do dropword com a visualização */
+.list-open {
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    transition: 2s;
+}
+
+/* Seção do horarios de reservar */
+.section-reserves {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    background: #3E5E27;
+}
+
+/* Caixinha de cada horarío um pouco estilizado */
+.drop-horarios {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0px;
+    width: 1041px;
+    height: 87px;
+    background: #D9D9D9;
+}
+
+/* CUIDADO AO MEXER. Classe contendo dropwdown ainda a ser colocado. inico do drop com display none. Ser necessário Js */
+.informacoes {
+    display: none;
+}
+
+/*Fim do dropdowmn */
+/* Fim da seção dos horarios da reserva */
+/* Inicio da seção das duvidas */
+.section-questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 1000px;
+    background: #374621;
+}
+
+/*Algumas estilização da caixa das dúvidas, necessita-se de muita estilização */
+.div-questions {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+/* Fim da seção das dúvidas e comentarios. */
