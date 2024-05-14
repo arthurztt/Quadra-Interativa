@@ -297,8 +297,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1310px;
-    margin-top: 1000px;
+    width: 100%;
+    margin-top: 1250px;
     padding-bottom: 50px;
     background-color: #374621;
     border-radius: 10px;
@@ -370,9 +370,36 @@ main {
 }
 
 /* Div do select para interatividade do site */
+
+.green{
+    background-color: #395224;
+
+}
+
+.purple{
+    background-color: #2c0076;
+}
+
+.blue{
+    background-color: #077442;
+}
+
+.import{
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    width: 100%;
+    justify-content: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: white;
+
+}
+
 .dropdown-list {
     width: 1275px;
     height: 351px;
+    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -389,7 +416,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 /* Classe para deixar a lista do dropword sem a visualização */
@@ -398,6 +424,7 @@ main {
     flex-direction: column;
     opacity: 0;
     transition: 1s;
+    width: 100%;
 }
 
 /* Classe para deixar a lista do dropword com a visualização */
@@ -406,6 +433,17 @@ main {
     flex-direction: column;
     opacity: 1;
     transition: 2s;
+    width: 100%;
+}
+
+.list-close > span{
+    padding: 15px;
+    border-bottom: 1px solid black;
+}
+
+.list-open > span{
+    padding: 15px;
+    border-bottom: 1px solid black;
 }
 
 /* Seção do horarios de reservar */

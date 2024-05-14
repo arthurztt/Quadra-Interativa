@@ -76,38 +76,38 @@
     <!-- Primeira seção do main-->
     <section class="section-home">
       <!--div do carrossel (A ser feito)-->
-      <div class="slider">
-        <div class="slides-inpts">
-          <!--Radio buttons of carrossel -->
-          <input type="radio" name="radio-slides" id="radio-slides1">
-          <input type="radio" name="radio-slides" id="radio-slides2">
-          <input type="radio" name="radio-slides" id="radio-slides3">
-          <!--Imagens do carrossel-->
-          <div class="slides-img first">
-            <img src="Src/images/carrossel-img1.jpeg" alt="Imagem um">
+        <div class="slider">
+          <div class="slides-inpts">
+            <!--Radio buttons of carrossel -->
+            <input type="radio" name="radio-slides" id="radio-slides1">
+            <input type="radio" name="radio-slides" id="radio-slides2">
+            <input type="radio" name="radio-slides" id="radio-slides3">
+            <!--Imagens do carrossel-->
+            <div class="slides-img first">
+              <img src="Src/images/slider-img.jpg" alt="Imagem um">
+            </div>
+            <div class="slides-img">
+              <img src="Src/images/slider-img-2.jpeg" alt="Imagem dois">
+            </div>
+            <div class="slides-img">
+              <img src="Src/images/slider-img-3.jpeg" alt="Imagem três">
+            </div>
+            <!--Fim das imagens do carrossel-->
           </div>
-          <div class="slides-img">
-            <img src="Src/images/carrossel-img2.jpeg" alt="Imagem dois">
-          </div>
-          <div class="slides-img">
-            <img src="Src/images/carrossel-img3.jpeg" alt="Imagem três">
-          </div>
-          <!--Fim das imagens do carrossel-->
         </div>
-      </div>
-      <!--Labels do carrossel para serem butões clicaveis e mexíveis-->
-      <div class="slides-labels">
-        <label for="radio-slides1" class="slides-btn"> </label>
-        <label for="radio-slides2" class="slides-btn"> </label>
-        <label for="radio-slides3" class="slides-btn"> </label>
-      </div>
+        <!--Labels do carrossel para serem butões clicaveis e mexíveis-->
+        <div class="slides-labels">
+          <label for="radio-slides1" class="slides-btn"> </label>
+          <label for="radio-slides2" class="slides-btn"> </label>
+          <label for="radio-slides3" class="slides-btn"> </label>
+        </div>
       <!--FIm dos labels do carrossel-->
       <!--Fim do carrossel-->
       <!-- Article com o dropdwon List  -->
       <article class="dropdown-list">
         <!-- Div do dropdown definindo todas as regras a serem seguidas. -->
         <div class="dropdown">
-          <span class="import" onclick="openEve()">EVENTOS</span>
+          <span class="import green" onclick="openEve()">EVENTOS</span>
           <!-- Div contendo a lista dos eventos  -->
           <div class="list-close" id="events">
             <!-- Spans Contendo o conteúdo e que deve ser colocado class/id em cada para a estilização -->
@@ -118,7 +118,7 @@
         </div>
         <!-- Mesmo raciocinio dos  -->
         <div class="dropdown">
-          <span class="import" onclick="openEsp()">ESPORTES</span>
+          <span class="import blue" onclick="openEsp()">ESPORTES</span>
           <div class="list-close" id="esport">
             <span>Volêi</span>
             <span>Futsal</span>
@@ -126,7 +126,7 @@
           </div>
         </div>
         <div class="dropdown">
-          <span class="import" onclick="openRes()">RESERVAR</span>
+          <span class="import purple" onclick="openRes()">RESERVAR</span>
           <div class="list-close" id="reserv">
             <span>9:00</span>
             <span>12:00</span>
