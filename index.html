@@ -107,39 +107,39 @@
       <article class="dropdown-list">
         <!-- Div do dropdown definindo todas as regras a serem seguidas. -->
         <div class="dropdown">
-          <div class="dropdown-header green">
+          <div class="dropdown-header green" id="dd-events">
             <span class="import">EVENTOS</span>
-            <img src="./src/images/angle-down-solid.svg" onclick="openEve()" class="open-close-dropdown">
+            <img src="./src/images/angle-down-solid.svg" onclick="openEve()" class="arrow-dropdown" id="arrow-eve">
           </div>
           <!-- Div contendo a lista dos eventos  -->
           <div class="list-open" id="events">
             <!-- Spans Contendo o conteúdo e que deve ser colocado class/id em cada para a estilização -->
             <span>Carnaval</span>
             <span>Festa Junina</span>
-            <span>Paixão de Cristo</span>
+            <span class="last-child-dd">Paixão de Cristo</span>
           </div>
         </div>
         <!-- Mesmo raciocinio dos  -->
         <div class="dropdown">
-          <div class="dropdown-header blue">
+          <div class="dropdown-header blue" id="dd-sport">
             <span class="import">ESPORTES</span>
-            <img src="./src/images/angle-down-solid.svg" onclick="openEsp()" class="open-close-dropdown">
+            <img src="./src/images/angle-down-solid.svg" onclick="openEsp()" class="arrow-dropdown" id="arrow-esp">
           </div>
           <div class="list-open" id="esport">
             <span>Volêi</span>
             <span>Futsal</span>
-            <span>Carimba</span>
+            <span class="last-child-dd">Carimba</span>
           </div>
         </div>
         <div class="dropdown">
-          <div class="dropdown-header purple">
+          <div class="dropdown-header purple" id="dd-reserve">
             <span class="import">RESERVAR</span>
-            <img src="./src/images/angle-down-solid.svg" onclick="openRes()" class="open-close-dropdown">
+            <img src="./src/images/angle-down-solid.svg" onclick="openRes()" class="arrow-dropdown" id="arrow-">
           </div>
           <div class="list-open" id="reserv">
             <span>9:00</span>
             <span>12:00</span>
-            <span>15:00</span>
+            <span class="last-child-dd">15:00</span>
           </div>
         </div>
       </article>

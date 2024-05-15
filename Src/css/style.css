@@ -340,6 +340,7 @@ main {
 .slides-labels {
     width: 800px;
     height: 20px;
+    padding-right: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -352,8 +353,14 @@ main {
 .slides-btn {
     width: 91px;
     height: 4px;
-    background: #E3E3E3;
+    background: #e3e3e38d;
     flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.slides-btn:hover{
+    transition: 0.3s;
+    background: #f8f8f8;
 }
 
 /* Movimentação do carrossel */
@@ -387,12 +394,10 @@ main {
 .import{
     display: flex;
     padding-top: 25px;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
     width: 100%;
     justify-content: center;
-
     color: white;
-
 }
 
 .dropdown-list {
@@ -411,8 +416,8 @@ main {
 .dropdown {
     display: flex;
     width: 323px;
+    padding: 50px 0px 50px 0px;
     border-radius: 35px;
-    background: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -428,30 +433,44 @@ main {
     font-family: "Poppins", sans-serif;
 }
 
-.open-close-dropdown{
+.arrow-dropdown{
     position: relative;
     right: 50px;
     width: 20px;
-    padding-top: 10px;
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7489%) hue-rotate(338deg) brightness(101%) contrast(100%);
+    filter: brightness(0) saturate(100%) invert(85%) sepia(1%) saturate(2669%) hue-rotate(345deg) brightness(118%) contrast(95%);
+    cursor: pointer;
+    transform: rotate(180deg);
 }
+
+.arrow-dropdown:hover{
+    transition: 0.3s;
+    filter: brightness(0) saturate(100%) invert(92%) sepia(0%) saturate(3411%) hue-rotate(136deg) brightness(94%) contrast(82%);
+}
+
 /* Classe para deixar a lista do dropword sem a visualização */
 .list-close {
     display: flex;
     flex-direction: column;
-    display: none;
-    transition: 0.4s;
+    visibility: none !important;
     width: 100%;
+    visibility: hidden;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
+
 
 /* Classe para deixar a lista do dropword com a visualização */
 .list-open {
+    background: rgba(255, 255, 255, 0.887);
     display: flex;
     flex-direction: column;
     opacity: 1;
     transition: 0.4s;
     width: 100%;
-}
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: auto;
+}                                   
 
 .list-close > span{
     padding: 15px;
@@ -460,7 +479,12 @@ main {
 
 .list-open > span{
     padding: 15px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.500);
+}
+
+.list-open > .last-child-dd{
+    padding-bottom: 20px;
+    border-bottom: none;
 }
 
 /* Seção do horarios de reservar */
