@@ -107,9 +107,12 @@
       <article class="dropdown-list">
         <!-- Div do dropdown definindo todas as regras a serem seguidas. -->
         <div class="dropdown">
-          <span class="import green" onclick="openEve()">EVENTOS</span>
+          <div class="dropdown-header green">
+            <span class="import">EVENTOS</span>
+            <img src="./src/images/angle-down-solid.svg" onclick="openEve()" class="open-close-dropdown">
+          </div>
           <!-- Div contendo a lista dos eventos  -->
-          <div class="list-close" id="events">
+          <div class="list-open" id="events">
             <!-- Spans Contendo o conteúdo e que deve ser colocado class/id em cada para a estilização -->
             <span>Carnaval</span>
             <span>Festa Junina</span>
@@ -118,16 +121,22 @@
         </div>
         <!-- Mesmo raciocinio dos  -->
         <div class="dropdown">
-          <span class="import blue" onclick="openEsp()">ESPORTES</span>
-          <div class="list-close" id="esport">
+          <div class="dropdown-header blue">
+            <span class="import">ESPORTES</span>
+            <img src="./src/images/angle-down-solid.svg" onclick="openEsp()" class="open-close-dropdown">
+          </div>
+          <div class="list-open" id="esport">
             <span>Volêi</span>
             <span>Futsal</span>
             <span>Carimba</span>
           </div>
         </div>
         <div class="dropdown">
-          <span class="import purple" onclick="openRes()">RESERVAR</span>
-          <div class="list-close" id="reserv">
+          <div class="dropdown-header purple">
+            <span class="import">RESERVAR</span>
+            <img src="./src/images/angle-down-solid.svg" onclick="openRes()" class="open-close-dropdown">
+          </div>
+          <div class="list-open" id="reserv">
             <span>9:00</span>
             <span>12:00</span>
             <span>15:00</span>
