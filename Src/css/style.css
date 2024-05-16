@@ -81,7 +81,7 @@ aside {
 
 /*Parte da logo do código */
 
-hr {
+aside > hr {
     margin-bottom: 20px;
     width: 75%;
     filter: brightness(0) saturate(100%) invert(94%) sepia(20%) saturate(193%) hue-rotate(34deg) brightness(98%) contrast(94%) opacity(40%);
@@ -346,7 +346,7 @@ main {
 .slides-labels {
     width: 800px;
     height: 20px;
-    padding-right: 60px;
+    padding-right: 65px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -421,9 +421,9 @@ main {
 .blue{ background-color: var(--blue); }
 .purple{ background-color: var(--purple); }
 
-.scroll-green{  }
-.scroll-blue{scrollbar-color: hsl(95, 30%, 54%)  var(--blue) ;}
-.scroll-purple{}
+.scroll-green{scrollbar-color: #5b7c40  var(--green);}
+.scroll-blue{scrollbar-color: hsl(95, 30%, 54%)  var(--blue);}
+.scroll-purple{scrollbar-color:  #71569f  var(--purple);}
 
 
 .dropdown-header{
@@ -473,7 +473,7 @@ main {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     overflow: auto;
-}                                   
+}      
 
 .list-close > span{
     padding: 15px;
@@ -489,6 +489,25 @@ main {
     padding-bottom: 20px;
     border-bottom: none;
 }
+
+/* Estilização da Tabela/Calendário */
+.calendar-main{
+    width: 1236px;
+    height: 700px;
+    border-left: 20px solid #56822E;
+    border-radius: 15px;
+    font-size: 25px;
+    text-align: center;
+    background-color: #CDE5B1;
+}
+
+.line-calendar{
+    width: 1159px;
+    margin-left: 15px;
+    border: solid 1px #00000021;
+    margin-bottom: 25px;
+}
+
 
 /* Seção do horarios de reservar */
 .section-reserves {
