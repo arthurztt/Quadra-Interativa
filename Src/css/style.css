@@ -305,11 +305,24 @@ main {
     width: 100%;
     /* position: absolute; */
     padding-bottom: 50px;
-    background-color: #374621;
+    background-color: #364a1b;
     border-radius: 10px;
 }
 
 /*Div pai do carrossel */
+.slider-main-container{
+    margin-top: 30px;
+    padding: 30px;
+    display: flex;
+    width: 65%;
+    background-color: #37561eaf;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 0px 10px 16px -7px #121e09;
+}
+
 .slider {
     margin-top: 25px;
     width: 1097px;
@@ -345,6 +358,7 @@ main {
 .slides-labels {
     width: 800px;
     height: 20px;
+    margin-top: 10px;
     padding-right: 65px;
     display: flex;
     justify-content: center;
@@ -396,12 +410,13 @@ main {
     width: 1275px;
     height: 351px;
     margin-top: 50px;
+    margin-bottom: 40px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     border-radius: 20px;
-    background: #3E5E27;
-    box-shadow: -2px 12px 7px -6px rgba(0,0,0,0.39);
+    background-color: #426724af;
+    box-shadow: 0px 10px 16px -7px #121e09;
 }
 
 /* Estilo de cada caixa de lista */
@@ -442,6 +457,7 @@ main {
     filter: brightness(0) saturate(100%) invert(85%) sepia(1%) saturate(2669%) hue-rotate(345deg) brightness(118%) contrast(95%);
     cursor: pointer;
     transform: rotate(180deg);
+    user-select: none;
 }
 
 .arrow-dropdown:hover{
@@ -511,6 +527,27 @@ main {
     margin-left: 15px;
     border: solid 1px #00000021;
     margin-bottom: 25px;
+}
+
+.sports-calendar{
+    width: 1236px;
+    height: 167px;
+    background: #4c7130;
+    border-radius: 15px;
+    border-left: 20px solid #446724;
+    font-size: 25px;
+    text-align: center;
+}
+
+.sports-calendar hr {
+    width: 100%;
+    border: 1px solid #000000;
+}
+
+td > legend{
+    width: 300px;
+    padding: 20px;
+    background-color: #446724;
 }
 
 

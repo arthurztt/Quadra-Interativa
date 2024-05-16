@@ -77,30 +77,32 @@
     <!-- Primeira seção do main-->
     <section class="section-home">
       <!--div do carrossel (A ser feito)-->
-        <div class="slider">
-          <div class="slides-inpts">
-            <!--Radio buttons of carrossel -->
-            <input type="radio" name="radio-slides" id="radio-slides1">
-            <input type="radio" name="radio-slides" id="radio-slides2">
-            <input type="radio" name="radio-slides" id="radio-slides3">
-            <!--Imagens do carrossel-->
-            <div class="slides-img first">
-              <img src="Src/images/slider-img.jpg" alt="Imagem um">
+        <div class="slider-main-container">
+          <div class="slider">
+            <div class="slides-inpts">
+              <!--Radio buttons of carrossel -->
+              <input type="radio" name="radio-slides" id="radio-slides1">
+              <input type="radio" name="radio-slides" id="radio-slides2">
+              <input type="radio" name="radio-slides" id="radio-slides3">
+              <!--Imagens do carrossel-->
+              <div class="slides-img first">
+                <img src="Src/images/slider-img.jpg" alt="Imagem um">
+              </div>
+              <div class="slides-img">
+                <img src="Src/images/slider-img-2.jpeg" alt="Imagem dois">
+              </div>
+              <div class="slides-img">
+                <img src="Src/images/slider-img-3.jpeg" alt="Imagem três">
+              </div>
+              <!--Fim das imagens do carrossel-->
             </div>
-            <div class="slides-img">
-              <img src="Src/images/slider-img-2.jpeg" alt="Imagem dois">
-            </div>
-            <div class="slides-img">
-              <img src="Src/images/slider-img-3.jpeg" alt="Imagem três">
-            </div>
-            <!--Fim das imagens do carrossel-->
           </div>
-        </div>
-        <!--Labels do carrossel para serem butões clicaveis e mexíveis-->
-        <div class="slides-labels">
-          <label for="radio-slides1" class="slides-btn"> </label>
-          <label for="radio-slides2" class="slides-btn"> </label>
-          <label for="radio-slides3" class="slides-btn"> </label>
+          <!--Labels do carrossel para serem butões clicaveis e mexíveis-->
+          <div class="slides-labels">
+            <label for="radio-slides1" class="slides-btn"> </label>
+            <label for="radio-slides2" class="slides-btn"> </label>
+            <label for="radio-slides3" class="slides-btn"> </label>
+          </div>
         </div>
       <!--FIm dos labels do carrossel-->
       <!--Fim do carrossel-->
@@ -239,14 +241,14 @@
         </tr>
 
       </table>
-      <table>
+      <table class="sports-calendar">
         <tr>
           <td> Futsal</td>
           <td> Vôlei </td>
           <td> Carimba </td>
         </tr>
         <tr>
-          <td>
+          <td colspan="3">
             <hr>
           </td>
         </tr>
@@ -319,5 +321,4 @@
   </main>
   <script src="src/js/script.js"></script>
 </body>
-
-</html>
+s</html>
