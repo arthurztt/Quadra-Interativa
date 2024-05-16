@@ -304,7 +304,7 @@ main {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 1250px;
+    margin-top: 1780px;
     padding-bottom: 50px;
     background-color: #374621;
     border-radius: 10px;
@@ -491,14 +491,20 @@ main {
 }
 
 /* Estilização da Tabela/Calendário */
+.section-calendar{
+    margin: 100px 0px 0px 0px;
+}
+
 .calendar-main{
     width: 1236px;
     height: 700px;
-    border-left: 20px solid #56822E;
+    border-left: 20px solid #446724;
     border-radius: 15px;
     font-size: 25px;
     text-align: center;
-    background-color: #CDE5B1;
+    background-color: #4c7130;
+    color: white;
+    margin-bottom: 60px;
 }
 
 .line-calendar{
