@@ -77,33 +77,33 @@
     <!-- Primeira seção do main-->
     <section class="section-home">
       <!--div do carrossel (A ser feito)-->
-        <div class="slider-main-container">
-          <div class="slider">
-            <div class="slides-inpts">
-              <!--Radio buttons of carrossel -->
-              <input type="radio" name="radio-slides" id="radio-slides1">
-              <input type="radio" name="radio-slides" id="radio-slides2">
-              <input type="radio" name="radio-slides" id="radio-slides3">
-              <!--Imagens do carrossel-->
-              <div class="slides-img first">
-                <img src="Src/images/slider-img.jpg" alt="Imagem um">
-              </div>
-              <div class="slides-img">
-                <img src="Src/images/slider-img-2.jpeg" alt="Imagem dois">
-              </div>
-              <div class="slides-img">
-                <img src="Src/images/slider-img-3.jpeg" alt="Imagem três">
-              </div>
-              <!--Fim das imagens do carrossel-->
+      <div class="slider-main-container">
+        <div class="slider">
+          <div class="slides-inpts">
+            <!--Radio buttons of carrossel -->
+            <input type="radio" name="radio-slides" id="radio-slides1">
+            <input type="radio" name="radio-slides" id="radio-slides2">
+            <input type="radio" name="radio-slides" id="radio-slides3">
+            <!--Imagens do carrossel-->
+            <div class="slides-img first">
+              <img src="Src/images/slider-img.jpg" alt="Imagem um">
             </div>
-          </div>
-          <!--Labels do carrossel para serem butões clicaveis e mexíveis-->
-          <div class="slides-labels">
-            <label for="radio-slides1" class="slides-btn"> </label>
-            <label for="radio-slides2" class="slides-btn"> </label>
-            <label for="radio-slides3" class="slides-btn"> </label>
+            <div class="slides-img">
+              <img src="Src/images/slider-img-2.jpeg" alt="Imagem dois">
+            </div>
+            <div class="slides-img">
+              <img src="Src/images/slider-img-3.jpeg" alt="Imagem três">
+            </div>
+            <!--Fim das imagens do carrossel-->
           </div>
         </div>
+        <!--Labels do carrossel para serem butões clicaveis e mexíveis-->
+        <div class="slides-labels">
+          <label for="radio-slides1" class="slides-btn"> </label>
+          <label for="radio-slides2" class="slides-btn"> </label>
+          <label for="radio-slides3" class="slides-btn"> </label>
+        </div>
+      </div>
       <!--FIm dos labels do carrossel-->
       <!--Fim do carrossel-->
       <!-- Article com o dropdwon List  -->
@@ -176,7 +176,7 @@
       <table class="calendar-main">
         <tr>
           <td colspan="7" class="mes">
-              <legend>Maio</legend>
+            <legend>Maio</legend>
           </td>
         </tr>
         <tr>
@@ -264,24 +264,73 @@
     <section class="section-reserves">
       <h2>Horários Possíveis</h2>
       <!-- Caixinha de cada drop falando dos horarios -->
-      <div class="drop-horarios">
-        <img src="" alt="icone"> <span>Intervalo da Manhã</span><span>barra</span>
+      <div class="resever-main-container">
+        <div class="drop-horarios">
+          <img src="Src/images/journal-check.svg" alt="icone" class="note-icon"><span>Intervalo da Manhã</span><img
+            src="Src/images/angle-down-solid.svg" alt="" class="seta-dropwdown">
+        </div>
+        <!-- Caixinha contendo o conteúdo do dropdown cujo no css contem display none para não influenciar, ainda será adicionado com o passar do tempo. MEXERE COM JS -->
+        <!-- <div class="informacoes"> -->
+        <!-- container geral do conteúdo do drop  -->
+        <div class="inpts-drop">
+          <!-- Primeira parte com os botões radio para os esportes -->
+          <div class="inpts">
+            <div class=" esportes-check">
+              <div>
+                <input type="checkbox" name="Futsal" id="Futsal">Futsal
+              </div>
+              <div>
+                <input type="checkbox" name="Volêi" id=""> Volêi
+              </div>
+              <div>
+                <input type="checkbox" name="Carimba" id=""> Carimba
+              </div>
+            </div>
+            <!-- Reservar times e etc  -->
+            <div class="times">
+              <span>TIMES</span>
+              <div>
+                <input type="text" name="" id="">
+                X
+                <input type="text" name="" id="">
+              </div>
+              <span>Vestiarios:</span>
+              <div>
+                <input type="checkbox" name="" id="">Masculino
+              </div>
+              <div>
+                <input type="checkbox" name="" id="">Feminino
+              </div>
+              <!-- Fim do drop com observações e o botão de solicitar  -->
+            </div>
+          </div>
+          <div class="footer-drop">
+            <div class="obs">
+              <span>OBSERVAÇÕES</span>
+              <input type="text" name="observ" id="observ">
+            </div>
+            <div class="slc">
+              <button class="solit">SOLICITAR</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- Caixinha contendo o conteúdo do dropdown cujo no css contem display none para não influenciar, ainda será adicionado com o passar do tempo. MEXERE COM JS -->
-      <div class="informacoes">
-        <span>inf</span>
+      <div class="drop-horarios">
+        <img src="Src/images/journal-check.svg" alt="icone" class="note-icon"> <span>Intervalo da Manhã</span><img
+          src="Src/images/angle-down-solid.svg" alt="" class="seta-dropwdown">
       </div>
       <div class="drop-horarios">
-        <img src="" alt="icone"> <span>Intervalo da Manhã</span><span>barra</span>
+        <img src="Src/images/journal-check.svg" alt="icone" class="note-icon"> <span>Intervalo da Manhã</span><img
+          src="Src/images/angle-down-solid.svg" alt="" class="seta-dropwdown">
       </div>
       <div class="drop-horarios">
-        <img src="" alt="icone"> <span>Intervalo da Manhã</span><span>barra</span>
+        <img src="Src/images/journal-check.svg" alt="icone" class="note-icon"> <span>Intervalo da Manhã</span><img
+          src="Src/images/angle-down-solid.svg" alt="" class="seta-dropwdown">
       </div>
       <div class="drop-horarios">
-        <img src="" alt="icone"> <span>Intervalo da Manhã</span><span>barra</span>
+        <img src="Src/images/journal-check.svg" alt="icone" class="note-icon"> <span>Intervalo da Manhã</span><img
+          src="Src/images/angle-down-solid.svg" alt="" class="seta-dropwdown">
       </div>
-      <div class="drop-horarios">
-        <img src="" alt="icone"> <span>Intervalo da Manhã</span><span>barra</span>
       </div>
     </section>
     <!-- Fim da seção dos horarios. -->
@@ -321,4 +370,6 @@
   </main>
   <script src="src/js/script.js"></script>
 </body>
-s</html>
+
+
+</html>
