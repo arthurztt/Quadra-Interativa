@@ -644,14 +644,19 @@ td>legend {
     height: 100%;
 }
 
+/* Div das obserbvações e textarea */
+.obs{
+    display: flex;
+    flex-direction: column;
+    align-items:baseline ;
+    width: 100%;
+}
 /* Estilização do bloco de selação check dos esportes  */
 .esportes-check {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    justify-content: space-between;
-    width: 100%;
 }
 
 /* Estilização do bloco de selação check dos times  */
@@ -661,7 +666,6 @@ td>legend {
     align-items: center;
     text-align: center;
     justify-content: space-between;
-    width: 100%
 }
 
 /* Estilização do fim com observações e o botão solicitar   */
@@ -669,14 +673,24 @@ td>legend {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    padding-left: 17px ;
+    padding-bottom: 20px ;
 }
-/* Div das obserbvações e textarea */
-.obs{
-    display: flex;
-    flex-direction: column;
-    align-items:baseline ;
-    width: 100%;
+/* Estilização do input text  */
+#observ{
+    width: 542px;
+    height: 110px;
+}
+/* Estilização do botão */
+.solit{
+    width: 278px;
+    height: 63px;
+    font-size: 32px;
+    background-color: #314522;
+    color: #fff;
+    border-radius: 31px;
+    border: none;
+    user-select: none;
 }
 
 /*Fim do dropdowmn */
