@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root{
+:root {
     --green: #395224;
     --blue: #077442;
     --purple: #2c0076;
@@ -81,7 +81,7 @@ aside {
 
 /*Parte da logo do código */
 
-aside > hr {
+aside>hr {
     margin-bottom: 20px;
     width: 75%;
     filter: brightness(0) saturate(100%) invert(94%) sepia(20%) saturate(193%) hue-rotate(34deg) brightness(98%) contrast(94%) opacity(40%);
@@ -310,7 +310,7 @@ main {
 }
 
 /*Div pai do carrossel */
-.slider-main-container{
+.slider-main-container {
     margin-top: 30px;
     padding: 30px;
     display: flex;
@@ -377,7 +377,7 @@ main {
     cursor: pointer;
 }
 
-.slides-btn:hover{
+.slides-btn:hover {
     transition: 0.3s;
     background: #f8f8f8;
 }
@@ -397,7 +397,7 @@ main {
 
 /* Div do select para interatividade do site */
 
-.import{
+.import {
     display: flex;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -431,16 +431,32 @@ main {
     max-height: 450px;
 }
 
-.green{ background-color: var(--green); }
-.blue{ background-color: var(--blue); }
-.purple{ background-color: var(--purple); }
+.green {
+    background-color: var(--green);
+}
 
-.scroll-green{scrollbar-color: #5b7c40  var(--green);}
-.scroll-blue{scrollbar-color: hsl(95, 30%, 54%)  var(--blue);}
-.scroll-purple{scrollbar-color:  #71569f  var(--purple);}
+.blue {
+    background-color: var(--blue);
+}
+
+.purple {
+    background-color: var(--purple);
+}
+
+.scroll-green {
+    scrollbar-color: #5b7c40 var(--green);
+}
+
+.scroll-blue {
+    scrollbar-color: hsl(95, 30%, 54%) var(--blue);
+}
+
+.scroll-purple {
+    scrollbar-color: #71569f var(--purple);
+}
 
 
-.dropdown-header{
+.dropdown-header {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -450,7 +466,7 @@ main {
     font-family: "Poppins", sans-serif;
 }
 
-.arrow-dropdown{
+.arrow-dropdown {
     position: relative;
     right: 50px;
     width: 20px;
@@ -460,7 +476,7 @@ main {
     user-select: none;
 }
 
-.arrow-dropdown:hover{
+.arrow-dropdown:hover {
     transition: 0.3s;
     filter: brightness(0) saturate(100%) invert(92%) sepia(0%) saturate(3411%) hue-rotate(136deg) brightness(94%) contrast(82%);
 }
@@ -488,29 +504,32 @@ main {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     overflow: auto;
-}      
+}
 
-.list-close > span{
+.list-close>span {
     padding: 15px;
     border-bottom: 1px solid black;
 }
 
-.list-open > span{
+.list-open>span {
     padding: 15px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.500);
 }
 
-.list-open > .last-child-dd{
+.list-open>.last-child-dd {
     padding-bottom: 20px;
     border-bottom: none;
 }
 
 /* Estilização da Tabela/Calendário */
-.section-calendar, .section-calendar, .section-questions, .section-reserves{
+.section-calendar,
+.section-calendar,
+.section-questions,
+.section-reserves {
     margin: 100px 0px 0px 0px;
 }
 
-.calendar-main{
+.calendar-main {
     width: 1236px;
     height: 700px;
     border-left: 20px solid #446724;
@@ -522,14 +541,14 @@ main {
     margin-bottom: 60px;
 }
 
-.line-calendar{
+.line-calendar {
     width: 1159px;
     margin-left: 15px;
     border: solid 1px #00000021;
     margin-bottom: 25px;
 }
 
-.sports-calendar{
+.sports-calendar {
     width: 1236px;
     height: 167px;
     background: #4c7130;
@@ -544,7 +563,7 @@ main {
     border: 1px solid #000000;
 }
 
-td > legend{
+td>legend {
     width: 300px;
     padding: 20px;
     background-color: #446724;
@@ -556,7 +575,7 @@ td > legend{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:100%;
+    width: 100%;
     background: #3E5E27;
 }
 
@@ -571,7 +590,8 @@ td > legend{
     background: #D9D9D9;
     opacity: 60%;
 }
-.resever-main-container{
+
+.resever-main-container {
     margin-top: 30px;
     padding: 30px;
     display: flex;
@@ -584,12 +604,14 @@ td > legend{
     box-shadow: 0px 10px 16px -7px #121e09;
 
 }
- .seta-dropwdown{
+
+.seta-dropwdown {
     width: 27px;
     height: 45px;
     transform: rotate(-90deg);
-} 
-.note-icon{
+}
+
+.note-icon {
     width: 45px;
     height: 54px;
 }
@@ -598,49 +620,65 @@ td > legend{
 .informacoes {
     display: none;
 }
+
 /* DIV DO QUE VAI APARECER AO CLICAR NO DROPDOWN  */
-.inpts-drop{
+.inpts-drop {
     width: 1041px;
     height: 349px;
     background-color: #d9d9d9;
     margin-top: 0;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     font-size: 30px;
 }
+
 /* Estilização das seleções de esportes  */
-.inpts{
+.inpts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilização do bloco de selação check dos esportes  */
+.esportes-check {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Estilização do bloco de selação check dos times  */
+.times {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    justify-content: space-around;
-    float: left;
-    width: 100%;
-    height: 50%;
+    justify-content: space-between;
+    width: 100%
 }
-/* Estilização das seleções dos times para reservar  */
-.times{
-    width: 100%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
 
-    align-items: end;
-
-}
 /* Estilização do fim com observações e o botão solicitar   */
-.footer-drop{
+.footer-drop {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding-top: 25% ;
-    margin-top: 25% ;
-    padding-right: 100%;
-    padding: 10px ;
-    background: #000000;
 }
+/* Div das obserbvações e textarea */
+.obs{
+    display: flex;
+    flex-direction: column;
+    align-items:baseline ;
+    width: 100%;
+}
+
 /*Fim do dropdowmn */
 /* Fim da seção dos horarios da reserva */
 /* Inicio da seção das duvidas */
