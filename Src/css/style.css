@@ -580,16 +580,6 @@ td>legend {
 }
 
 /* Caixinha de cada horarío um pouco estilizado */
-.drop-horarios {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0px 0px;
-    width: 1041px;
-    height: 87px;
-    background: #D9D9D9;
-    opacity: 60%;
-}
 
 .resever-main-container {
     margin-top: 30px;
@@ -605,6 +595,17 @@ td>legend {
 
 }
 
+.drop-horarios {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0px 0px 0px;
+    width: 1041px;
+    height: 87px;
+    background: #D9D9D9;
+    opacity: 60%;
+}
+
 .seta-dropwdown {
     width: 27px;
     height: 45px;
@@ -617,14 +618,15 @@ td>legend {
 }
 
 /* CUIDADO AO MEXER. Classe contendo dropwdown ainda a ser colocado. inico do drop com display none. Ser necessário Js */
-.informacoes {
+.reserv-close {
     display: none;
 }
 
+
 /* DIV DO QUE VAI APARECER AO CLICAR NO DROPDOWN  */
-.inpts-drop {
+.reserv-open {
     width: 1041px;
-    height: 349px;
+    height: 500px;
     background-color: #d9d9d9;
     margin-top: 0;
     display: flex;
@@ -645,12 +647,13 @@ td>legend {
 }
 
 /* Div das obserbvações e textarea */
-.obs{
+.obs {
     display: flex;
     flex-direction: column;
-    align-items:baseline ;
+    align-items: baseline;
     width: 100%;
 }
+
 /* Estilização do bloco de selação check dos esportes  */
 .esportes-check {
     display: flex;
@@ -673,16 +676,18 @@ td>legend {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 17px ;
-    padding-bottom: 20px ;
+    /* padding-left: 17px ;
+    padding-bottom: 20px ; */
 }
+
 /* Estilização do input text  */
-#observ{
+#observ {
     width: 542px;
     height: 110px;
 }
+
 /* Estilização do botão */
-.solit{
+.solit {
     width: 278px;
     height: 63px;
     font-size: 32px;
