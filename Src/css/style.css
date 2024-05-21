@@ -536,9 +536,10 @@ main {
     border-radius: 15px;
     font-size: 25px;
     text-align: center;
-    background-color: #4c7130;
+    background-color: #456e26;
     color: white;
     margin-bottom: 60px;
+    box-shadow: -1px -3px 5px 2px rgba(0,0,0,0.05);
 }
 
 .line-calendar {
@@ -563,10 +564,40 @@ main {
     border: 1px solid #000000;
 }
 
-td>legend {
+.calendar-header{
+    display: flex;
+    flex-direction: row;
+}
+
+.mes {
+    height: 220px;
+}
+
+td > legend {
     width: 300px;
     padding: 20px;
+    font-weight: 400;
     background-color: #446724;
+    position: relative;
+    top: 60px;
+    right: 5px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.styled-box-calendar{
+    background-color: #385a1e;
+    left: 3px;
+    bottom: 72.5px;
+    width: 800px;
+    height: 150px;
+    float: right;
+    position: relative;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 15px;
+}
+
+.styled-box-calendar > p{
+    opacity: 0;
 }
 
 
@@ -582,8 +613,8 @@ td>legend {
 /* Caixinha de cada horarío um pouco estilizado */
 
 .resever-main-container {
-    margin-top: 30px;
-    padding: 30px;
+    margin: 50px 0px 65px 0px;
+    padding: 30px 30px 50px 30px;
     display: flex;
     width: 65%;
     background-color: #37561eaf;
