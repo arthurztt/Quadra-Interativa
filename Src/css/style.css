@@ -511,7 +511,7 @@ main {
     border-bottom: 1px solid black;
 }
 
-.list-open>span {
+.list-open>.list-items {
     padding: 15px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.500);
 }
@@ -531,15 +531,19 @@ main {
 
 .calendar-main {
     width: 1236px;
-    height: 700px;
+    height: 630px;
     border-left: 20px solid #446724;
     border-radius: 15px;
-    font-size: 25px;
+    font-size: 22px;
     text-align: center;
     background-color: #456e26;
     color: white;
     margin-bottom: 60px;
     box-shadow: -1px -3px 5px 2px rgba(0,0,0,0.05);
+}
+
+.gap-changes{
+    width: 195px;
 }
 
 .line-calendar {
@@ -570,7 +574,7 @@ main {
 }
 
 .mes {
-    height: 220px;
+    height: 180px;
 }
 
 td > legend {
@@ -579,7 +583,7 @@ td > legend {
     font-weight: 400;
     background-color: #446724;
     position: relative;
-    top: 60px;
+    top: 37px;
     right: 5px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -587,9 +591,9 @@ td > legend {
 .styled-box-calendar{
     background-color: #385a1e;
     left: 3px;
-    bottom: 72.5px;
+    bottom: 72px;
     width: 800px;
-    height: 150px;
+    height: 110px;
     float: right;
     position: relative;
     border-bottom-left-radius: 20px;
