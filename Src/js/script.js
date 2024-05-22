@@ -11,7 +11,7 @@ function abrirMenu() {
     menu.style.transition = "all 0.4s ease";
     menu.style.width = "282px";
     //Botão para a direita
-    iconButton.src = "Src/images/arrow-left-circle-fill.svg";
+    iconButton.src = "Src/icons/arrow-left-circle-fill.svg";
 
     //Tamanho do main
     main.style.transition = "all  0.5s ease ";
@@ -30,7 +30,7 @@ function abrirMenu() {
     menu.style.transition = "all 0.4s ease";
     menu.style.width = "132px";
     //Botão para a esquerda
-    iconButton.src = "Src/images/arrow-right-circle-fill.svg";
+    iconButton.src = "Src/icons/arrow-right-circle-fill.svg";
     lateralButton.style.left = "0px";
     //Alterações mains
     main.style.width = "100%";
