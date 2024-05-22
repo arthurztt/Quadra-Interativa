@@ -27,22 +27,30 @@
     <div class="menu-icons">
       <!-- ============= PARTE COM OS ICONES E DPS COM O TEXTO + ICONES   ============= -->
       <ul class="list-ordenato">
-        <li class="list">
-          <img src="src/images/house.svg" alt="" id="icons" class="icons">
-          <span class="text padding-diff-1" id="text">Home</span>
-        </li>
-        <li class="list">
-          <img src="src/images/calendar.svg" alt="" id="icons" class="icons">
-          <span class="text padding-diff-2" id="text">Evento</span>
-        </li>
-        <li class="list">
-          <img src="src/images//person-fill-add.svg" alt="" id="icons" class="icons"><span class="text padding-diff-3"
-            id="text">Reservar</span>
-        </li>
-        <li class="list">
-          <img src="src/images//chat-left-dots-fill.svg" alt="" id="icons" class="icons"><span
-            class="text padding-diff-4" id="text">Sugestões</span>
-        </li>
+        <a href="#home">
+          <li class="list">
+            <img src="src/images/house.svg" alt="" id="icons" class="icons">
+            <span class="text padding-diff-1" id="text">Home</span>
+          </li>
+        </a>
+        <a href="#calendar">
+          <li class="list">
+            <img src="src/images/calendar.svg" alt="" id="icons" class="icons">
+            <span class="text padding-diff-2" id="text">Evento</span>
+          </li>
+        </a>
+        <a href="#reservas">
+          <li class="list">
+            <img src="src/images//person-fill-add.svg" alt="" id="icons" class="icons"><span class="text padding-diff-3"
+              id="text">Reservar</span>
+          </li>
+        </a>
+        <a href="#quest">
+          <li class="list">
+            <img src="src/images//chat-left-dots-fill.svg" alt="" id="icons" class="icons"><span
+              class="text padding-diff-4" id="text">Sugestões</span>
+          </li>
+        </a>
         <li class="list">
           <img src="Src/images/person-fill.svg" alt="" id="icons" class="icons"><span class="text padding-diff-5"
             id="text">Perfil</span>
@@ -75,7 +83,7 @@
   <!--CUIDADO, ESSE MAIN DEIXA O CONTEÚDO AO LADO DO MENU LATERAL, TUDO DO "BODY" TEM QUE ESTAR DENTRO DELE-->
   <main>
     <!-- Primeira seção do main-->
-    <section class="section-home">
+    <section class="section-home" id="home">
       <!--div do carrossel (A ser feito)-->
       <div class="slider-main-container">
         <div class="slider">
@@ -119,8 +127,12 @@
             <!-- Spans Contendo o conteúdo e que deve ser colocado class/id em cada para a estilização -->
             <span>Carnaval</span>
             <span>Festa Junina</span>
-            <span>Feira Cientifica</span>
-            <span>Dia das Mães</span>
+            <span>Festa Junina</span>
+            <span>Festa Junina</span>
+            <span>Festa Junina</span>
+            <span>Festa Junina</span>
+            <span>Festa Junina</span>
+            <span>Festa Junina</span>
             <span class="last-child-dd">Paixão de Cristo</span>
           </div>
         </div>
@@ -131,11 +143,21 @@
             <img src="./src/images/angle-down-solid.svg" onclick="openEsp()" class="arrow-dropdown" id="arrow-esp">
           </div>
           <div class="list-open scroll-blue" id="esport">
-            <span class="list-items"><img src="">Volêi</span>
-            <span class="list-items">Futsal</span>
-            <span class="list-items">Futsal</span>
-            <span class="list-items">Futsal</span>
-            <span class="last-child-dd list-items">Carimba</span>
+            <span>Volêi</span>
+            <span>Futsal</span>
+            <span>Futsal</span>
+            <span>Futsal</span>
+            <span>Futsal</span>
+            <span>Futsal</span>
+            <span>Futsal</span>
+            <span>Futsal</span>
+            <span>Futsal</span>
+            <span>Futsal</span>
+            <span>Futsal</span>
+            <span>Futsal</span>
+            <span>Futsal</span>
+            <span>Futsal</span>
+            <span class="last-child-dd">Carimba</span>
           </div>
         </div>
         <div class="dropdown">
@@ -158,7 +180,7 @@
     </section>
     <!--Fim da primeira seção do main-->
     <!--Calendario em tabela-->
-    <section class="section-calendar">
+    <section class="section-calendar" id="calendar">
       <table class="calendar-main">
         <tr>
           <td colspan="7" class="mes">
@@ -166,16 +188,16 @@
             <div class="styled-box-calendar">
               <p>aa</p>
           </td>
-        </div>
+          </div>
         </tr>
-        <tr class="days-week-box">
-          <td class="days-week gap-changes">Domingo</td>
-          <td class="days-week">Segunda</td>
-          <td class="days-week">Terça</td>
-          <td class="days-week">Quarta</td>
-          <td class="days-week">Quinta</td>
-          <td class="days-week">Sexta</td>
-          <td class="days-week">Sabado</td>
+        <tr>
+          <td>Domingo</td>
+          <td>Segunda</td>
+          <td>Terça</td>
+          <td>Quarta</td>
+          <td>Quinta</td>
+          <td>Sexta</td>
+          <td>Sabado</td>
         </tr>
         <tr>
           <td colspan="7">
@@ -183,7 +205,7 @@
           </td>
         </tr>
         <tr>
-          <td>1</td>
+          <td class="teste">1</td>
           <td>2</td>
           <td>3</td>
           <td>4</td>
@@ -250,7 +272,7 @@
 
     </section>
     <!-- Seção da parte de reservar a quadra em certos horários  -->
-    <section class="section-reserves">
+    <section class="section-reserves" id="reservas">
       <div class="resever-main-container">
         <h2>Horários Possíveis</h2>
         <!-- Caixinha de cada drop falando dos horarios -->
@@ -505,7 +527,7 @@
     </section>
     <!-- Fim da seção dos horarios. -->
     <!-- Seção das questões e comentarios -->
-    <section class="section-questions">
+    <section class="section-questions" id="quest">
       <!-- Div das perguntas. Falta grande parte da estilização -->
       <div class="div-questions">
         <h2>Perguntas Frequentes</h2>

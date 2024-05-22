@@ -114,11 +114,11 @@ function openHors1() {
     reserv.classList.remove("reserv-close");
     reserv.classList.add("reserv-open");
     arrow.style.transition = "0.3s";
-    arrow.style.transform = "rotate(180deg)";
+    arrow.style.transform = "rotate(0deg)";
   } else {
     reserv.classList.add("reserv-close");
     reserv.classList.remove("reserv-open");
-    arrow.style.transform = "rotate(0deg)";
+    arrow.style.transform = "rotate(180deg)";
     arrow.style.transition = "0.3s";
   }
 }
@@ -129,11 +129,11 @@ function openHors2() {
     reserv.classList.remove("reserv-close");
     reserv.classList.add("reserv-open");
     arrow.style.transition = "0.3s";
-    arrow.style.transform = "rotate(180deg)";
+    arrow.style.transform = "rotate(0deg)";
   } else {
     reserv.classList.add("reserv-close");
     reserv.classList.remove("reserv-open");
-    arrow.style.transform = "rotate(0deg)";
+    arrow.style.transform = "rotate(180deg)";
     arrow.style.transition = "0.3s";
   }
 }
@@ -144,12 +144,12 @@ function openHors3() {
     reserv.classList.remove("reserv-close");
     reserv.classList.add("reserv-open");
     arrow.style.transition = "0.3s";
-    arrow.style.transform = "rotate(180deg)";
+    arrow.style.transform = "rotate(0deg)";
   } else {
     reserv.classList.add("reserv-close");
     reserv.classList.remove("reserv-open");
-    arrow.style.transform = "rotate(0deg)";
     arrow.style.transition = "0.3s";
+    arrow.style.transform = "rotate(180deg)";
   }
 }
 function openHors4() {
@@ -159,11 +159,11 @@ function openHors4() {
     reserv.classList.remove("reserv-close");
     reserv.classList.add("reserv-open");
     arrow.style.transition = "0.3s";
-    arrow.style.transform = "rotate(180deg)";
+    arrow.style.transform = "rotate(0deg)";
   } else {
     reserv.classList.add("reserv-close");
     reserv.classList.remove("reserv-open");
-    arrow.style.transform = "rotate(0deg)";
+    arrow.style.transform = "rotate(180deg)";
     arrow.style.transition = "0.3s";
   }
 }
@@ -174,11 +174,11 @@ function openHors5() {
     reserv.classList.remove("reserv-close");
     reserv.classList.add("reserv-open");
     arrow.style.transition = "0.3s";
-    arrow.style.transform = "rotate(180deg)";
+    arrow.style.transform = "rotate(0deg)";
   } else {
     reserv.classList.add("reserv-close");
     reserv.classList.remove("reserv-open");
-    arrow.style.transform = "rotate(0deg)";
+    arrow.style.transform = "rotate(180deg)";
     arrow.style.transition = "0.3s";
   }
 }
