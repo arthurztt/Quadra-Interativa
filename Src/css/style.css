@@ -760,6 +760,26 @@ td>legend {
     height: auto;
 }
 
+.coments {
+    width: 1174px;
+    height: 205px;
+    border-radius: 17px;
+    background: #ffffff;
+    margin: 10px 0px;
+    font-size: 16px;
+}
+
+.coments img {
+    width: 20px;
+    height: 20px;
+}
+.coments-perfil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5px;
+
+}
 
 
 
