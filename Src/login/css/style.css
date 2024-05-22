@@ -1,0 +1,233 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #57822e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+.left-login {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Roboto Condensed", sans-serif;    
+    font-weight: 800;
+    float: left;
+    position: absolute;
+    right: 48%;
+    top: -85px;
+}
+
+.left-login > h1 {
+    color: aliceblue;
+    font-size: 3em;
+    font-weight: 700;
+
+}
+.left-login-image {
+    width: 35vw;
+    float: left;
+}
+
+.flip-form {
+    background-color: transparent;
+    width: 350px;
+    height: 550px;
+    perspective: 1000px;
+    margin: auto;
+    position: absolute;
+
+}
+
+.flip-form-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: absolute;
+    left: 100%;
+    top: 30%;
+}
+
+.flip-form-front,.flip-form-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    padding: 25px 20px;
+    top: -85px;
+}
+
+.flip-form-front {
+    background: #5f8f33; 
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+     box-shadow: 0 0 3.2px #0c0c0c, 
+                0 0 3.2px #000000, 
+                0 0 20.8px #57822e,
+                inset 0 0 20.8px #57822e;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                box-sizing: border-box;
+                box-shadow: 0px 0px 15px #ffffffa8;
+}
+
+.flip-form-back {
+    background: #5f8f33; 
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 0 3.2px #0c0c0c, 
+    0 0 3.2px #000000, 
+    0 0 20.8px #57822e,
+    inset 0 0 20.8px #57822e;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 15px #ffffffa8;
+    transform: rotateY(180deg);            
+}
+
+.flipped .flip-form-inner {
+    transform: rotateY(180deg);
+}
+
+.header h1 {
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;    
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: "Roboto Condensed", sans-serif;
+    padding: 10px;
+}
+
+.input-box > label {
+    margin-left: 8px;
+    font-size: 15px;  
+    color: #000000;
+    position: absolute;
+    transition: .2s ease-in-out;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    background: #ffffff75;
+    padding: 3px 5px;
+    font-size: 13px;
+    color: #57822e;
+}
+
+.input-box > input  {
+    width: 100%;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 15px;
+    outline: none;
+    background: #24232348;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box; 
+    padding-inline: 10px;
+    margin: 0;
+    position: relative;
+
+}
+
+.input-box a {
+    position: relative;
+    bottom:18px;
+    left: 79px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: all .2s;
+}
+
+.input-box a:hover {
+    text-decoration:underline;
+    color: #000000;
+}
+
+#btn {
+    width: 100%;
+    height: 5vh;
+    /* padding: 16px 0px; */
+    border-radius: 25px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    cursor: pointer;
+    letter-spacing: 2px;
+    color: #57822e;
+    background: #eee5e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto Condensed", sans-serif;
+    transition: all .5s;
+}
+
+#btn:hover {
+    background: #000000;
+    color: #eee5e9;
+    display: flex;
+    justify-content: center;
+}
+
+.fa-brands {
+    width: 30px;
+    position: relative;
+    font-size: 20px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    padding: 5px;
+    cursor: pointer;
+    background: #5f8f33;
+    color: #eee5e9;
+    transition: all .5s;
+}
+
+.fa-brands:hover {
+    border: 2px solid #ffffff;
+    color: #5f8f33;
+    background: #000;
+}
+
+.login-link a, .signup-link a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.signup-link {
+    position: relative;
+    top: 30px;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+    color: #000000;
+}
+
