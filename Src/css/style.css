@@ -16,7 +16,7 @@
 
 /* Css link para o scroll estar lento */
 html {
-    scroll-behavior: smooth !important;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -340,7 +340,7 @@ main {
 
 .slider {
     margin-top: 25px;
-    width: 1097px;
+    width: 95%;
     height: 541px;
     border-radius: 10px;
     overflow: hidden;

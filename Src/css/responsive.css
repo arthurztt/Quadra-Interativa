@@ -173,8 +173,10 @@
     }
 
     .resever-main-container {
+        /* position: relative;
+        left: 50px; */
         margin: 50px 0px 65px 0px;
-        padding: 30px 30px 50px 30px;
+        padding: 30px 100px 50px 100px;
         display: flex;
         width: 65%;
         background-color: #37561eaf;
