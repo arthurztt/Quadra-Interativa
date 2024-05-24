@@ -13,10 +13,12 @@
     font-family: "Inter", sans-serif;
     font-weight: 400;
 }
+
 /* Css link para o scroll estar lento */
-html{
+html {
     scroll-behavior: smooth !important;
 }
+
 body {
     width: 100%;
     height: 100%;
@@ -362,7 +364,7 @@ main {
 }
 
 .slides-img img {
-    width: 1097px;
+    width: 100%;
     height: 541px;
 }
 
@@ -776,6 +778,7 @@ td>legend {
     width: 20px;
     height: 20px;
 }
+
 .coments-perfil {
     display: flex;
     justify-content: space-between;
@@ -783,106 +786,7 @@ td>legend {
     padding: 15px 5px;
 
 }
-/* Responsividade de notebook */
-@media screen and (max-width: 1024px) {  
-    
-.slider {
-    margin-top: 25px;
-    width: 600px;
-    height: 350px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-/* Div dos inputs e imagens do carrossel */
-.slides-inpts {
-    width:600px;
-    height: 350px;
-    display: flex;
-}
-
-    .slides-img {
-        width: 600px;
-        transition: 2s;
-    }
-    
-    .slides-img img {
-        width: 600px;
-        height: 350px;
-    }
-    
-    /* ================================Slides labels para navegação manual ==================*/
-    /* Defininando a div geral dos labels e onde vão ficar */
-    .slides-labels {
-        width: 800px;
-        height: 20px;
-        margin-top: 10px;
-        padding-right: 65px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 35px;
-        position: relative;
-        flex-wrap: wrap;
-    }
-    
-    /* Tamanho, cor e distancia de cada label */
-    .slides-btn {
-        width: 91px;
-        height: 4px;
-        background: #e3e3e38d;
-        flex-wrap: wrap;
-        cursor: pointer;
-    }
-    
-    .slides-btn:hover {
-        transition: 0.3s;
-        background: #f8f8f8;
-    }
-    #radio-slides1:checked~.first {
-        margin-left: 0;
-    }
-    
-    #radio-slides2:checked~.first {
-        margin-left: -600px;
-    }
-    
-    #radio-slides3:checked~.first {
-        margin-left: -1200px
-    }
-    .section-home {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin-bottom: 50px;
-        background-color: #364a1b;
-        border-radius: 10px;
-    }
-    .dropdown-list {
-        width: 1275px;
-        height: auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: ;
-        border-radius: 20px;
-        background-color: #426724af;
-        box-shadow: 0px 10px 16px -7px #121e09;
-    }
-    .dropdown {
-        display: flex;
-        width: 323px;
-        padding: 20px 0px 20px 0px;
-        border-radius: 35px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-height: 300px;
-    }
-}
+/* Fim da seção das dúvidas e comentarios. */
 
 
-/* Fim da seção das dúvidas e comentarios. */   
+
