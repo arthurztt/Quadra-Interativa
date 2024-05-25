@@ -545,8 +545,8 @@ main {
 }
 
 .calendar-main {
-    width: 1236px;
-    height: 700px;
+    width: 95%;
+    height: 900px;
     border-left: 20px solid #446724;
     border-radius: 15px;
     font-size: 25px;
@@ -683,6 +683,16 @@ td>legend {
 }
 
 /* Estilização das seleções de esportes  */
+/* Div pai da de todos os reservs open  */
+.inpts-drop {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .inpts {
     display: flex;
     flex-direction: row;
@@ -691,6 +701,17 @@ td>legend {
     justify-content: space-around;
     width: 100%;
     height: 100%;
+}
+
+input[type="checkbox"] {
+    
+    width: 23px;
+    height: 26px;
+    margin: 0px 10px 10px 0px;
+}
+
+input[type="checkbox"]:checked{
+    background-color: #446724;
 }
 
 /* Div das obserbvações e textarea */
@@ -721,10 +742,6 @@ td>legend {
 /* Estilização do fim com observações e o botão solicitar   */
 .footer-drop {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* padding-left: 17px ;
-    padding-bottom: 20px ; */
 }
 
 /* Estilização do input text  */
@@ -786,7 +803,5 @@ td>legend {
     padding: 15px 5px;
 
 }
+
 /* Fim da seção das dúvidas e comentarios. */
-
-
-
