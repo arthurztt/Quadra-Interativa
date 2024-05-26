@@ -11,7 +11,6 @@
     margin: 0%;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
-    font-weight: 400;
 }
 
 /* Css link para o scroll estar lento */
@@ -521,6 +520,31 @@ main {
     overflow: auto;
 }
 
+.events-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.events-name{
+    font-weight: 500;
+}
+
+.indisp{filter: brightness(0) saturate(100%) invert(15%) sepia(82%) saturate(2631%) hue-rotate(350deg) brightness(91%) contrast(87%);}
+.disp{filter: brightness(0) saturate(100%) invert(52%) sepia(73%) saturate(5304%) hue-rotate(64deg) brightness(90%) contrast(90%);}
+
+.events-date > img {
+    width: 21px;
+    height: 21px;
+}
+
+.events-date{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    gap: 3px;
+}
+
 .list-close>span {
     padding: 15px;
     border-bottom: 1px solid black;
@@ -572,11 +596,12 @@ main {
     border-left: 20px solid #446724;
     font-size: 25px;
     text-align: center;
+    color: white;
 }
 
-.sports-calendar hr {
+.line-sports{
     width: 100%;
-    border: 1px solid #000000;
+    border: 1px solid #00000021;
 }
 
 .calendar-header {
@@ -640,6 +665,10 @@ td>legend {
     border-radius: 25px;
     box-shadow: 0px 10px 16px -7px #121e09;
 
+}
+
+.resever-main-container > h2 {
+    color: white;
 }
 
 .drop-horarios {
