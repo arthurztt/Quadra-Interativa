@@ -422,10 +422,9 @@ main {
 }
 
 .dropdown-list {
-    width: 1275px;
+    width: 1000px;
     height: 351px;
-    margin-top: 50px;
-    margin-bottom: 40px;
+    padding: 20px 40px 20px 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -436,9 +435,8 @@ main {
 
 /* Estilo de cada caixa de lista */
 .dropdown {
-    display: flex;
-    width: 323px;
-    padding: 100px 0px 100px 0px;
+    width: 300px;
+    margin: 20px;
     border-radius: 35px;
     display: flex;
     flex-direction: column;
@@ -626,8 +624,7 @@ td>legend {
     background: #3E5E27;
 }
 
-/* Caixinha de cada horarío um pouco estilizado */
-
+/* Caixinha de cada horarío um pouco estilizada de acordo com a do carrossel  */
 .resever-main-container {
     margin: 50px 0px 65px 0px;
     padding: 30px 30px 50px 30px;
@@ -641,7 +638,7 @@ td>legend {
     box-shadow: 0px 10px 16px -7px #121e09;
 
 }
-
+/* Div dos horarios que sera clicada */
 .drop-horarios {
     display: flex;
     justify-content: space-around;
@@ -656,7 +653,7 @@ td>legend {
 .drop-horarios img {
     user-select: none;
 }
-
+/* Estilização da seta do dropdowmn dos horarios  */
 .seta-dropwdown {
     width: 27px;
     height: 45px;
@@ -692,7 +689,7 @@ td>legend {
     height: 100%;
     padding: 0px 20px 0px 20px;
 }
-
+/* Div pai da parte de cima, com os checkbox buttons */
 .inpts {
     width: 100%;
     height: 100%;
@@ -702,13 +699,13 @@ td>legend {
     text-align: center;
     justify-content: space-around;
 }
-
+/* Tamanho dos checkbox buttons e distaciamento */
 input[type="checkbox"] {
     width: 23px;
     height: 26px;
     margin: 0px 10px 10px 0px;
 }
-
+/* Div filho da parte de cima, com os checkbox buttons */
 .checks {
     width: 100%;
     display: flex;
@@ -717,6 +714,7 @@ input[type="checkbox"] {
     gap: 25px;
 }
 
+/* Div da parte de vestiarios abertos  */
 .vest {
     gap: 15px;
     width: 100%;
@@ -737,15 +735,6 @@ input[type="checkbox"] {
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
-
-/* Estilização do bloco de selação check dos times  */
-.times {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
 }
 
 /* Estilização do fim com observações e o botão solicitar   */
@@ -779,36 +768,60 @@ input[type="checkbox"] {
 /* Fim da seção dos horarios da reserva */
 /* Inicio da seção das duvidas */
 .section-questions {
+    width: 100%;
+    height: 750px;
+    background: #374621;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 1000px;
-    background: #374621;
 }
 
 /*Algumas estilização da caixa das dúvidas, necessita-se de muita estilização */
 .div-questions {
-    display: block;
     width: auto;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    margin: 50px 0px 50px 150px;
 }
+/* Afastamento entre os textos  */
+.div-questions h2,
+.div-questions h3,
+.list-prgts {
+    margin: 5px;
+}
+/* texto das perguntas frequentes com fonte maior */
+.div-questions h2 {
+    font-size: 32px;
+}
+/* Fonte das perguntas em si maiores e mais a direita */
+.div-questions h3 {
+    margin-left: 15px;
+    font-size: 25px;
+}
+/* Classe da li das respostas das perguntas frequentes */
+.li-prgts {
+    margin-left: 70px;
+    font-size: 25px;
+}
+/* Caixa pai de onde os comentarios vão ficar */
 .coments {
-    width: 1174px;
+    width: 95%;
     height: auto;
     border-radius: 17px;
     background: #ffffff;
     margin: 10px 0px;
     font-size: 16px;
 }
-
+/* Tamnho dos icones dos comentarios */
 .coments img {
     width: 20px;
     height: 20px;
     user-select: none;
 }
-
+/* Div da parte de cima dos comentarios, onde fica o perfil, like/deslike, etc */
 .coments-perfil {
     display: flex;
     justify-content: space-between;
@@ -816,8 +829,9 @@ input[type="checkbox"] {
     padding: 15px 5px;
 
 }
-.feedback{
-    margin:  20px 0px 50px 30px;
+/* Classe da parte de onde fica os comentarios de fato, como "Aplicativo lento" */
+.feedback {
+    padding: 20px 0px 50px 30px;
 }
 
 /* Fim da seção das dúvidas e comentarios. */
