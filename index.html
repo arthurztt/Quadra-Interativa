@@ -11,7 +11,7 @@
 
 <body>
   <!--Seção do menu lateral menor com os icones, classe está sujeit a mudanças. Onclick usado para fechar o menu menor e abrir o maior-->
-  <aside class="menu" id="menu">
+  <aside class="menu menu-close" id="menu">
     <!-- ============= logo ============= -->
     <div class="logo">
       <span>
@@ -526,56 +526,59 @@
         <h2>Perguntas Frequentes</h2>
         <h3>Quem pode adicionar eventos?</h3>
         <ul class="list-prgts">
-          <li> <em> Alunos que participam do grêmio e a gestão </em> </li>
+          <li class="li-prgts"> <em> Alunos que participam do grêmio e a gestão </em> </li>
         </ul>
         <h3>Quero marcar jogo de algum esporte que não está na lisa, como faço?</h3>
         <ul>
-          <li><em>Não marque nenhuma caixa e escreve o esporte em questão nas observações"</em></li>
+          <li class="li-prgts"><em>Não marque nenhuma caixa e escreve o esporte em questão nas observações"</em></li>
         </ul>
         <!-- Falta a ul aqui que será feita junto do dropdown -->
         <h3>Choveu ou tera algum evento na quadra, o que acontece com o horário da quadra?</h3>
         <ul>
-          <li><em>Você terá que esperar a proxima vez para jogar esse esporte, pois o horário segue normalmente</em>
+          <li class="li-prgts"><em>Você terá que esperar a proxima vez para jogar esse esporte, pois o horário segue
+              normalmente</em>
           </li>
         </ul>
       </div>
       <!-- Div dos comentarios. Já tem como base os dois comentarios do figma -->
-      <div class="coments">
-        <div class="coments-perfil">
-          <div>
-            <img src="Src/icons/person.svg" alt="">
-            <span>Beatriz lima</span>
-            <span>infor3</span>
-            <img src="" alt="Icon-estrelinha">
+      <div>
+        <div class="coments">
+          <div class="coments-perfil">
+            <div>
+              <img src="Src/icons/person.svg" alt="">
+              <span>Beatriz lima</span>
+              <span>infor3</span>
+              <img src="" alt="Icon-estrelinha">
+            </div>
+            <div>
+              <img src="Src/icons/hand-thumbs-up.svg" alt="curtir">
+              <img src="Src/icons/hand-thumbs-down.svg" alt="não curtir">
+            </div>
           </div>
-          <div>
-            <img src="Src/icons/hand-thumbs-up.svg" alt="curtir">
-            <img src="Src/icons/hand-thumbs-down.svg" alt="não curtir">
-          </div>
-        </div>
-        <hr>
-        <div class="feedback">
-          <span>"Aplicativo Lento"</span>
-        </div>
-      </div>
-      <div class="coments">
-        <div class="coments-perfil">
-          <div>
-            <img src="Src/icons/person.svg" alt="">
-            <span>João Vitor</span>
-            <span>infor3</span>
-            <img src="" alt="Icon-estrelinha">
-          </div>
-          <div>
-            <img src="Src/icons/hand-thumbs-up.svg" alt="curtir">
-            <img src="Src/icons/hand-thumbs-down.svg" alt="não curtir">
+          <hr>
+          <div class="feedback">
+            <span>"Aplicativo Lento"</span>
           </div>
         </div>
-        <hr>
-        <div class="feedback">
-          <span>"Adorei o aplicativo, muito interativo"</span>
+        <div class="coments">
+          <div class="coments-perfil">
+            <div>
+              <img src="Src/icons/person.svg" alt="">
+              <span>João Vitor</span>
+              <span>infor3</span>
+              <img src="" alt="Icon-estrelinha">
+            </div>
+            <div>
+              <img src="Src/icons/hand-thumbs-up.svg" alt="curtir">
+              <img src="Src/icons/hand-thumbs-down.svg" alt="não curtir">
+            </div>
+          </div>
+          <hr>
+          <div class="feedback">
+            <span>"Adorei o aplicativo, muito interativo"</span>
+          </div>
         </div>
-      </div>
+
     </section>
     <!-- Fim da seção das questões e perguntas. -->
   </main>
