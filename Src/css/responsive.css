@@ -169,8 +169,8 @@
         user-select: none;
     }
     .coments {
-        width: 700px;
-        height: 205px;
+        width: 900px;
+        height: auto;
         border-radius: 17px;
         background: #ffffff;
         margin: 10px 0px;
@@ -187,7 +187,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 15px 5px;
-    
+        
     }
     
 }

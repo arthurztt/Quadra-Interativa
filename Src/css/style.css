@@ -714,7 +714,7 @@ input[type="checkbox"] {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 50px;
+    gap: 25px;
 }
 
 .vest {
@@ -794,10 +794,9 @@ input[type="checkbox"] {
     width: auto;
     height: auto;
 }
-
 .coments {
     width: 1174px;
-    height: 205px;
+    height: auto;
     border-radius: 17px;
     background: #ffffff;
     margin: 10px 0px;
@@ -816,6 +815,9 @@ input[type="checkbox"] {
     align-items: center;
     padding: 15px 5px;
 
+}
+.feedback{
+    margin:  20px 0px 50px 30px;
 }
 
 /* Fim da seção das dúvidas e comentarios. */
