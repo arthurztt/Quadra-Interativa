@@ -544,25 +544,30 @@ main {
     overflow: auto;
 }
 
-.events-items{
+.events-items {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.events-name{
+.events-name {
     font-weight: 500;
 }
 
-.indisp{filter: brightness(0) saturate(100%) invert(15%) sepia(82%) saturate(2631%) hue-rotate(350deg) brightness(91%) contrast(87%);}
-.disp{filter: brightness(0) saturate(100%) invert(52%) sepia(73%) saturate(5304%) hue-rotate(64deg) brightness(90%) contrast(90%);}
+.indisp {
+    filter: brightness(0) saturate(100%) invert(15%) sepia(82%) saturate(2631%) hue-rotate(350deg) brightness(91%) contrast(87%);
+}
 
-.events-date > img {
+.disp {
+    filter: brightness(0) saturate(100%) invert(52%) sepia(73%) saturate(5304%) hue-rotate(64deg) brightness(90%) contrast(90%);
+}
+
+.events-date>img {
     width: 21px;
     height: 21px;
 }
 
-.events-date{
+.events-date {
     display: flex;
     align-items: center;
     font-size: 13px;
@@ -623,7 +628,7 @@ main {
     color: white;
 }
 
-.line-sports{
+.line-sports {
     width: 100%;
     border: 1px solid #00000021;
 }
@@ -688,6 +693,10 @@ td>legend {
     border-radius: 25px;
     box-shadow: 0px 10px 16px -7px #121e09;
 
+}
+
+.resever-main-container h2 {
+    color: white;
 }
 
 /* Div dos horarios que sera clicada */
@@ -826,10 +835,25 @@ input[type="checkbox"] {
 .section-questions {
     width: 100%;
     height: 750px;
-    background: #374621;
+    margin-top: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.coments-main-container {
+    margin-top: 30px;
+    margin-bottom:30px ;
+    display: flex;
+    width: 75%;
+    background-color: #37561eaf;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 0px 10px 16px -7px #121e09;
+    position: relative;
+    left: 50px;
 }
 
 /*Algumas estilização da caixa das dúvidas, necessita-se de muita estilização */
@@ -840,14 +864,14 @@ input[type="checkbox"] {
     flex-direction: column;
     align-items: baseline;
     justify-content: center;
-    margin: 50px 0px 50px 150px;
+    margin: 50px 0px 50px 25px;
 }
 
 /* Afastamento entre os textos  */
 .div-questions h2,
 .div-questions h3,
 .list-prgts {
-    margin: 5px;
+    margin: 5px 0px 5px 0px;
 }
 
 /* texto das perguntas frequentes com fonte maior */
@@ -857,13 +881,13 @@ input[type="checkbox"] {
 
 /* Fonte das perguntas em si maiores e mais a direita */
 .div-questions h3 {
-    margin-left: 15px;
+    margin-left: 5px;
     font-size: 25px;
 }
 
 /* Classe da li das respostas das perguntas frequentes */
 .li-prgts {
-    margin-left: 70px;
+    margin-left: 35px;
     font-size: 25px;
 }
 
