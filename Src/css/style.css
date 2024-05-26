@@ -653,6 +653,10 @@ td>legend {
     opacity: 60%;
 }
 
+.drop-horarios img {
+    user-select: none;
+}
+
 .seta-dropwdown {
     width: 27px;
     height: 45px;
@@ -673,7 +677,6 @@ td>legend {
 /* DIV DO QUE VAI APARECER AO CLICAR NO DROPDOWN  */
 .reserv-open {
     width: 1041px;
-    height: 500px;
     background-color: #d9d9d9;
     margin-top: 0;
     display: flex;
@@ -687,31 +690,37 @@ td>legend {
 .inpts-drop {
     width: 100%;
     height: 100%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    padding: 0px 20px 0px 20px;
 }
 
 .inpts {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: center;
     justify-content: space-around;
-    width: 100%;
-    height: 100%;
 }
 
 input[type="checkbox"] {
-    
     width: 23px;
     height: 26px;
     margin: 0px 10px 10px 0px;
 }
 
-input[type="checkbox"]:checked{
-    background-color: #446724;
+.checks {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.vest {
+    gap: 15px;
+    width: 100%;
+    display: flex;
 }
 
 /* Div das obserbvações e textarea */
@@ -741,7 +750,11 @@ input[type="checkbox"]:checked{
 
 /* Estilização do fim com observações e o botão solicitar   */
 .footer-drop {
+    width: 100%;
+    height: 100%;
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 /* Estilização do input text  */
@@ -794,6 +807,7 @@ input[type="checkbox"]:checked{
 .coments img {
     width: 20px;
     height: 20px;
+    user-select: none;
 }
 
 .coments-perfil {
