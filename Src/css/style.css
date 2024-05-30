@@ -708,7 +708,47 @@ td>legend {
     width: 1041px;
     height: 87px;
     background: #D9D9D9;
+    border-radius: 20px 20px 20px 20px;
     opacity: 60%;
+}
+
+.drop-horarios h2 {
+    color: black;
+    opacity: 60%;
+}
+
+.h2-padding-1 {
+text-align: center;
+    width: 240px;
+    text-align: start;
+}
+.h2-padding-2{
+    text-align: center;
+    width: 240px;
+    text-align: start;
+}
+/* Padding de alinhamento dos elementos */
+.h2-padding-3 {
+    width: 240px;
+    text-align: start;
+}
+
+.h2-padding-4 {
+    width: 240px;
+    text-align: start;
+}
+
+.h2-padding-5 {
+width: 240px;
+text-align: start;
+}
+
+.drop-border {
+    border-radius: 20px 20px 0px 0px;
+}
+
+.drop-off-border {
+    border-radius: 20px 20px 20px 20px;
 }
 
 .drop-horarios img {
@@ -738,6 +778,7 @@ td>legend {
     width: 1041px;
     background-color: #d9d9d9;
     margin-top: 0;
+    border-radius: 0px 0px 20px 20px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -787,19 +828,11 @@ input[type="checkbox"] {
 }
 
 /* Div das obserbvações e textarea */
-.obs {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    width: 100%;
-}
 
 /* Estilização do bloco de selação check dos esportes  */
 .esportes-check {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
 }
 
 /* Estilização do fim com observações e o botão solicitar   */
@@ -807,26 +840,34 @@ input[type="checkbox"] {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
+    justify-content: center;
 }
 
-/* Estilização do input text  */
-#observ {
-    width: 542px;
-    height: 110px;
+.obs {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
 }
 
-/* Estilização do botão */
 .solit {
-    width: 278px;
-    height: 63px;
-    font-size: 32px;
+    width: 200px;
+    font-size: 16px;
     background-color: #314522;
     color: #fff;
     border-radius: 31px;
     border: none;
     user-select: none;
+    margin-top: 50px;
+
+    /* Estilização do input text  */
+    #observ{
+        width: 300px;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    /* Estilização do botão */
 }
 
 /*Fim do dropdowmn */
@@ -843,7 +884,7 @@ input[type="checkbox"] {
 
 .coments-main-container {
     margin-top: 30px;
-    margin-bottom:30px ;
+    margin-bottom: 30px;
     display: flex;
     width: 75%;
     background-color: #37561eaf;

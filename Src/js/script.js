@@ -98,77 +98,92 @@ function openRes() {
   }
 }
 function openHors1() {
+  const drop = document.querySelector("div#drop1");
   const reserv = document.querySelector("div#reserv-manha");
   const arrow = document.querySelector("img#seta-manha");
   if (reserv.classList.contains("reserv-close")) {
     reserv.classList.remove("reserv-close");
     reserv.classList.add("reserv-open");
-    arrow.style.transition = "0.3s";
     arrow.style.transform = "rotate(0deg)";
+    drop.classList.add("drop-border");
+    drop.classList.remove("drop-off-border");
   } else {
     reserv.classList.add("reserv-close");
     reserv.classList.remove("reserv-open");
     arrow.style.transform = "rotate(180deg)";
-    arrow.style.transition = "0.3s";
+    drop.classList.add("drop-off-border");
+    drop.classList.remove("drop-border");
   }
 }
 function openHors2() {
+  const drop = document.querySelector("div#drop2");
   const reserv = document.querySelector("div#reserv-tarde");
   const arrow = document.querySelector("img#seta-tarde");
   if (reserv.classList.contains("reserv-close")) {
     reserv.classList.remove("reserv-close");
     reserv.classList.add("reserv-open");
-    arrow.style.transition = "0.3s";
     arrow.style.transform = "rotate(0deg)";
+    drop.classList.add("drop-border");
+    drop.classList.remove("drop-off-border");
   } else {
     reserv.classList.add("reserv-close");
     reserv.classList.remove("reserv-open");
     arrow.style.transform = "rotate(180deg)";
-    arrow.style.transition = "0.3s";
+    drop.classList.add("drop-off-border");
+    drop.classList.remove("drop-border");
   }
 }
 function openHors3() {
+  const drop = document.querySelector("div#drop3");
   const reserv = document.querySelector("div#reserv-almoco");
   const arrow = document.querySelector("img#seta-almoco");
   if (reserv.classList.contains("reserv-close")) {
     reserv.classList.remove("reserv-close");
     reserv.classList.add("reserv-open");
-    arrow.style.transition = "0.3s";
     arrow.style.transform = "rotate(0deg)";
+    drop.classList.add("drop-border");
+    drop.classList.remove("drop-off-border");
   } else {
     reserv.classList.add("reserv-close");
     reserv.classList.remove("reserv-open");
-    arrow.style.transition = "0.3s";
     arrow.style.transform = "rotate(180deg)";
+    drop.classList.add("drop-off-border");
+    drop.classList.remove("drop-border");
   }
 }
 function openHors4() {
+  const drop = document.querySelector("div#drop4");
   const reserv = document.querySelector("div#reserv-dps-aula");
   const arrow = document.querySelector("img#seta-dps-aula");
   if (reserv.classList.contains("reserv-close")) {
     reserv.classList.remove("reserv-close");
     reserv.classList.add("reserv-open");
-    arrow.style.transition = "0.3s";
     arrow.style.transform = "rotate(0deg)";
+    drop.classList.add("drop-border");
+    drop.classList.remove("drop-off-border");
   } else {
     reserv.classList.add("reserv-close");
     reserv.classList.remove("reserv-open");
     arrow.style.transform = "rotate(180deg)";
-    arrow.style.transition = "0.3s";
+    drop.classList.add("drop-off-border");
+    drop.classList.remove("drop-border");
   }
 }
 function openHors5() {
+  const drop = document.querySelector("div#drop5");
   const reserv = document.querySelector("div#reserv-livre");
   const arrow = document.querySelector("img#seta-livre");
   if (reserv.classList.contains("reserv-close")) {
     reserv.classList.remove("reserv-close");
     reserv.classList.add("reserv-open");
-    arrow.style.transition = "0.3s";
     arrow.style.transform = "rotate(0deg)";
+    drop.classList.add("drop-border");
+    drop.classList.remove("drop-off-border");
   } else {
     reserv.classList.add("reserv-close");
     reserv.classList.remove("reserv-open");
     arrow.style.transform = "rotate(180deg)";
-    arrow.style.transition = "0.3s";
+    drop.classList.add("drop-off-border");
+    drop.classList.remove("drop-border");
   }
 }

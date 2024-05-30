@@ -295,8 +295,9 @@
       <div class="resever-main-container">
         <h2>Horários Possíveis</h2>
         <!-- Caixinha de cada drop falando dos horarios -->
-        <div class="drop-horarios" onclick="openHors1()">
-          <img src="Src/icons/journal-check.svg" alt="icone" class="note-icon"><span>Intervalo da Manhã</span>
+        <div class="drop-horarios" onclick="openHors1()" id="drop1">
+          <img src="Src/icons/journal-check.svg" alt="icone" class="note-icon">
+          <h2>Intervalo da Manhã</h2>
           <img src="Src/icons/angle-down-solid.svg" alt="" class="seta-dropwdown" id="seta-manha">
         </div>
         <!-- Caixinha contendo o conteúdo do dropdown cujo no css contem display none para não influenciar, ainda será adicionado com o passar do tempo. MEXERE COM JS -->
@@ -348,9 +349,11 @@
             </div>
           </div>
         </div>
-        <div class="drop-horarios" onclick="openHors2()">
-          <img src="Src/icons/journal-check.svg" alt="icone" class="note-icon"> <span>Intervalo da Manhã</span><img
-            src="Src/icons/angle-down-solid.svg" alt="" class="seta-dropwdown" id="seta-tarde">
+        <div class="drop-horarios" onclick="openHors2()" id="drop2">
+          <img src="Src/icons/journal-check.svg" alt="icone" class="note-icon">
+          <div>
+            <div class="h2-padding-2"><h2>Intervalo do Almoço</h2></div>  
+          </div><img src="Src/icons/angle-down-solid.svg" alt="" class="seta-dropwdown" id="seta-tarde">
         </div>
         <div class="reserv-close" id="reserv-tarde">
           <!-- container geral do conteúdo do drop  -->
@@ -399,9 +402,11 @@
             </div>
           </div>
         </div>
-        <div class="drop-horarios" onclick="openHors3()">
-          <img src="Src/icons/journal-check.svg" alt="icone" class="note-icon"> <span>Intervalo da Manhã</span><img
-            src="Src/icons/angle-down-solid.svg" alt="" class="seta-dropwdown" id="seta-almoco">
+        <div class="drop-horarios" onclick="openHors3()" id="drop3">
+          <img src="Src/icons/journal-check.svg" alt="icone" class="note-icon">
+          <div class="h2-padding-3">
+            <h2>Intervalo da Tarde</h2>
+          </div><img src="Src/icons/angle-down-solid.svg" alt="" class="seta-dropwdown" id="seta-almoco">
         </div>
         <div class="reserv-close" id="reserv-almoco">
           <!-- container geral do conteúdo do drop  -->
@@ -450,9 +455,12 @@
             </div>
           </div>
         </div>
-        <div class="drop-horarios" onclick="openHors4()">
-          <img src="Src/icons/journal-check.svg" alt="icone" class="note-icon"> <span>Intervalo da Manhã</span><img
-            src="Src/icons/angle-down-solid.svg" alt="" class="seta-dropwdown" id="seta-dps-aula">
+        <div class="drop-horarios" onclick="openHors4()" id="drop4">
+          <img src="Src/icons/journal-check.svg" alt="icone" class="note-icon">
+          <div class="
+          h2-padding-4">
+            <h2 class="h2-padding-4">Depois da aula</h2>
+          </div><img src="Src/icons/angle-down-solid.svg" alt="" class="seta-dropwdown" id="seta-dps-aula">
         </div>
         <div class="reserv-close" id="reserv-dps-aula">
           <!-- container geral do conteúdo do drop  -->
@@ -501,9 +509,11 @@
             </div>
           </div>
         </div>
-        <div class="drop-horarios" onclick="openHors5()">
-          <img src="Src/icons/journal-check.svg" alt="icone" class="note-icon"> <span>Intervalo da Manhã</span><img
-            src="Src/icons/angle-down-solid.svg" alt="" class="seta-dropwdown" id="seta-livre">
+        <div class="drop-horarios" onclick="openHors5()" id="drop5">
+          <img src="Src/icons/journal-check.svg" alt="icone" class="note-icon">
+          <div class="h2-padding-5">
+            <h2>Aula livre</h2>
+          </div><img src="Src/icons/angle-down-solid.svg" alt="" class="seta-dropwdown" id="seta-livre">
         </div>
         <div class="reserv-close" id="reserv-livre">
           <!-- container geral do conteúdo do drop  -->
@@ -573,49 +583,49 @@
           <h3>Choveu ou tera algum evento na quadra, o que acontece com o horário da quadra?</h3>
           <ul>
             <li class="li-prgts"><em>Você terá que esperar a proxima vez para jogar esse esporte, pois o horário segue
-              normalmente</em>
+                normalmente</em>
             </li>
           </ul>
         </div>
       </div>
-        <!-- Div dos comentarios. Já tem como base os dois comentarios do figma -->
-        <div>
-          <div class="coments">
-            <div class="coments-perfil">
-              <div>
-                <img src="Src/icons/person.svg" alt="">
-                <span>Beatriz lima</span>
-                <span>infor3</span>
-                <img src="" alt="Icon-estrelinha">
-              </div>
-              <div>
-                <img src="Src/icons/hand-thumbs-up.svg" alt="curtir">
-                <img src="Src/icons/hand-thumbs-down.svg" alt="não curtir">
-              </div>
+      <!-- Div dos comentarios. Já tem como base os dois comentarios do figma -->
+      <div>
+        <div class="coments">
+          <div class="coments-perfil">
+            <div>
+              <img src="Src/icons/person.svg" alt="">
+              <span>Beatriz lima</span>
+              <span>infor3</span>
+              <img src="" alt="Icon-estrelinha">
             </div>
-            <hr>
-            <div class="feedback">
-              <span>"Aplicativo Lento"</span>
+            <div>
+              <img src="Src/icons/hand-thumbs-up.svg" alt="curtir">
+              <img src="Src/icons/hand-thumbs-down.svg" alt="não curtir">
             </div>
           </div>
-          <div class="coments">
-            <div class="coments-perfil">
-              <div>
-                <img src="Src/icons/person.svg" alt="">
-                <span>João Vitor</span>
-                <span>infor3</span>
-                <img src="" alt="Icon-estrelinha">
-              </div>
-              <div>
-                <img src="Src/icons/hand-thumbs-up.svg" alt="curtir">
-                <img src="Src/icons/hand-thumbs-down.svg" alt="não curtir">
-              </div>
+          <hr>
+          <div class="feedback">
+            <span>"Bom!"</span>
+          </div>
+        </div>
+        <div class="coments">
+          <div class="coments-perfil">
+            <div>
+              <img src="Src/icons/person.svg" alt="">
+              <span>João Vitor</span>
+              <span>infor3</span>
+              <img src="" alt="Icon-estrelinha">
             </div>
-            <hr>
-            <div class="feedback">
-              <span>"Adorei o aplicativo, muito interativo"</span>
+            <div>
+              <img src="Src/icons/hand-thumbs-up.svg" alt="curtir">
+              <img src="Src/icons/hand-thumbs-down.svg" alt="não curtir">
             </div>
           </div>
+          <hr>
+          <div class="feedback">
+            <span>"Adorei o aplicativo, muito interativo"</span>
+          </div>
+        </div>
     </section>
     <!-- Fim da seção das questões e perguntas. -->
   </main>
