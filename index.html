@@ -11,6 +11,79 @@
 
 <body>
   <!--Seção do menu lateral menor com os icones, classe está sujeit a mudanças. Onclick usado para fechar o menu menor e abrir o maior-->
+  <aside class="hamburger" onclick="openHamb()">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </aside>
+  <nav class="hamburger-nav closed">
+    <div class="logo">
+      <span>
+        <img src="src/images/logo.png" class="logo-img" id="image-span">
+      </span>
+      <h3 class="text main-menu-text">Quadra Interativa</h3>
+      <!-- <div class="openButton"> -->
+      <div class="close-button" onclick="closeHamb()">
+        <span class="bar-close"></span>
+        <span class="bar-close"></span>
+      </div>
+      <!-- </div> -->
+    </div>
+    <div class="menu-icons">
+      <!-- ============= PARTE COM OS ICONES E DPS COM O TEXTO + ICONES   ============= -->
+      <ul class="list-ordenato">
+        <a href="#home">
+          <li class="list">
+            <img src="src/icons/house.svg" alt="" id="icons" class="icons">
+            <span class="text padding-diff-1" id="text">Home</span>
+          </li>
+        </a>
+        <a href="#calendar">
+          <li class="list">
+            <img src="src/icons/calendar.svg" alt="" id="icons" class="icons">
+            <span class="text padding-diff-2" id="text">Evento</span>
+          </li>
+        </a>
+        <a href="#reservas">
+          <li class="list">
+            <img src="src/icons//person-fill-add.svg" alt="" id="icons" class="icons"><span class="text padding-diff-3"
+              id="text">Reservar</span>
+          </li>
+        </a>
+        <a href="#quest">
+          <li class="list">
+            <img src="src/icons//chat-left-dots-fill.svg" alt="" id="icons" class="icons"><span
+              class="text padding-diff-4" id="text">Sugestões</span>
+          </li>
+        </a>
+        <a href="Src/login/index.html">
+          <li class="list">
+            <img src="Src/icons/person-fill.svg" alt="" id="icons" class="icons"><span class="text padding-diff-5"
+              id="text">Perfil</span>
+          </li>
+        </a>
+      </ul>
+    </div>
+    <!-- ============= DIV QUE SERA COLOCADA O INPUT QUE TROCARA O FUNDO DE COR   ============= -->
+    <div class="icons-tema">
+      <img src="src/icons/sun.svg" class="sun-img">
+      <div class="switch__container text">
+        <!-- Switch criado pela bia para mudança de cor, requer onclick do js-->
+        <input id="switch-shadow" class="switch switch--shadow" type="checkbox">
+        <label for="switch-shadow"></label>
+      </div>
+      <img src="src/icons/moon.svg" class="text moon-img ">
+    </div>
+    <!-- ============= Parte do login que ainda deve ser responsivo  ============= -->
+    <div class="perfil">
+      <img src="src/icons/person.svg" class="icons-perfil">
+      <div class="usuario">
+        <span class="text" id="text">Fulano da Silva </span>
+        <span class="text" id="text">Informática 3 </span>
+      </div>
+      <img src="src/icons/exit.svg" class="icons-perfil">
+    </div>
+  </nav>
   <aside class="menu menu-close" id="menu">
     <!-- ============= logo ============= -->
     <div class="logo">
@@ -352,7 +425,9 @@
         <div class="drop-horarios" onclick="openHors2()" id="drop2">
           <img src="Src/icons/journal-check.svg" alt="icone" class="note-icon">
           <div>
-            <div class="h2-padding-2"><h2>Intervalo do Almoço</h2></div>  
+            <div class="h2-padding-2">
+              <h2>Intervalo do Almoço</h2>
+            </div>
           </div><img src="Src/icons/angle-down-solid.svg" alt="" class="seta-dropwdown" id="seta-tarde">
         </div>
         <div class="reserv-close" id="reserv-tarde">
@@ -589,43 +664,42 @@
         </div>
       </div>
       <!-- Div dos comentarios. Já tem como base os dois comentarios do figma -->
-      <div>
-        <div class="coments">
-          <div class="coments-perfil">
-            <div>
-              <img src="Src/icons/person.svg" alt="">
-              <span>Beatriz lima</span>
-              <span>infor3</span>
-              <img src="" alt="Icon-estrelinha">
-            </div>
-            <div>
-              <img src="Src/icons/hand-thumbs-up.svg" alt="curtir">
-              <img src="Src/icons/hand-thumbs-down.svg" alt="não curtir">
-            </div>
+      <div class="coments">
+        <div class="coments-perfil">
+          <div>
+            <img src="Src/icons/person.svg" alt="">
+            <span>Beatriz lima</span>
+            <span>infor3</span>
+            <img src="" alt="Icon-estrelinha">
           </div>
-          <hr>
-          <div class="feedback">
-            <span>"Bom!"</span>
+          <div>
+            <img src="Src/icons/hand-thumbs-up.svg" alt="curtir">
+            <img src="Src/icons/hand-thumbs-down.svg" alt="não curtir">
           </div>
         </div>
-        <div class="coments">
-          <div class="coments-perfil">
-            <div>
-              <img src="Src/icons/person.svg" alt="">
-              <span>João Vitor</span>
-              <span>infor3</span>
-              <img src="" alt="Icon-estrelinha">
-            </div>
-            <div>
-              <img src="Src/icons/hand-thumbs-up.svg" alt="curtir">
-              <img src="Src/icons/hand-thumbs-down.svg" alt="não curtir">
-            </div>
+        <hr>
+        <div class="feedback">
+          <span>"Bom!"</span>
+        </div>
+      </div>
+      <div class="coments">
+        <div class="coments-perfil">
+          <div>
+            <img src="Src/icons/person.svg" alt="">
+            <span>João Vitor</span>
+            <span>infor3</span>
+            <img src="" alt="Icon-estrelinha">
           </div>
-          <hr>
-          <div class="feedback">
-            <span>"Adorei o aplicativo, muito interativo"</span>
+          <div>
+            <img src="Src/icons/hand-thumbs-up.svg" alt="curtir">
+            <img src="Src/icons/hand-thumbs-down.svg" alt="não curtir">
           </div>
         </div>
+        <hr>
+        <div class="feedback">
+          <span>"Adorei o aplicativo, muito interativo"</span>
+        </div>
+      </div>
     </section>
     <!-- Fim da seção das questões e perguntas. -->
   </main>

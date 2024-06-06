@@ -34,6 +34,18 @@ function abrirMenu() {
     });
   }
 }
+//Função para a brir o menu lateral responsivo
+function openHamb() {
+  const menu = document.querySelector("nav");
+  menu.classList.add("opened");
+  menu.classList.remove("closed");
+}
+//Função para o X fechar a barra de eventos
+function closeHamb() {
+  const menu = document.querySelector("nav");
+  menu.classList.remove("opened");
+  menu.classList.add("closed");
+}
 //Função dos eventos. Adiciona uma classe para a lista ser visível e ou não, com verificador.
 function openEve() {
   const ddHeader = document.querySelector("div#dd-events");
