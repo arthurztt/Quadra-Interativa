@@ -26,7 +26,11 @@ body {
 }
 
 /* ==========Menu Menor. Já responsivo e ajeitado========== */
-aside {
+.hamburger {
+    display: none;
+}
+
+.menu {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -343,10 +347,11 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 95%;
     padding-bottom: 50px;
     background-color: #364a1b;
     border-radius: 10px;
+    flex-wrap: wrap;
 }
 
 /*Div pai do carrossel */
@@ -676,16 +681,16 @@ td>legend {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 95%;
     background: #3E5E27;
 }
 
 /* Caixinha de cada horarío um pouco estilizada de acordo com a do carrossel  */
 .resever-main-container {
-    margin: 50px 0px 65px 0px;
+    margin: 50px 10px 65px 10px;
     padding: 30px 30px 50px 30px;
     display: flex;
-    width: 65%;
+    width: 70%;
     background-color: #37561eaf;
     flex-direction: column;
     justify-content: center;
@@ -705,7 +710,7 @@ td>legend {
     justify-content: space-around;
     align-items: center;
     margin: 20px 0px 0px 0px;
-    width: 1041px;
+    width: 90%;
     height: 87px;
     background: #D9D9D9;
     border-radius: 20px 20px 20px 20px;
@@ -718,15 +723,17 @@ td>legend {
 }
 
 .h2-padding-1 {
-text-align: center;
-    width: 240px;
-    text-align: start;
-}
-.h2-padding-2{
     text-align: center;
     width: 240px;
     text-align: start;
 }
+
+.h2-padding-2 {
+    text-align: center;
+    width: 240px;
+    text-align: start;
+}
+
 /* Padding de alinhamento dos elementos */
 .h2-padding-3 {
     width: 240px;
@@ -739,8 +746,8 @@ text-align: center;
 }
 
 .h2-padding-5 {
-width: 240px;
-text-align: start;
+    width: 240px;
+    text-align: start;
 }
 
 .drop-border {
@@ -775,7 +782,7 @@ text-align: start;
 
 /* DIV DO QUE VAI APARECER AO CLICAR NO DROPDOWN  */
 .reserv-open {
-    width: 1041px;
+    width: 90%;
     background-color: #d9d9d9;
     margin-top: 0;
     border-radius: 0px 0px 20px 20px;
@@ -861,7 +868,7 @@ input[type="checkbox"] {
     margin-top: 50px;
 
     /* Estilização do input text  */
-    #observ{
+    #observ {
         width: 300px;
         height: auto;
         padding-bottom: 50px;
@@ -962,6 +969,5 @@ input[type="checkbox"] {
 .feedback {
     padding: 20px 0px 50px 30px;
 }
-
 
 /* Fim da seção das dúvidas e comentarios. */
