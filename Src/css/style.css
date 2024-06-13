@@ -29,9 +29,11 @@ body {
 .hamburger {
     display: none;
 }
+
 .hamburger-nav {
     display: none;
 }
+
 .menu {
     display: flex;
     flex-direction: column;
@@ -455,7 +457,7 @@ main {
 
 .dropdown-list {
     width: 1000px;
-    height: 351px;
+    height: auto;
     padding: 20px 40px 20px 20px;
     display: flex;
     align-items: center;

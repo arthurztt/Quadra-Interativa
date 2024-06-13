@@ -1,4 +1,4 @@
-/* Responsividade de notebook */
+    /* Responsividade de notebook */
 /* Para cuidar tanto da largura quando ta altura é só adicionar um and e min (coisa que você quer alterar) */
 @media screen and (min-width: 1024px) {
 
