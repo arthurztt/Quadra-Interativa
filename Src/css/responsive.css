@@ -1,276 +1,238 @@
     /* Responsividade de notebook */
-/* Para cuidar tanto da largura quando ta altura é só adicionar um and e min (coisa que você quer alterar) */
-@media screen and (min-width: 1024px) {
+    /* Para cuidar tanto da largura quando ta altura é só adicionar um and e min (coisa que você quer alterar) */
+    @media screen and (min-width: 1024px) {
 
-    /* ================================Slides labels para navegação manual ==================*/
-    /* Defininando a div geral dos labels e onde vão ficar */
-    .dropdown-list {
-        width: 1000px;
-        height: auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        gap: 20px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        border-radius: 20px;
-        background-color: #426724af;
-        box-shadow: 0px 10px 16px -7px #121e09;
-    }
+        /* ================================Slides labels para navegação manual ==================*/
+        /* Defininando a div geral dos labels e onde vão ficar */
+        .dropdown-list {
+            width: 1000px;
+            height: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            gap: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            background-color: #426724af;
+            box-shadow: 0px 10px 16px -7px #121e09;
+        }
 
-    .dropdown {
-        display: flex;
-        width: 30%;
-        padding: 40px 0px 40px 0px;
-        border-radius: 35px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-height: 300px;
-    }
+        .dropdown {
+            display: flex;
+            width: 30%;
+            padding: 40px 0px 40px 0px;
+            border-radius: 35px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-height: 300px;
+        }
 
-    .calendar-main {
-        width: 700px;
-        height: 700px;
-        border-left: 20px solid #446724;
-        border-radius: 15px;
-        font-size: 25px;
-        text-align: center;
-        background-color: #456e26;
-        color: white;
-        margin-bottom: 60px;
-        box-shadow: -1px -3px 5px 2px rgba(0, 0, 0, 0.05);
-        position: relative;
-        left: 50px;
-    }
+        .sports-calendar {
+            width: 1200px;
+            height: 167px;
+            background: #4c7130;
+            border-radius: 15px;
+            border-left: 20px solid #446724;
+            font-size: 25px;
+            text-align: center;
+            position: relative;
+            left: 50px;
+        }
 
-    .line-calendar {
-        width: 1159px;
-        margin-left: 15px;
-        border: solid 1px #00000021;
-        margin-bottom: 25px;
-    }
+        .sports-calendar hr {
+            width: 100%;
+            border: 1px solid #00000021;
+        }
 
-    .sports-calendar {
-        width: 1200px;
-        height: 167px;
-        background: #4c7130;
-        border-radius: 15px;
-        border-left: 20px solid #446724;
-        font-size: 25px;
-        text-align: center;
-        position: relative;
-        left: 50px;
-    }
+        .mes {
+            height: 220px;
+        }
 
-    .sports-calendar hr {
-        width: 100%;
-        border: 1px solid #00000021;
-    }
+        td>legend {
+            width: 300px;
+            padding: 20px;
+            font-weight: 400;
+            background-color: #446724;
+            position: relative;
+            top: 60px;
+            right: 5px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
 
-    .calendar-header {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .mes {
-        height: 220px;
-    }
-
-    td>legend {
-        width: 300px;
-        padding: 20px;
-        font-weight: 400;
-        background-color: #446724;
-        position: relative;
-        top: 60px;
-        right: 5px;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
-    }
-
-    .styled-box-calendar {
-        background-color: #385a1e;
-        left: 3px;
-        bottom: 72.5px;
-        width: 800px;
-        height: 150px;
-        float: right;
-        position: relative;
-        border-bottom-left-radius: 20px;
-        border-top-right-radius: 15px;
-    }
-
-    .resever-main-container {
-        /* position: relative;
+        .resever-main-container {
+            /* position: relative;
         left: 50px; */
-        margin: 50px 0px 65px 0px;
-        padding: 30px 100px 50px 100px;
-        display: flex;
-        width: 80%;
-        background-color: #37561eaf;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 25px;
-        box-shadow: 0px 10px 16px -7px #121e09;
+            margin: 50px 0px 65px 0px;
+            padding: 30px 100px 50px 100px;
+            display: flex;
+            width: 80%;
+            background-color: #37561eaf;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 25px;
+            box-shadow: 0px 10px 16px -7px #121e09;
+
+        }
+
+        .drop-horarios {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px 0px 0px 0px;
+            width: 80%;
+            height: 87px;
+            background: #D9D9D9;
+            opacity: 60%;
+
+        }
+
+        .reserv-open {
+            width: 80%;
+            height: 400px;
+            background-color: #d9d9d9;
+            margin-top: 0;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            font-size: 25px;
+        }
+
+        .inpts-drop {
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .inpts {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+            justify-content: space-between;
+        }
+
+        #observ {
+            width: 300px;
+            height: auto;
+            padding-bottom: 50px;
+
+        }
+
+        .solit {
+            width: 125px;
+            height: 50px;
+            font-size: 16px;
+            background-color: #314522;
+            color: #fff;
+            border-radius: 31px;
+            border: none;
+            user-select: none;
+        }
+
+        .coments {
+            width: 900px;
+            height: auto;
+            border-radius: 17px;
+            background: #ffffff;
+            margin: 10px 0px;
+            font-size: 16px;
+        }
+
+        .coments img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .coments-perfil {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5px;
+
+        }
 
     }
 
-    .drop-horarios {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 20px 0px 0px 0px;
-        width: 80%;
-        height: 87px;
-        background: #D9D9D9;
-        opacity: 60%;
+    @media screen and (max-height: 768px) {
+        .menu {
+            display: none;
+        }
+
+        .hamburger {
+            z-index: 1;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0px 0px 30px;
+        }
+
+        .bar {
+            display: flex;
+            width: 50px;
+            height: 5px;
+            margin: 10px 0px 0px 30px;
+            background: #000000;
+        }
+
+        .hamburger-nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            width: auto;
+            height: 100%;
+            background: #395224;
+            position: fixed;
+            float: left;
+            box-shadow: 2px 0px 12px 0px rgba(0, 0, 0, 0.35);
+            user-select: none;
+            scroll-behavior: smooth;
+            z-index: 2;
+        }
+
+        .closed {
+            transition: all 2s ease;
+            left: -200px;
+            width: 0;
+        }
+
+        .opened {
+            width: 150px;
+            left: 0px;
+            transition: 1s all ease;
+        }
+
+        .close-button {
+            display: flex;
+            width: 0;
+            left: -120px;
+            transition: all 1s ease;
+        }
+
+        .bar-close:first-child {
+            position: absolute;
+            width: 50px;
+            height: 5px;
+            background: #fff;
+            transform: rotate(45deg);
+        }
+
+        .bar-close:last-child {
+            position: absolute;
+            width: 50px;
+            height: 5px;
+            background: #fff;
+            transform: rotate(135deg);
+        }
 
     }
-
-    .reserv-open {
-        width: 80%;
-        height: 400px;
-        background-color: #d9d9d9;
-        margin-top: 0;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        font-size: 25px;
-    }
-
-    .inpts-drop {
-        width: 100%;
-        height: 100%;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    .inpts {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        text-align: center;
-        justify-content: space-between;
-    }
-
-    #observ {
-        width: 300px;
-        height: auto;
-        padding-bottom: 50px;
-
-    }
-
-    .solit {
-        width: 125px;
-        height: 50px;
-        font-size: 16px;
-        background-color: #314522;
-        color: #fff;
-        border-radius: 31px;
-        border: none;
-        user-select: none;
-    }
-
-    .coments {
-        width: 900px;
-        height: auto;
-        border-radius: 17px;
-        background: #ffffff;
-        margin: 10px 0px;
-        font-size: 16px;
-    }
-
-    .coments img {
-        width: 20px;
-        height: 20px;
-    }
-
-    .coments-perfil {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px 5px;
-
-    }
-
-}
-
-@media screen and (max-height: 768px) {
-    .menu {
-        display: none;
-    }
-
-    .hamburger {
-        z-index: 1;
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        margin: 20px 0px 0px 30px;
-    }
-
-    .bar {
-        display: flex;
-        width: 50px;
-        height: 5px;
-        margin: 10px 0px 0px 30px;
-        background: #000000;
-    }
-
-    .hamburger-nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        width: auto;
-        height: 100%;
-        background: #395224;
-        position: fixed;
-        float: left;
-        box-shadow: 2px 0px 12px 0px rgba(0, 0, 0, 0.35);
-        user-select: none;
-        scroll-behavior: smooth;
-        z-index: 2;
-    }
-
-    .closed {
-        transition: all 2s ease;
-        left: -200px;
-        width: 0;
-    }
-
-    .opened {
-        width: 150px;
-        left: 0px;
-        transition: 1s all ease;
-    }
-    .close-button {
-        display: flex;
-        width: 0;
-        left: -120px;
-        transition: all 1s ease;
-    }
-
-    .bar-close:first-child {
-        position: absolute;
-        width: 50px;
-        height: 5px;
-        background: #fff;
-        transform: rotate(45deg);
-    }
-
-    .bar-close:last-child {
-        position: absolute;
-        width: 50px;
-        height: 5px;
-        background: #fff;
-        transform: rotate(135deg);
-    }
-
-}
