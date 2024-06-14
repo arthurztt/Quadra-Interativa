@@ -600,15 +600,23 @@ main {
 
 /* Estilização da Tabela/Calendário */
 .section-calendar,
-.section-calendar,
 .section-questions,
 .section-reserves {
     margin: 100px 0px 0px 0px;
 }
 
+.section-calendar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .calendar-main {
-    width: 95%;
-    height: 900px;
+    width: 60%;
+    height: 100%;
     border-left: 20px solid #446724;
     border-radius: 15px;
     font-size: 25px;
@@ -617,11 +625,18 @@ main {
     color: white;
     margin-bottom: 60px;
     box-shadow: -1px -3px 5px 2px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+
 }
 
 .line-calendar {
-    width: 1159px;
-    margin-left: 15px;
+    width: 95%;
+    margin-left: 30px;
     border: solid 1px #00000021;
     margin-bottom: 25px;
 }
@@ -643,34 +658,32 @@ main {
 }
 
 .calendar-header {
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center
 }
 
 .mes {
     height: 220px;
 }
 
-td>legend {
-    width: 300px;
-    padding: 20px;
+div>span>legend {
+    width: 100%;
+    padding: 20px 100px;
     font-weight: 400;
     background-color: #446724;
-    position: relative;
-    top: 60px;
-    right: 5px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
 
 .styled-box-calendar {
     background-color: #385a1e;
-    left: 3px;
-    bottom: 72.5px;
-    width: 800px;
+    position: relative;
+    width: 70%;
     height: 150px;
     float: right;
-    position: relative;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 15px;
 }
@@ -678,8 +691,20 @@ td>legend {
 .styled-box-calendar>p {
     opacity: 0;
 }
+.semana {
+    width: 95%;
+    margin: 30px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
-
+.dias  {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
 /* Seção do horarios de reservar */
 .section-reserves {
     display: flex;
