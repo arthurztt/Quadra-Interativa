@@ -643,14 +643,28 @@ main {
 }
 
 .sports-calendar {
-    width: 1236px;
-    height: 167px;
+    width: 60%;
+    height: auto;
+    padding: 30px;
     background: #4c7130;
     border-radius: 15px;
     border-left: 20px solid #446724;
     font-size: 25px;
     text-align: center;
     color: white;
+}
+
+.esportes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+}
+
+.intervalos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+
 }
 
 .line-sports {
