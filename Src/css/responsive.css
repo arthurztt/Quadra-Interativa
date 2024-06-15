@@ -30,18 +30,6 @@
             max-height: 300px;
         }
 
-        .sports-calendar {
-            width: 1200px;
-            height: 167px;
-            background: #4c7130;
-            border-radius: 15px;
-            border-left: 20px solid #446724;
-            font-size: 25px;
-            text-align: center;
-            position: relative;
-            left: 50px;
-        }
-
         .sports-calendar hr {
             width: 100%;
             border: 1px solid #00000021;
