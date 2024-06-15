@@ -348,7 +348,7 @@ main {
 /* Tamanho do header */
 /* Primeira seção do main demoninada home por ser do começo */
 .section-home {
-    width: 100%;
+    width: 95%;
     padding-bottom: 50px;
     background-color: #364a1b;
     border-radius: 10px;
@@ -460,6 +460,7 @@ main {
     width: 1000px;
     height: auto;
     padding: 20px 40px 20px 20px;
+    margin: 50px 0px 0px 0px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -607,7 +608,7 @@ main {
 }
 
 .section-calendar {
-    width: 100%;
+    width: 95%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -687,7 +688,7 @@ main {
     height: 220px;
 }
 
-div>span>legend {
+.calendar-header>div>span>legend {
     width: 100%;
     padding: 20px 100px;
     font-weight: 400;
@@ -737,12 +738,12 @@ div>span>legend {
 
 /* Seção do horarios de reservar */
 .section-reserves {
+    width: 95%;
+    background: #3E5E27;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    background: #3E5E27;
 }
 
 /* Caixinha de cada horarío um pouco estilizada de acordo com a do carrossel  */
@@ -941,7 +942,7 @@ input[type="checkbox"] {
 /* Fim da seção dos horarios da reserva */
 /* Inicio da seção das duvidas */
 .section-questions {
-    width:  100%;
+    width: 95%;
     height: 750px;
     margin-top: 0;
     display: flex;
