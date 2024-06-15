@@ -348,13 +348,14 @@ main {
 /* Tamanho do header */
 /* Primeira seção do main demoninada home por ser do começo */
 .section-home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 95%;
+    width: 100%;
     padding-bottom: 50px;
     background-color: #364a1b;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -363,7 +364,7 @@ main {
     margin-top: 30px;
     padding: 30px;
     display: flex;
-    width: 65%;
+    width: 75%;
     background-color: #37561eaf;
     flex-direction: column;
     justify-content: center;
@@ -475,7 +476,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-height: 450px;
+    max-height: 220px;
 }
 
 .green {
@@ -739,7 +740,8 @@ div>span>legend {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 95%;
+    justify-content: center;
+    width: 100%;
     background: #3E5E27;
 }
 
@@ -939,7 +941,7 @@ input[type="checkbox"] {
 /* Fim da seção dos horarios da reserva */
 /* Inicio da seção das duvidas */
 .section-questions {
-    width: 95%;
+    width:  100%;
     height: 750px;
     margin-top: 0;
     display: flex;

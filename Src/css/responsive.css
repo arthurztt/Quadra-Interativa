@@ -4,7 +4,7 @@
 
         /* ================================Slides labels para navegação manual ==================*/
         /* Defininando a div geral dos labels e onde vão ficar */
-        .dropdown-list {
+        /* .dropdown-list {
             width: 1000px;
             height: auto;
             margin-top: 20px;
@@ -21,14 +21,14 @@
 
         .dropdown {
             display: flex;
-            width: 30%;
+            width: 300px;
             padding: 40px 0px 40px 0px;
             border-radius: 35px;
             display: flex;
             flex-direction: column;
             align-items: center;
             max-height: 300px;
-        }
+        } */
 
         .sports-calendar hr {
             width: 100%;
@@ -151,7 +151,7 @@
 
     }
 
-    @media screen and (max-height: 768px) {
+    @media screen  and (max-width:1024px) {
         .menu {
             display: none;
         }
@@ -162,6 +162,95 @@
             display: flex;
             flex-direction: column;
             margin: 20px 0px 0px 30px;
+        }
+
+        .bar {
+            display: flex;
+            width: 50px;
+            height: 5px;
+            margin: 10px 0px 0px 30px;
+            background: #000000;
+        }
+
+        .hamburger-nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            width: auto;
+            height: 100%;
+            background: #395224;
+            position: fixed;
+            float: left;
+            box-shadow: 2px 0px 12px 0px rgba(0, 0, 0, 0.35);
+            user-select: none;
+            scroll-behavior: smooth;
+            z-index: 2;
+        }
+
+        .closed {
+            transition: all 2s ease;
+            left: -200px;
+            width: 0;
+        }
+
+        .opened {
+            width: 150px;
+            left: 0px;
+            transition: 1s all ease;
+        }
+
+        .close-button {
+            display: flex;
+            width: 0;
+            left: -120px;
+            transition: all 1s ease;
+        }
+
+        .bar-close:first-child {
+            position: absolute;
+            width: 50px;
+            height: 5px;
+            background: #fff;
+            transform: rotate(45deg);
+        }
+
+        .bar-close:last-child {
+            position: absolute;
+            width: 50px;
+            height: 5px;
+            background: #fff;
+            transform: rotate(135deg);
+        }
+
+        .dropdown-list {
+            width: auto;
+            height: auto;
+            padding: 20px 40px 20px 20px;
+            margin: 50px 0px 0px 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 20px;
+            background-color: #426724af;
+            box-shadow: 0px 10px 16px -7px #121e09;
+        }
+
+    }
+
+    @media screen and (max-width:768px) {
+        .menu {
+            display: none;
+        }
+
+        .hamburger {
+            z-index: 1;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0px 0px 30px;
+            float: left;
         }
 
         .bar {
