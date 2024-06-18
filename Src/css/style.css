@@ -347,13 +347,14 @@ main {
 /* Tamanho do header */
 /* Primeira seção do main demoninada home por ser do começo */
 .section-home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 95%;
     padding-bottom: 50px;
     background-color: #364a1b;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -362,7 +363,7 @@ main {
     margin-top: 30px;
     padding: 30px;
     display: flex;
-    width: 65%;
+    width: 75%;
     background-color: #37561eaf;
     flex-direction: column;
     justify-content: center;
@@ -458,6 +459,7 @@ main {
     width: 1000px;
     height: auto;
     padding: 20px 40px 20px 20px;
+    margin: 50px 0px 0px 0px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -474,7 +476,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-height: 450px;
+    max-height: 220px;
 }
 
 .green {
@@ -599,15 +601,23 @@ main {
 
 /* Estilização da Tabela/Calendário */
 .section-calendar,
-.section-calendar,
 .section-questions,
 .section-reserves {
     margin: 100px 0px 0px 0px;
 }
 
-.calendar-main {
+.section-calendar {
     width: 95%;
-    height: 900px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar-main {
+    width: 60%;
+    height: 100%;
     border-left: 20px solid #446724;
     border-radius: 15px;
     font-size: 25px;
@@ -615,19 +625,28 @@ main {
     background-color: #456e26;
     color: white;
     margin-bottom: 60px;
+    padding: 10px;
     box-shadow: -1px -3px 5px 2px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+
 }
 
 .line-calendar {
-    width: 1159px;
-    margin-left: 15px;
+    width: 95%;
+    margin-left: 30px;
     border: solid 1px #00000021;
     margin-bottom: 25px;
 }
 
 .sports-calendar {
-    width: 1236px;
-    height: 167px;
+    width: 60%;
+    height: auto;
+    padding: 30px;
     background: #4c7130;
     border-radius: 15px;
     border-left: 20px solid #446724;
@@ -636,40 +655,57 @@ main {
     color: white;
 }
 
+.esportes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+}
+
+.intervalos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+
+}
+
 .line-sports {
     width: 100%;
     border: 1px solid #00000021;
 }
 
 .calendar-header {
+    width: 100%;
+    position: relative;
+    bottom: 10px;
     display: flex;
-    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center
 }
 
 .mes {
     height: 220px;
 }
 
-td>legend {
-    width: 300px;
-    padding: 20px;
+.calendar-header>div>span>legend {
+    width: 100%;
+    padding: 20px 100px;
     font-weight: 400;
     background-color: #446724;
-    position: relative;
-    top: 60px;
-    right: 5px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    position: relative;
+    right: 10px;
 }
 
 .styled-box-calendar {
     background-color: #385a1e;
-    left: 3px;
-    bottom: 72.5px;
-    width: 800px;
+    position: relative;
+    width: 70%;
     height: 150px;
     float: right;
     position: relative;
+    left: 10px;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 15px;
 }
@@ -678,14 +714,35 @@ td>legend {
     opacity: 0;
 }
 
+.semana {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-row-gap: 10px;
+    justify-content: center;
+    margin: 10px;
+
+}
+
+.dias {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+    justify-items: center;
+    align-items: center;
+    margin: 10px;
+}
+
 
 /* Seção do horarios de reservar */
 .section-reserves {
+    width: 95%;
+    background: #3E5E27;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 95%;
-    background: #3E5E27;
+    justify-content: center;
 }
 
 /* Caixinha de cada horarío um pouco estilizada de acordo com a do carrossel  */
