@@ -46,7 +46,6 @@ body {
     float: left;
     box-shadow: 2px 0px 12px 0px rgba(0, 0, 0, 0.35);
     user-select: none;
-    scroll-behavior: smooth;
     z-index: 1;
 }
 
