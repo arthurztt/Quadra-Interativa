@@ -109,6 +109,75 @@ function openRes() {
     arrow.style.transition = "0.1s";
   }
 }
+// --------------------------------------------- TESTE DE DATAS DO CALENDARIO DOS ESPORTES -------------------------------- //
+const data = new Date();
+const day = data.getDay();
+const seg = document.querySelector("div.segunda");
+const ter = document.querySelector("div.terca");
+const qua = document.querySelector("div.quarta");
+const qui = document.querySelector("div.quinta");
+const sex = document.querySelector("div.sexta");
+switch (day) {
+  case 0:
+    seg.style.display = "block";
+    ter.style.display = "none";
+    qua.style.display = "none";
+    qui.style.display = "none";
+    sex.style.display = "none";
+    break;
+  case 1:
+    seg.style.display = "block";
+    ter.style.display = "none";
+    qua.style.display = "none";
+    qui.style.display = "none";
+    sex.style.display = "none";
+    break;
+  case 2:
+    seg.style.display = "none";
+    ter.style.display = "block";
+    qua.style.display = "none";
+    qui.style.display = "none";
+    sex.style.display = "none";
+    break;
+  case 3:
+    seg.style.display = "none";
+    ter.style.display = "none";
+    qua.style.display = "block";
+    qui.style.display = "none";
+    sex.style.display = "none";
+    break;
+  case 4:
+    seg.style.display = "none";
+    ter.style.display = "none";
+    qua.style.display = "none";
+    qui.style.display = "block";
+    sex.style.display = "none";
+    break;
+  case 5:
+    seg.style.display = "none";
+    ter.style.display = "none";
+    qua.style.display = "none";
+    qui.style.display = "none";
+    sex.style.display = "block";
+    break;
+  case 6:
+    seg.style.display = "block";
+    ter.style.display = "none";
+    qua.style.display = "none";
+    qui.style.display = "none";
+    sex.style.display = "none";
+    break;
+  default:
+    seg.style.display = "block";
+    ter.style.display = "none";
+    qua.style.display = "none";
+    qui.style.display = "none";
+    sex.style.display = "none";
+    break;
+}
+// --------------------------------------------- FIM DO TESTE  -------------------------------- //
+
+
 function openHors1() {
   const drop = document.querySelector("div#drop1");
   const reserv = document.querySelector("div#reserv-manha");
