@@ -346,7 +346,6 @@
           <span> ENSAIO </span>
           <span> FUTSAL </span>
         </div>
-
       </div>
       <div class="sports-calendar terca">
         <div class="intervalos">
@@ -357,7 +356,6 @@
         <div>
           <hr class="line-calendar">
         </div>
-      <div class="sports-calendar">
         <div class="esportes">
           <span> FUTFEMININO</span>
           <span> VOLEIBOL </span>
@@ -417,279 +415,280 @@
     </section>
     <!-- Seção da parte de reservar a quadra em certos horários  -->
     <section class="section-reserves" id="reservas">
-      <form class="resever-main-container" >
-      <div class="resever-main-container">
-        <h2>Horários Possíveis</h2>
-        <!-- Caixinha de cada drop falando dos horarios -->
-        <div class="drop-horarios" onclick="openHors1()" id="drop1">
-          <img src="Src/icons/journal-check.svg" alt="icone" class="note-icon">
-          <h2>Intervalo da Manhã</h2>
-          <img src="Src/icons/angle-down-solid.svg" alt="" class="seta-dropwdown" id="seta-manha">
-        </div>
-        <!-- Caixinha contendo o conteúdo do dropdown cujo no css contem display none para não influenciar, ainda será adicionado com o passar do tempo. MEXERE COM JS -->
-        <div class="reserv-close" id="reserv-manha">
-          <!-- container geral do conteúdo do drop  -->
-          <div class="inpts-drop">
-            <!-- Primeira parte com os botões radio para os esportes -->
-            <div class="inpts">
-              <div class=" esportes-check">
-                <div class="checks">
-                  <input type="radio" name="esporte" class="check-esp" id="Futsal" class="check-esp"><span>Futsal</span>
+      <form class="resever-main-container">
+        <div class="resever-main-container">
+          <h2>Horários Possíveis</h2>
+          <!-- Caixinha de cada drop falando dos horarios -->
+          <div class="drop-horarios" onclick="openHors1()" id="drop1">
+            <img src="Src/icons/journal-check.svg" alt="icone" class="note-icon">
+            <h2>Intervalo da Manhã</h2>
+            <img src="Src/icons/angle-down-solid.svg" alt="" class="seta-dropwdown" id="seta-manha">
+          </div>
+          <!-- Caixinha contendo o conteúdo do dropdown cujo no css contem display none para não influenciar, ainda será adicionado com o passar do tempo. MEXERE COM JS -->
+          <div class="reserv-close" id="reserv-manha">
+            <!-- container geral do conteúdo do drop  -->
+            <div class="inpts-drop">
+              <!-- Primeira parte com os botões radio para os esportes -->
+              <div class="inpts">
+                <div class=" esportes-check">
+                  <div class="checks">
+                    <input type="radio" name="esporte" class="check-esp" id="Futsal"
+                      class="check-esp"><span>Futsal</span>
+                  </div>
+                  <div class="checks">
+                    <input type="radio" name="esporte" id="" class="check-esp"> <span>Volêi</span>
+                  </div>
+                  <div class="checks">
+                    <input type="radio" name="esporte" class="check-esp" id=""><span>Carimba</span>
+                  </div>
                 </div>
-                <div class="checks">
-                  <input type="radio" name="esporte" id="" class="check-esp"> <span>Volêi</span>
-                </div>
-                <div class="checks">
-                  <input type="radio" name="esporte" class="check-esp" id=""><span>Carimba</span>
-                </div>
-              </div>
-              <!-- Reservar times e etc  -->
-              <div class="times">
-                <span>TIMES</span>
-                <div class="checks">
-                  <input type="text" name="" id="">
-                  X
-                  <input type="text" name="" id="">
-                </div>
-                <div class="vest">
-                  <span>Vestiarios:</span>
-                  <div class="vest">
-                    <input type="checkbox" name="" id="" class="check-esp"> Masculino
+                <!-- Reservar times e etc  -->
+                <div class="times">
+                  <span>TIMES</span>
+                  <div class="checks">
+                    <input type="text" name="" id="">
+                    X
+                    <input type="text" name="" id="">
                   </div>
                   <div class="vest">
-                    <input type="checkbox" name="" id="" class="check-esp"> Feminino
+                    <span>Vestiarios:</span>
+                    <div class="vest">
+                      <input type="checkbox" name="" id="" class="check-esp"> Masculino
+                    </div>
+                    <div class="vest">
+                      <input type="checkbox" name="" id="" class="check-esp"> Feminino
+                    </div>
                   </div>
+                  <!-- Fim do drop com observações e o botão de solicitar  -->
                 </div>
-                <!-- Fim do drop com observações e o botão de solicitar  -->
+              </div>
+              <div class="footer-drop">
+                <div class="obs">
+                  <span>OBSERVAÇÕES</span>
+                  <input type="text" name="observ" id="observ">
+                </div>
+                <div class="slc">
+                  <button class="solit">SOLICITAR</button>
+                </div>
               </div>
             </div>
-            <div class="footer-drop">
-              <div class="obs">
-                <span>OBSERVAÇÕES</span>
-                <input type="text" name="observ" id="observ">
+      </form>
+      </div>
+      <div class="drop-horarios" onclick="openHors2()" id="drop2">
+        <img src="Src/icons/journal-check.svg" alt="icone" class="note-icon">
+        <div>
+          <div class="h2-padding-2">
+            <h2>Intervalo do Almoço</h2>
+          </div>
+        </div><img src="Src/icons/angle-down-solid.svg" alt="" class="seta-dropwdown" id="seta-tarde">
+      </div>
+      <div class="reserv-close" id="reserv-tarde">
+        <!-- container geral do conteúdo do drop  -->
+        <div class="inpts-drop">
+          <!-- Primeira parte com os botões radio para os esportes -->
+          <div class="inpts">
+            <div class=" esportes-check">
+              <div class="checks">
+                <input type="radio" name="esporte" class="check-esp" id="Futsal">Futsal
               </div>
-              <div class="slc">
-                <button class="solit">SOLICITAR</button>
+              <div class="checks">
+                <input type="radio" name="esporte" class="check-esp" id=""> Volêi
               </div>
+              <div class="checks">
+                <input type="radio" name="esporte" class="check-esp" id=""> Carimba
+              </div>
+            </div>
+            <!-- Reservar times e etc  -->
+            <div class="times">
+              <span>TIMES</span>
+              <div class="checks">
+                <input type="text" name="" id="">
+                X
+                <input type="text" name="" id="">
+              </div>
+              <div class="vest">
+                <span>Vestiarios:</span>
+                <div class="checks">
+                  <input type="checkbox" name="" id="" class="check-esp"> Masculino
+                </div>
+                <div class="checks">
+                  <input type="checkbox" name="" id="" class="check-esp"> Feminino
+                </div>
+              </div>
+              <!-- Fim do drop com observações e o botão de solicitar  -->
             </div>
           </div>
-        </form>
-        </div>
-        <div class="drop-horarios" onclick="openHors2()" id="drop2">
-          <img src="Src/icons/journal-check.svg" alt="icone" class="note-icon">
-          <div>
-            <div class="h2-padding-2">
-              <h2>Intervalo do Almoço</h2>
+          <div class="footer-drop">
+            <div class="obs">
+              <span>OBSERVAÇÕES</span>
+              <input type="text" name="observ" id="observ">
             </div>
-          </div><img src="Src/icons/angle-down-solid.svg" alt="" class="seta-dropwdown" id="seta-tarde">
-        </div>
-        <div class="reserv-close" id="reserv-tarde">
-          <!-- container geral do conteúdo do drop  -->
-          <div class="inpts-drop">
-            <!-- Primeira parte com os botões radio para os esportes -->
-            <div class="inpts">
-              <div class=" esportes-check">
-                <div class="checks">
-                  <input type="radio" name="esporte" class="check-esp" id="Futsal">Futsal
-                </div>
-                <div class="checks">
-                  <input type="radio" name="esporte" class="check-esp" id=""> Volêi
-                </div>
-                <div class="checks">
-                  <input type="radio" name="esporte" class="check-esp" id=""> Carimba
-                </div>
-              </div>
-              <!-- Reservar times e etc  -->
-              <div class="times">
-                <span>TIMES</span>
-                <div class="checks">
-                  <input type="text" name="" id="">
-                  X
-                  <input type="text" name="" id="">
-                </div>
-                <div class="vest">
-                  <span>Vestiarios:</span>
-                  <div class="checks">
-                    <input type="checkbox" name="" id="" class="check-esp"> Masculino
-                  </div>
-                  <div class="checks">
-                    <input type="checkbox" name="" id="" class="check-esp"> Feminino
-                  </div>
-                </div>
-                <!-- Fim do drop com observações e o botão de solicitar  -->
-              </div>
-            </div>
-            <div class="footer-drop">
-              <div class="obs">
-                <span>OBSERVAÇÕES</span>
-                <input type="text" name="observ" id="observ">
-              </div>
-              <div class="slc">
-                <button class="solit">SOLICITAR</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="drop-horarios" onclick="openHors3()" id="drop3">
-          <img src="Src/icons/journal-check.svg" alt="icone" class="note-icon">
-          <div class="h2-padding-3">
-            <h2>Intervalo da Tarde</h2>
-          </div><img src="Src/icons/angle-down-solid.svg" alt="" class="seta-dropwdown" id="seta-almoco">
-        </div>
-        <div class="reserv-close" id="reserv-almoco">
-          <!-- container geral do conteúdo do drop  -->
-          <div class="inpts-drop">
-            <!-- Primeira parte com os botões radio para os esportes -->
-            <div class="inpts">
-              <div class=" esportes-check">
-                <div class="checks">
-                  <input type="radio" name="esporte" class="check-esp" id="Futsal">Futsal
-                </div>
-                <div class="checks">
-                  <input type="radio" name="esporte" id="" class="check-esp"> Volêi
-                </div>
-                <div class="checks">
-                  <input type="radio" name="esporte" class="check-esp" id=""> Carimba
-                </div>
-              </div>
-              <!-- Reservar times e etc  -->
-              <div class="times">
-                <span>TIMES</span>
-                <div class="checks">
-                  <input type="text" name="" id="">
-                  X
-                  <input type="text" name="" id="">
-                </div>
-                <div class="vest">
-                  <span>Vestiarios:</span>
-                  <div class="checks">
-                    <input type="checkbox" name="" id="" class="check-esp" class="check-esp"> Masculino
-                  </div>
-                  <div class="checks">
-                    <input type="checkbox" name="" id="" class="check-esp" class="check-esp"> Feminino
-                  </div>
-                </div>
-                <!-- Fim do drop com observações e o botão de solicitar  -->
-              </div>
-            </div>
-            <div class="footer-drop">
-              <div class="obs">
-                <span>OBSERVAÇÕES</span>
-                <input type="text" name="observ" id="observ">
-              </div>
-              <div class="slc">
-                <button class="solit">SOLICITAR</button>
-              </div>
+            <div class="slc">
+              <button class="solit">SOLICITAR</button>
             </div>
           </div>
         </div>
-        <div class="drop-horarios" onclick="openHors4()" id="drop4">
-          <img src="Src/icons/journal-check.svg" alt="icone" class="note-icon">
-          <div class="
+      </div>
+      <div class="drop-horarios" onclick="openHors3()" id="drop3">
+        <img src="Src/icons/journal-check.svg" alt="icone" class="note-icon">
+        <div class="h2-padding-3">
+          <h2>Intervalo da Tarde</h2>
+        </div><img src="Src/icons/angle-down-solid.svg" alt="" class="seta-dropwdown" id="seta-almoco">
+      </div>
+      <div class="reserv-close" id="reserv-almoco">
+        <!-- container geral do conteúdo do drop  -->
+        <div class="inpts-drop">
+          <!-- Primeira parte com os botões radio para os esportes -->
+          <div class="inpts">
+            <div class=" esportes-check">
+              <div class="checks">
+                <input type="radio" name="esporte" class="check-esp" id="Futsal">Futsal
+              </div>
+              <div class="checks">
+                <input type="radio" name="esporte" id="" class="check-esp"> Volêi
+              </div>
+              <div class="checks">
+                <input type="radio" name="esporte" class="check-esp" id=""> Carimba
+              </div>
+            </div>
+            <!-- Reservar times e etc  -->
+            <div class="times">
+              <span>TIMES</span>
+              <div class="checks">
+                <input type="text" name="" id="">
+                X
+                <input type="text" name="" id="">
+              </div>
+              <div class="vest">
+                <span>Vestiarios:</span>
+                <div class="checks">
+                  <input type="checkbox" name="" id="" class="check-esp" class="check-esp"> Masculino
+                </div>
+                <div class="checks">
+                  <input type="checkbox" name="" id="" class="check-esp" class="check-esp"> Feminino
+                </div>
+              </div>
+              <!-- Fim do drop com observações e o botão de solicitar  -->
+            </div>
+          </div>
+          <div class="footer-drop">
+            <div class="obs">
+              <span>OBSERVAÇÕES</span>
+              <input type="text" name="observ" id="observ">
+            </div>
+            <div class="slc">
+              <button class="solit">SOLICITAR</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="drop-horarios" onclick="openHors4()" id="drop4">
+        <img src="Src/icons/journal-check.svg" alt="icone" class="note-icon">
+        <div class="
           h2-padding-4">
-            <h2 class="h2-padding-4">Depois da aula</h2>
-          </div><img src="Src/icons/angle-down-solid.svg" alt="" class="seta-dropwdown" id="seta-dps-aula">
-        </div>
-        <div class="reserv-close" id="reserv-dps-aula">
-          <!-- container geral do conteúdo do drop  -->
-          <div class="inpts-drop">
-            <!-- Primeira parte com os botões radio para os esportes -->
-            <div class="inpts">
-              <div class=" esportes-check">
-                <div class="checks">
-                  <input type="radio" name="esporte" class="check-esp" id="Futsal">Futsal
-                </div>
-                <div class="checks">
-                  <input type="radio" name="esporte" i class="check-esp" d=""> Volêi
-                </div>
-                <div class="checks">
-                  <input type="radio" name="esporte" class="check-esp" id=""> Carimba
-                </div>
+          <h2 class="h2-padding-4">Depois da aula</h2>
+        </div><img src="Src/icons/angle-down-solid.svg" alt="" class="seta-dropwdown" id="seta-dps-aula">
+      </div>
+      <div class="reserv-close" id="reserv-dps-aula">
+        <!-- container geral do conteúdo do drop  -->
+        <div class="inpts-drop">
+          <!-- Primeira parte com os botões radio para os esportes -->
+          <div class="inpts">
+            <div class=" esportes-check">
+              <div class="checks">
+                <input type="radio" name="esporte" class="check-esp" id="Futsal">Futsal
               </div>
-              <!-- Reservar times e etc  -->
-              <div class="times">
-                <span>TIMES</span>
-                <div class="checks">
-                  <input type="text" name="" id="">
-                  X
-                  <input type="text" name="" id="">
-                </div>
-                <div class="vest">
-                  <span>Vestiarios:</span>
-                  <div class="checks">
-                    <input type="checkbox" name="" id="" class="check-esp"> Masculino
-                  </div>
-                  <div class="checks">
-                    <input type="checkbox" name="" id="" class="check-esp"> Feminino
-                  </div>
-                </div>
-                <!-- Fim do drop com observações e o botão de solicitar  -->
+              <div class="checks">
+                <input type="radio" name="esporte" i class="check-esp" d=""> Volêi
+              </div>
+              <div class="checks">
+                <input type="radio" name="esporte" class="check-esp" id=""> Carimba
               </div>
             </div>
-            <div class="footer-drop">
-              <div class="obs">
-                <span>OBSERVAÇÕES</span>
-                <input type="text" name="observ" id="observ">
+            <!-- Reservar times e etc  -->
+            <div class="times">
+              <span>TIMES</span>
+              <div class="checks">
+                <input type="text" name="" id="">
+                X
+                <input type="text" name="" id="">
               </div>
-              <div class="slc">
-                <button class="solit">SOLICITAR</button>
+              <div class="vest">
+                <span>Vestiarios:</span>
+                <div class="checks">
+                  <input type="checkbox" name="" id="" class="check-esp"> Masculino
+                </div>
+                <div class="checks">
+                  <input type="checkbox" name="" id="" class="check-esp"> Feminino
+                </div>
               </div>
+              <!-- Fim do drop com observações e o botão de solicitar  -->
+            </div>
+          </div>
+          <div class="footer-drop">
+            <div class="obs">
+              <span>OBSERVAÇÕES</span>
+              <input type="text" name="observ" id="observ">
+            </div>
+            <div class="slc">
+              <button class="solit">SOLICITAR</button>
             </div>
           </div>
         </div>
-        <div class="drop-horarios" onclick="openHors5()" id="drop5">
-          <img src="Src/icons/journal-check.svg" alt="icone" class="note-icon">
-          <div class="h2-padding-5">
-            <h2>Aula livre</h2>
-          </div><img src="Src/icons/angle-down-solid.svg" alt="" class="seta-dropwdown" id="seta-livre">
-        </div>
-        <div class="reserv-close" id="reserv-livre">
-          <!-- container geral do conteúdo do drop  -->
-          <div class="inpts-drop">
-            <!-- Primeira parte com os botões radio para os esportes -->
-            <div class="inpts">
-              <div class=" esportes-check">
-                <div class="checks">
-                  <input type="radio" name="esporte" class="check-esp" id="Futsal">Futsal
-                </div>
-                <div class="checks">
-                  <input type="radio" name="esporte" id="" class="check-esp"> Volêi
-                </div>
-                <div class="checks">
-                  <input type="radio" name="esporte" class="check-esp" id=""> Carimba
-                </div>
+      </div>
+      <div class="drop-horarios" onclick="openHors5()" id="drop5">
+        <img src="Src/icons/journal-check.svg" alt="icone" class="note-icon">
+        <div class="h2-padding-5">
+          <h2>Aula livre</h2>
+        </div><img src="Src/icons/angle-down-solid.svg" alt="" class="seta-dropwdown" id="seta-livre">
+      </div>
+      <div class="reserv-close" id="reserv-livre">
+        <!-- container geral do conteúdo do drop  -->
+        <div class="inpts-drop">
+          <!-- Primeira parte com os botões radio para os esportes -->
+          <div class="inpts">
+            <div class=" esportes-check">
+              <div class="checks">
+                <input type="radio" name="esporte" class="check-esp" id="Futsal">Futsal
               </div>
-              <!-- Reservar times e etc  -->
-              <div class="times">
-                <span>TIMES</span>
-                <div class="checks">
-                  <input type="text" name="" id="">
-                  X
-                  <input type="text" name="" id="">
-                </div>
-                <div class="vest">
-                  <span>Vestiarios:</span>
-                  <div class="checks">
-                    <input type="checkbox" name="" id=""> Masculino
-                  </div>
-                  <div class="checks">
-                    <input type="checkbox" name="" id=""> Feminino
-                  </div>
-                </div>
-                <!-- Fim do drop com observações e o botão de solicitar  -->
+              <div class="checks">
+                <input type="radio" name="esporte" id="" class="check-esp"> Volêi
+              </div>
+              <div class="checks">
+                <input type="radio" name="esporte" class="check-esp" id=""> Carimba
               </div>
             </div>
-            <div class="footer-drop">
-              <div class="obs">
-                <span>OBSERVAÇÕES</span>
-                <input type="text" name="observ" id="observ">
+            <!-- Reservar times e etc  -->
+            <div class="times">
+              <span>TIMES</span>
+              <div class="checks">
+                <input type="text" name="" id="">
+                X
+                <input type="text" name="" id="">
               </div>
-              <div class="slc">
-                <button class="solit">SOLICITAR</button>
+              <div class="vest">
+                <span>Vestiarios:</span>
+                <div class="checks">
+                  <input type="checkbox" name="" id=""> Masculino
+                </div>
+                <div class="checks">
+                  <input type="checkbox" name="" id=""> Feminino
+                </div>
               </div>
+              <!-- Fim do drop com observações e o botão de solicitar  -->
+            </div>
+          </div>
+          <div class="footer-drop">
+            <div class="obs">
+              <span>OBSERVAÇÕES</span>
+              <input type="text" name="observ" id="observ">
+            </div>
+            <div class="slc">
+              <button class="solit">SOLICITAR</button>
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
     <!-- Fim da seção dos horarios. -->
