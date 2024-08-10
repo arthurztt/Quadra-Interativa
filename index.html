@@ -11,7 +11,7 @@
 
 <body>
   <!--Seção do menu lateral menor com os icones, classe está sujeit a mudanças. Onclick usado para fechar o menu menor e abrir o maior-->
-  <aside class="hamburger" onclick="openHamb()">
+  <aside class="hamburger" id="hamburger">
     <span class="bar"></span>
     <span class="bar"></span>
     <span class="bar"></span>
@@ -22,7 +22,7 @@
         <img src="src/images/logo.png" class="logo-img" id="image-span">
       </span>
       <!-- <div class="openButton"> -->
-      <div class="close-button" onclick="closeHamb()">
+      <div class="close-button" id="close-button">
         <span class="bar-close"></span>
         <span class="bar-close"></span>
       </div>
@@ -79,16 +79,14 @@
     </div>
   </nav>
   <aside class="menu menu-close" id="menu">
-    <!-- ============= logo ============= -->
     <div class="logo">
       <span>
-        <!-- ============= NECESSITO DA LOGO  ============= -->
         <img src="src/images/logo.png" class="logo-img" id="image-span">
       </span>
       <h3 class="text main-menu-text">Quadra Interativa</h3>
       <!-- <div class="openButton"> -->
-      <span class="lateralButton" onclick="abrirMenu()" id="lateralButton"><img
-          src="Src/icons//arrow-right-circle-fill.svg" class="button-img"></span>
+      <span class="lateralButton" id="lateralButton"><img src="Src/icons//arrow-right-circle-fill.svg"
+          class="button-img"></span>
       <!-- </div> -->
     </div>
     <hr>
@@ -190,7 +188,7 @@
         <div class="dropdown">
           <div class="dropdown-header green" id="dd-events">
             <span class="import">EVENTOS</span>
-            <img src="./src/icons/angle-down-solid.svg" onclick="openEve()" class="arrow-dropdown" id="arrow-eve">
+            <img src="./src/icons/angle-down-solid.svg" class="arrow-dropdown" id="arrow-eve">
           </div>
           <!-- Div contendo a lista dos eventos  -->
           <div class="list-open scroll-green" id="events">
@@ -217,7 +215,7 @@
         <div class="dropdown">
           <div class="dropdown-header blue" id="dd-sport">
             <span class="import">ESPORTES</span>
-            <img src="./src/icons/angle-down-solid.svg" onclick="openEsp()" class="arrow-dropdown" id="arrow-esp">
+            <img src="./src/icons/angle-down-solid.svg" class="arrow-dropdown" id="arrow-esp">
           </div>
           <div class="list-open scroll-blue" id="esport">
             <span class="events-items">
@@ -241,7 +239,7 @@
         <div class="dropdown">
           <div class="dropdown-header purple" id="dd-reserve">
             <span class="import">RESERVAR</span>
-            <img src="./src/icons/angle-down-solid.svg" onclick="openRes()" class="arrow-dropdown" id="arrow-res">
+            <img src="./src/icons/angle-down-solid.svg" class="arrow-dropdown" id="arrow-res">
           </div>
           <div class="list-open scroll-purple" id="reserv">
             <span class="events-items">
@@ -419,7 +417,7 @@
         <div class="resever-main-container">
           <h2>Horários Possíveis</h2>
           <!-- Caixinha de cada drop falando dos horarios -->
-          <div class="drop-horarios" onclick="openHors1()" id="drop1">
+          <div class="drop-horarios" id="drop-horario-1">
             <img src="Src/icons/journal-check.svg" alt="icone" class="note-icon">
             <h2>Intervalo da Manhã</h2>
             <img src="Src/icons/angle-down-solid.svg" alt="" class="seta-dropwdown" id="seta-manha">
@@ -474,7 +472,7 @@
             </div>
       </form>
       </div>
-      <div class="drop-horarios" onclick="openHors2()" id="drop2">
+      <div class="drop-horarios" id="drop-horario-2">
         <img src="Src/icons/journal-check.svg" alt="icone" class="note-icon">
         <div>
           <div class="h2-padding-2">
@@ -529,7 +527,7 @@
           </div>
         </div>
       </div>
-      <div class="drop-horarios" onclick="openHors3()" id="drop3">
+      <div class="drop-horarios" id="drop-horario-3">
         <img src="Src/icons/journal-check.svg" alt="icone" class="note-icon">
         <div class="h2-padding-3">
           <h2>Intervalo da Tarde</h2>
@@ -582,7 +580,7 @@
           </div>
         </div>
       </div>
-      <div class="drop-horarios" onclick="openHors4()" id="drop4">
+      <div class="drop-horarios" id="drop-horario-4">
         <img src="Src/icons/journal-check.svg" alt="icone" class="note-icon">
         <div class="
           h2-padding-4">
@@ -636,7 +634,7 @@
           </div>
         </div>
       </div>
-      <div class="drop-horarios" onclick="openHors5()" id="drop5">
+      <div class="drop-horarios" id="drop-horario-5">
         <img src="Src/icons/journal-check.svg" alt="icone" class="note-icon">
         <div class="h2-padding-5">
           <h2>Aula livre</h2>
