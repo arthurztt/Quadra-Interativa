@@ -1,22 +1,22 @@
-let open_menu_button = document.getElementById('lateralButton');
-let open_hamburger_button = document.getElementById('hamburger');
-let close_hamburger_button = document.getElementById('close-button');
-let open_eve_button = document.getElementById('arrow-eve');
-let open_esp_button = document.getElementById('arrow-esp');
-let open_res_button = document.getElementById('arrow-res');
-let open_horario_button_one = document.getElementById('drop-horario-1');
-let open_horario_button_two = document.getElementById('drop-horario-2');
-let open_horario_button_three = document.getElementById('drop-horario-3');
-let open_horario_button_four = document.getElementById('drop-horario-4');
-let open_horario_button_five = document.getElementById('drop-horario-5')
+let open_menu_button = document.querySelector('img#lateralButton');
+let open_hamburger_button = document.querySelector('div.hamburger-button-open');
+let close_hamburger_button = document.querySelector('div#close-button');
+let open_eve_button = document.querySelector('img#arrow-eve');
+let open_esp_button = document.querySelector('img#arrow-esp');
+let open_res_button = document.querySelector('img#arrow-res');
+let open_horario_button_one = document.querySelector('div#drop-horario-1');
+let open_horario_button_two = document.querySelector('div#drop-horario-2');
+let open_horario_button_three = document.querySelector('div#drop-horario-3');
+let open_horario_button_four = document.querySelector('div#drop-horario-4');
+let open_horario_button_five = document.querySelector('div#drop-horario-5')
 // --------------------------------------------- TESTE DE DATAS DO CALENDARIO DOS ESPORTES -------------------------------- //
 const data = new Date();
 const day = data.getDay();
-const seg = document.querySelector("div.segunda");
-const ter = document.querySelector("div.terca");
-const qua = document.querySelector("div.quarta");
-const qui = document.querySelector("div.quinta");
-const sex = document.querySelector("div.sexta");
+const seg = document.querySelector("article.segunda");
+const ter = document.querySelector("article.terca");
+const qua = document.querySelector("article.quarta");
+const qui = document.querySelector("article.quinta");
+const sex = document.querySelector("article.sexta");
 switch (day) {
   case 0:
     seg.style.display = "block";
@@ -90,7 +90,7 @@ open_menu_button.addEventListener('click', function () {
     iconButton.src = "Src/icons/arrow-left-circle-fill.svg";
     //Alteração da posição do botão
     lateralButton.classList.add("lateralButtonleft");
-    lateralButton.classList.remove("lateButtonRight");
+    lateralButton.classList.remove("lateralButtonRight");
     //para cada classe text dentro da function text ela adiciona as classes
     text.forEach(function (text) {
       text.classList.remove("text");
@@ -104,7 +104,7 @@ open_menu_button.addEventListener('click', function () {
     iconButton.src = "Src/icons/arrow-right-circle-fill.svg";
     //O botão de volta para o lugar de origem
     lateralButton.classList.add("lateralButtonRight");
-    lateralButton.classList.remove("lateButtonLeft");
+    lateralButton.classList.remove("lateralButtonLeft");
     //para cada classe text dentro da function text ela remove as classes
     text.forEach(function (text) {
       text.classList.add("text");

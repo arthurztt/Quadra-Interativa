@@ -12,82 +12,74 @@
 <body>
   <!--Seção do menu lateral menor com os icones, classe está sujeit a mudanças. Onclick usado para fechar o menu menor e abrir o maior-->
   <aside class="hamburger" id="hamburger">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-  </aside>
-  <nav class="hamburger-nav closed">
-    <div class="logo">
-      <span>
+    <div class="hamburger-button-open">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <nav class="hamburger-nav closed">
+      <div class="logo">
         <img src="src/images/logo.png" class="logo-img" id="image-span">
-      </span>
-      <!-- <div class="openButton"> -->
-      <div class="close-button" id="close-button">
-        <span class="bar-close"></span>
-        <span class="bar-close"></span>
+        <div class="close-button" id="close-button">
+          <span class="bar-close"></span>
+          <span class="bar-close"></span>
+        </div>
       </div>
-      <!-- </div> -->
-    </div>
-    <div class="menu-icons">
-      <!-- ============= PARTE COM OS ICONES E DPS COM O TEXTO + ICONES   ============= -->
-      <ul class="list-ordenato">
-        <a href="#home">
-          <li class="list">
-            <img src="src/icons/house.svg" alt="" id="icons" class="icons">
-          </li>
-        </a>
-        <a href="#calendar">
-          <li class="list">
-            <img src="src/icons/calendar.svg" alt="" id="icons" class="icons">
-          </li>
-        </a>
-        <a href="#reservas">
-          <li class="list">
-            <img src="src/icons//person-fill-add.svg" alt="" id="icons" class="icons">
-          </li>
-        </a>
-        <a href="#quest">
-          <li class="list">
-            <img src="src/icons//chat-left-dots-fill.svg" alt="" id="icons" class="icons">
-          </li>
-        </a>
-        <a href="Src/login/index.html">
-          <li class="list">
-            <img src="Src/icons/person-fill.svg" alt="" id="icons" class="icons">
-          </li>
-        </a>
-      </ul>
-    </div>
-    <!-- ============= DIV QUE SERA COLOCADA O INPUT QUE TROCARA O FUNDO DE COR   ============= -->
-    <div class="icons-tema">
-      <img src="src/icons/sun.svg" class="sun-img">
-      <div class="switch__container text">
-        <!-- Switch criado pela bia para mudança de cor, requer onclick do js-->
-        <input id="switch-shadow" class="switch switch--shadow" type="radio">
-        <label for="switch-shadow"></label>
+      <div class="menu-icons">
+        <!-- ============= PARTE COM OS ICONES E DPS COM O TEXTO + ICONES   ============= -->
+        <ul class="list-ordenato">
+          <a href="#home">
+            <li class="list">
+              <img src="src/icons/house.svg" alt="" id="icons" class="icons">
+            </li>
+          </a>
+          <a href="#calendar">
+            <li class="list">
+              <img src="src/icons/calendar.svg" alt="" id="icons" class="icons">
+            </li>
+          </a>
+          <a href="#reservas">
+            <li class="list">
+              <img src="src/icons//person-fill-add.svg" alt="" id="icons" class="icons">
+            </li>
+          </a>
+          <a href="#quest">
+            <li class="list">
+              <img src="src/icons//chat-left-dots-fill.svg" alt="" id="icons" class="icons">
+            </li>
+          </a>
+          <a href="Src/login/index.html">
+            <li class="list">
+              <img src="Src/icons/person-fill.svg" alt="" id="icons" class="icons">
+            </li>
+          </a>
+        </ul>
       </div>
-      <img src="src/icons/moon.svg" class="text moon-img ">
-    </div>
-    <!-- ============= Parte do login que ainda deve ser responsivo  ============= -->
-    <div class="perfil">
-      <img src="src/icons/person.svg" class="icons-perfil">
-      <div class="usuario">
-        <span class="text" id="text">Fulano da Silva </span>
-        <span class="text" id="text">Informática 3 </span>
+      <div class="icons-tema">
+        <img src="src/icons/sun.svg" class="sun-img">
+        <div class="switch__container text">
+          <!-- Switch criado pela bia para mudança de cor, requer onclick do js-->
+          <input id="switch-shadow" class="switch switch--shadow" type="radio">
+          <label for="switch-shadow"></label>
+        </div>
+        <img src="src/icons/moon.svg" class="text moon-img ">
       </div>
-      <img src="src/icons/exit.svg" class="icons-perfil">
-    </div>
-  </nav>
+      <!-- ============= Parte do login que ainda deve ser responsivo  ============= -->
+      <div class="perfil">
+        <img src="src/icons/person.svg" class="icons-perfil">
+        <div class="usuario">
+          <span class="text" id="text">Fulano da Silva </span>
+          <span class="text" id="text">Informática 3 </span>
+        </div>
+        <img src="src/icons/exit.svg" class="icons-perfil">
+      </div>
+    </nav>
+  </aside>
   <aside class="menu menu-close" id="menu">
     <div class="logo">
-      <span>
-        <img src="src/images/logo.png" class="logo-img" id="image-span">
-      </span>
-      <h3 class="text main-menu-text">Quadra Interativa</h3>
-      <!-- <div class="openButton"> -->
-      <span class="lateralButton" id="lateralButton"><img src="Src/icons//arrow-right-circle-fill.svg"
-          class="button-img"></span>
-      <!-- </div> -->
+      <img src="src/images/logo.png" class="logo-img" id="image-span">
+      <h1 class="text main-menu-text">Quadra Interativa</h1>
+      <img src="Src/icons//arrow-right-circle-fill.svg" class="button-img lateralButton" id="lateralButton">
     </div>
     <hr>
     <div class="menu-icons">
@@ -153,7 +145,7 @@
     <!-- Primeira seção do main-->
     <section class="section-home" id="home">
       <!--div do carrossel (A ser feito)-->
-      <div class="slider-main-container">
+      <figure class="slider-main-container">
         <div class="slider">
           <div class="slides-inpts">
             <!--Radio buttons of carrossel -->
@@ -179,7 +171,7 @@
           <label for="radio-slides2" class="slides-btn"> </label>
           <label for="radio-slides3" class="slides-btn"> </label>
         </div>
-      </div>
+      </figure>
       <!--FIm dos labels do carrossel-->
       <!--Fim do carrossel-->
       <!-- Article com o dropdwon List  -->
@@ -265,72 +257,72 @@
     <!--Fim da primeira seção do main-->
     <!--Calendario em tabela-->
     <section class="section-calendar" id="calendar">
-      <div class="calendar-main">
+      <article class="calendar-main">
         <div class="calendar-header">
           <div>
             <span class="mes">
               <legend>Maio</legend>
+            </span>
           </div>
           <div class="styled-box-calendar">
             <p>aa</p>
-            </span>
           </div>
         </div>
-        <div class="semana">
-          <span>Domingo</span>
-          <span>Segunda</span>
-          <span>Terça</span>
-          <span>Quarta</span>
-          <span>Quinta</span>
-          <span>Sexta</span>
-          <span>Sabado</span>
-        </div>
+        <ul class="semana">
+          <li>Domingo</li>
+          <li>Segunda</li>
+          <li>Terça</li>
+          <li>Quarta</li>
+          <li>Quinta</li>
+          <li>Sexta</li>
+          <li>Sabado</li>
+        </ul>
         <div>
           <hr class="line-calendar">
         </div>
-        <div class="dias">
-          <span class="teste">1</span>
-          <span>2</span>
-          <span>3</span>
-          <span>4</span>
-          <span>5</span>
-          <span>6</span>
-          <span>7</span>
-        </div>
-        <div class="dias">
-          <span>8</span>
-          <span>9</span>
-          <span>10</span>
-          <span>11</span>
-          <span>12</span>
-          <span>13</span>
-          <span>14</span>
-        </div>
-        <div class="dias">
-          <span>15</span>
-          <span>16</span>
-          <span>17</span>
-          <span>18</span>
-          <span>19</span>
-          <span>20</span>
-          <span>21</span>
-        </div>
-        <div class="dias">
-          <span>22</span>
-          <span>23</span>
-          <span>24</span>
-          <span>25</span>
-          <span>26</span>
-          <span>27</span>
-          <span>28</span>
-        </div>
-        <div class="dias">
-          <span>29</span>
-          <span>30</span>
-          <span>31</span>
-        </div>
-      </div>
-      <div class="sports-calendar segunda">
+        <ul class="dias">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+        </ul>
+        <ul class="dias">
+          <li>8</li>
+          <li>9</li>
+          <li>10</li>
+          <li>11</li>
+          <li>12</li>
+          <li>13</li>
+          <li>14</li>
+        </ul>
+        <ul class="dias">
+          <li>15</li>
+          <li>16</li>
+          <li>17</li>
+          <li>18</li>
+          <li>19</li>
+          <li>20</li>
+          <li>21</li>
+        </ul>
+        <ul class="dias">
+          <li>22</li>
+          <li>23</li>
+          <li>24</li>
+          <li>25</li>
+          <li>26</li>
+          <li>27</li>
+          <li>28</li>
+        </ul>
+        <ul class="dias">
+          <li>29</li>
+          <li>30</li>
+          <li>31</li>
+        </ul>
+      </article>
+      <article class="sports-calendar segunda">
         <div class="intervalos">
           <span>Intervalo da Manhã</span>
           <span>Almoço</span>
@@ -344,8 +336,8 @@
           <span> ENSAIO </span>
           <span> FUTSAL </span>
         </div>
-      </div>
-      <div class="sports-calendar terca">
+      </article>
+      <article class="sports-calendar terca">
         <div class="intervalos">
           <span>Intervalo da Manhã</span>
           <span>Almoço</span>
@@ -359,9 +351,8 @@
           <span> VOLEIBOL </span>
           <span> RODINHA </span>
         </div>
-
-      </div>
-      <div class="sports-calendar quarta">
+      </article>
+      <article class="sports-calendar quarta">
         <div class="intervalos">
           <span>Intervalo da Manhã</span>
           <span>Almoço</span>
@@ -375,9 +366,8 @@
           <span> FUTSAL </span>
           <span> CARIMBA </span>
         </div>
-
-      </div>
-      <div class="sports-calendar quinta">
+      </article>
+      <article class="sports-calendar quinta">
         <div class="intervalos">
           <span>Intervalo da Manhã</span>
           <span>Almoço</span>
@@ -392,8 +382,8 @@
           <span> FUTFEMININO </span>
         </div>
 
-      </div>
-      <div class="sports-calendar sexta">
+      </article>
+      <article class="sports-calendar sexta">
         <div class="intervalos">
           <span>Intervalo da Manhã</span>
           <span>Almoço</span>
@@ -408,18 +398,18 @@
           <span> ENSAIO </span>
           <span> VOLEIBOL </span>
         </div>
-      </div>
+      </article>
 
     </section>
     <!-- Seção da parte de reservar a quadra em certos horários  -->
     <section class="section-reserves" id="reservas">
-      <form class="resever-main-container">
+      <form class="resever-main-container" action="" method="">
         <div class="resever-main-container">
           <h2>Horários Possíveis</h2>
           <!-- Caixinha de cada drop falando dos horarios -->
           <div class="drop-horarios" id="drop-horario-1">
             <img src="Src/icons/journal-check.svg" alt="icone" class="note-icon">
-            <h2>Intervalo da Manhã</h2>
+            <h3>Intervalo da Manhã</h3>
             <img src="Src/icons/angle-down-solid.svg" alt="" class="seta-dropwdown" id="seta-manha">
           </div>
           <!-- Caixinha contendo o conteúdo do dropdown cujo no css contem display none para não influenciar, ainda será adicionado com o passar do tempo. MEXERE COM JS -->
@@ -474,11 +464,8 @@
       </div>
       <div class="drop-horarios" id="drop-horario-2">
         <img src="Src/icons/journal-check.svg" alt="icone" class="note-icon">
-        <div>
-          <div class="h2-padding-2">
-            <h2>Intervalo do Almoço</h2>
-          </div>
-        </div><img src="Src/icons/angle-down-solid.svg" alt="" class="seta-dropwdown" id="seta-tarde">
+        <h3>Intervalo do Almoço</h3>
+        <img src="Src/icons/angle-down-solid.svg" alt="" class="seta-dropwdown" id="seta-tarde">
       </div>
       <div class="reserv-close" id="reserv-tarde">
         <!-- container geral do conteúdo do drop  -->
@@ -529,9 +516,8 @@
       </div>
       <div class="drop-horarios" id="drop-horario-3">
         <img src="Src/icons/journal-check.svg" alt="icone" class="note-icon">
-        <div class="h2-padding-3">
-          <h2>Intervalo da Tarde</h2>
-        </div><img src="Src/icons/angle-down-solid.svg" alt="" class="seta-dropwdown" id="seta-almoco">
+        <h3>Intervalo da Tarde</h3>
+        <img src="Src/icons/angle-down-solid.svg" alt="" class="seta-dropwdown" id="seta-almoco">
       </div>
       <div class="reserv-close" id="reserv-almoco">
         <!-- container geral do conteúdo do drop  -->
@@ -582,10 +568,8 @@
       </div>
       <div class="drop-horarios" id="drop-horario-4">
         <img src="Src/icons/journal-check.svg" alt="icone" class="note-icon">
-        <div class="
-          h2-padding-4">
-          <h2 class="h2-padding-4">Depois da aula</h2>
-        </div><img src="Src/icons/angle-down-solid.svg" alt="" class="seta-dropwdown" id="seta-dps-aula">
+        <h3 class="h2-padding-4">Depois da aula</h3>
+        <img src="Src/icons/angle-down-solid.svg" alt="" class="seta-dropwdown" id="seta-dps-aula">
       </div>
       <div class="reserv-close" id="reserv-dps-aula">
         <!-- container geral do conteúdo do drop  -->
@@ -636,9 +620,8 @@
       </div>
       <div class="drop-horarios" id="drop-horario-5">
         <img src="Src/icons/journal-check.svg" alt="icone" class="note-icon">
-        <div class="h2-padding-5">
-          <h2>Aula livre</h2>
-        </div><img src="Src/icons/angle-down-solid.svg" alt="" class="seta-dropwdown" id="seta-livre">
+        <h3>Aula livre</h3>
+        <img src="Src/icons/angle-down-solid.svg" alt="" class="seta-dropwdown" id="seta-livre">
       </div>
       <div class="reserv-close" id="reserv-livre">
         <!-- container geral do conteúdo do drop  -->
