@@ -10,14 +10,13 @@ let open_horario_button_three = document.querySelector('div#drop-horario-3');
 let open_horario_button_four = document.querySelector('div#drop-horario-4');
 let open_horario_button_five = document.querySelector('div#drop-horario-5')
 // --------------------------------------------- TESTE DE DATAS DO CALENDARIO DOS ESPORTES -------------------------------- //
-const data = new Date();
-const day = data.getDay();
+const data = new Date().getDay();
 const seg = document.querySelector("article.segunda");
 const ter = document.querySelector("article.terca");
 const qua = document.querySelector("article.quarta");
 const qui = document.querySelector("article.quinta");
 const sex = document.querySelector("article.sexta");
-switch (day) {
+switch (data) {
   case 0:
     seg.style.display = "block";
     ter.style.display = "none";
