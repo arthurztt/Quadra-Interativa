@@ -13,7 +13,7 @@
     font-family: "Inter", sans-serif;
 }
 
-*>img {
+* > img {
     user-select: none;
 }
 
@@ -25,7 +25,7 @@ html {
 body {
     width: 100%;
     height: 100%;
-    background: #395224;
+    background: #3c502c;
     /* background total do body, deve ser mudado caso a seção tenha outra cor  */
 }
 
@@ -74,23 +74,23 @@ body {
 /* Botão mais a direita quando o menu aberto */
 .lateralButtonLeft {
     position: relative;
-    left: 5%;
+    left: 10px;
     transition: all 0.3s ease;
 }
 
 /* Botão mais a esquerda quando o menu fechado */
 
 .lateralButtonRight {
-    left: 0px;
+    left: 0;
 }
 
 #lateralButton {
-    filter: brightness(0) saturate(100%) invert(94%) sepia(96%) saturate(0%) hue-rotate(290deg) brightness(109%) contrast(101%);
-    width: 20px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(2%) hue-rotate(230deg) brightness(104%) contrast(100%);
     position: relative;
+    cursor: pointer;
 }
 
-#lateralButton:hover {
+.lateralButton:hover {
     filter: brightness(0) saturate(100%) invert(94%) sepia(96%) saturate(0%) hue-rotate(290deg) brightness(95%) contrast(101%) opacity(85%);
     cursor: pointer;
     transition: 0.3s;
@@ -353,7 +353,6 @@ main {
 .section-home {
     width: 100%;
     padding-bottom: 50px;
-    background-color: #364a1b;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -368,12 +367,12 @@ main {
     padding: 30px;
     display: flex;
     width: 75%;
-    background-color: #37561eaf;
+    background-color: #37561e;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 25px;
-    box-shadow: 0px 10px 16px -7px #121e09;
+    box-shadow: -1px 8px 5px 0px rgba(0,0,0,0.39);
 }
 
 .slider {
@@ -468,7 +467,9 @@ main {
     align-items: center;
     justify-content: space-around;
     border-radius: 20px;
-    background-color: #426724af;
+    background-color: #426724;
+    box-shadow: -1px 8px 5px 0px rgba(0, 0, 0, 0.19);
+
 }
 
 /* Estilo de cada caixa de lista */
@@ -537,7 +538,7 @@ main {
 .list-close {
     display: flex;
     flex-direction: column;
-    visibility: none !important;
+    display: none !important;
     width: 100%;
     visibility: hidden;
     border-bottom-left-radius: 20px;
@@ -630,14 +631,17 @@ main {
     color: white;
     margin-bottom: 60px;
     padding: 10px;
-    box-shadow: -1px -3px 5px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: -1px 8px 5px 0px rgba(0, 0, 0, 0.19);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     align-items: stretch;
+}
 
+.semana, .dias > li {
+    list-style-type: none;
 }
 
 .line-calendar {
@@ -720,7 +724,6 @@ main {
 
 .semana {
     width: 95%;
-    list-style: none;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-row-gap: 10px;
@@ -731,8 +734,6 @@ main {
 
 .dias {
     width: 95%;
-    list-style: none;
-
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-gap: 5px;
@@ -762,7 +763,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 25px;
+    border-radius: 25px;    
     box-shadow: 0px 10px 16px -7px #121e09;
     outline: 1px solid #1b38046e;
 
@@ -775,10 +776,9 @@ main {
 /* Div dos horarios que sera clicada */
 .drop-horarios {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin: 20px 0px 0px 0px;
-    padding: 0px 30px;
     width: 90%;
     height: 87px;
     background: #D9D9D9;
@@ -786,13 +786,8 @@ main {
     opacity: 60%;
 }
 
-.drop-horarios h3 {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
-    opacity: 60%;
+.drop-horarios h2 {
+    color: #37561eaf;
 }
 
 .h2-padding-1 {
@@ -809,14 +804,12 @@ main {
 
 /* Padding de alinhamento dos elementos */
 .h2-padding-3 {
-    text-align: center;
     width: 240px;
     text-align: start;
 }
 
 .h2-padding-4 {
-    text-align: center;
-    width: 240px;
+    width: 160px;
     text-align: start;
 }
 
@@ -842,6 +835,12 @@ main {
     width: 27px;
     height: 45px;
     transform: rotate(180deg);
+}
+
+.seta-dropwdown:hover{
+    filter: brightness(0) saturate(100%) invert(13%) sepia(0%) saturate(11%) hue-rotate(155deg) brightness(99%) contrast(80%);
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 .note-icon {
@@ -901,11 +900,25 @@ input[type="checkbox"] {
     gap: 25px;
 }
 
+.checks > input {
+    margin-bottom: 10px;
+}
+
+.check-esp {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
 /* Div da parte de vestiarios abertos  */
 .vest {
-    gap: 15px;
     width: 100%;
     display: flex;
+    padding-right: 10px;
+}
+
+.vest > span {
+    padding-right: 20px;
 }
 
 /* Div das obserbvações e textarea */
@@ -933,20 +946,19 @@ input[type="checkbox"] {
 
 .solit {
     width: 200px;
-    font-size: 16px;
+    font-size: 18px;
     background-color: #314522;
     color: #fff;
     border-radius: 31px;
     border: none;
     user-select: none;
 }
-
-/* Estilização do input text  */
-#observ {
-    width: 300px;
-    height: auto;
-    padding-bottom: 50px;
-}
+    /* Estilização do input text  */
+    #observ {
+        width: 300px;
+        height: auto;
+        padding-bottom: 50px;
+    }
 
 
 
@@ -963,6 +975,8 @@ input[type="checkbox"] {
 }
 
 .coments-main-container {
+
+    color: #f1f1f1;
     margin-top: 30px;
     margin-bottom: 30px;
     display: flex;
@@ -977,6 +991,10 @@ input[type="checkbox"] {
     left: 50px;
 }
 
+.coments-main-container > .div-questions > h2 {
+    padding-bottom: 30px;
+}
+
 /*Algumas estilização da caixa das dúvidas, necessita-se de muita estilização */
 .div-questions {
     width: auto;
@@ -988,10 +1006,15 @@ input[type="checkbox"] {
     margin: 50px 0px 50px 25px;
 }
 
+.div-questions > .li-prgts {
+    margin-left: 30px;
+}
+
 /* Afastamento entre os textos  */
 .div-questions h2,
 .div-questions h3,
 .list-prgts {
+    list-style-type: none;
     margin: 5px 0px 5px 0px;
 }
 
@@ -1007,9 +1030,12 @@ input[type="checkbox"] {
 }
 
 /* Classe da li das respostas das perguntas frequentes */
-.li-prgts {
+ul > li > .li-prgts {
+} 
+
+.li-prgts > em {
     margin-left: 35px;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 /* Caixa pai de onde os comentarios vão ficar */
