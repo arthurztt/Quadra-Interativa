@@ -1,14 +1,14 @@
-let open_menu_button = document.querySelector('img#lateralButton');
-let open_hamburger_button = document.querySelector('div.hamburger-button-open');
-let close_hamburger_button = document.querySelector('div#close-button');
-let open_eve_button = document.querySelector('img#arrow-eve');
-let open_esp_button = document.querySelector('img#arrow-esp');
-let open_res_button = document.querySelector('img#arrow-res');
-let open_horario_button_one = document.querySelector('div#drop-horario-1');
-let open_horario_button_two = document.querySelector('div#drop-horario-2');
-let open_horario_button_three = document.querySelector('div#drop-horario-3');
-let open_horario_button_four = document.querySelector('div#drop-horario-4');
-let open_horario_button_five = document.querySelector('div#drop-horario-5')
+let open_menu_button = document.querySelector("img#lateralButton");
+let open_hamburger_button = document.querySelector("div.hamburger-button-open");
+let close_hamburger_button = document.querySelector("div#close-button");
+let open_eve_button = document.querySelector("img#arrow-eve");
+let open_esp_button = document.querySelector("img#arrow-esp");
+let open_res_button = document.querySelector("img#arrow-res");
+let open_horario_button_one = document.querySelector("div#drop-horario-1");
+let open_horario_button_two = document.querySelector("div#drop-horario-2");
+let open_horario_button_three = document.querySelector("div#drop-horario-3");
+let open_horario_button_four = document.querySelector("div#drop-horario-4");
+let open_horario_button_five = document.querySelector("div#drop-horario-5");
 // --------------------------------------------- TESTE DE DATAS DO CALENDARIO DOS ESPORTES -------------------------------- //
 const data = new Date().getDay();
 const seg = document.querySelector("article.segunda");
@@ -75,7 +75,7 @@ switch (data) {
     break;
 }
 // --------------------------------------------- FIM DO TESTE  -------------------------------- //
-open_menu_button.addEventListener('click', function () {
+open_menu_button.addEventListener("click", function () {
   const menu = document.querySelector("aside.menu");
   const text = document.querySelectorAll(".text, .text-ok");
   const lateralButton = document.getElementById("lateralButton");
@@ -112,19 +112,18 @@ open_menu_button.addEventListener('click', function () {
   }
 });
 
-
 //Função para a brir o menu lateral responsivo
 open_hamburger_button.addEventListener("click", function () {
   const menu = document.querySelector("nav");
   menu.classList.add("opened");
   menu.classList.remove("closed");
-})
+});
 //Função para o X fechar a barra de eventos
-close_hamburger_button.addEventListener('click', function () {
+close_hamburger_button.addEventListener("click", function () {
   const menu = document.querySelector("nav");
   menu.classList.remove("opened");
   menu.classList.add("closed");
-})
+});
 //Função dos eventos. Adiciona uma classe para a lista ser visível e ou não, com verificador.
 open_eve_button.addEventListener("click", function () {
   const ddHeader = document.querySelector("div#dd-events");
@@ -147,7 +146,7 @@ open_eve_button.addEventListener("click", function () {
   }
 });
 //Função dos esportes. Adiciona uma classe para a lista ser visível e ou não, com verificador.
-open_esp_button.addEventListener('click', function () {
+open_esp_button.addEventListener("click", function () {
   const ddHeader = document.querySelector("div#dd-sport");
   const select = document.querySelector("div#esport");
   const arrow = document.querySelector("img#arrow-esp");
@@ -166,9 +165,9 @@ open_esp_button.addEventListener('click', function () {
     arrow.style.transform = "rotate(0deg)";
     arrow.style.transition = "0.1s";
   }
-})
+});
 //Função do Reservar a quadra. Adiciona uma classe para a lista ser visível e ou não, com verificador.
-open_res_button.addEventListener('click', function () {
+open_res_button.addEventListener("click", function () {
   const ddHeader = document.querySelector("div#dd-reserve");
   const select = document.querySelector("div#reserv ");
   const arrow = document.querySelector("img#arrow-res");
@@ -187,8 +186,7 @@ open_res_button.addEventListener('click', function () {
     arrow.style.transform = "rotate(0deg)";
     arrow.style.transition = "0.1s";
   }
-})
-
+});
 
 open_horario_button_one.addEventListener("click", function () {
   const drop = document.querySelector("div#drop-horario-1");
@@ -207,7 +205,7 @@ open_horario_button_one.addEventListener("click", function () {
     drop.classList.add("drop-off-border");
     drop.classList.remove("drop-border");
   }
-})
+});
 open_horario_button_two.addEventListener("click", function () {
   const drop = document.querySelector("div#drop-horario-2");
   const reserv = document.querySelector("div#reserv-tarde");
@@ -225,7 +223,7 @@ open_horario_button_two.addEventListener("click", function () {
     drop.classList.add("drop-off-border");
     drop.classList.remove("drop-border");
   }
-})
+});
 open_horario_button_three.addEventListener("click", function () {
   const drop = document.querySelector("div#drop-horario-3");
   const reserv = document.querySelector("div#reserv-almoco");
@@ -243,7 +241,7 @@ open_horario_button_three.addEventListener("click", function () {
     drop.classList.add("drop-off-border");
     drop.classList.remove("drop-border");
   }
-})
+});
 open_horario_button_four.addEventListener("click", function () {
   const drop = document.querySelector("div#drop-horario-4");
   const reserv = document.querySelector("div#reserv-dps-aula");
@@ -261,7 +259,7 @@ open_horario_button_four.addEventListener("click", function () {
     drop.classList.add("drop-off-border");
     drop.classList.remove("drop-border");
   }
-})
+});
 open_horario_button_five.addEventListener("click", function () {
   const drop = document.querySelector("div#drop-horario-5");
   const reserv = document.querySelector("div#reserv-livre");
@@ -279,11 +277,10 @@ open_horario_button_five.addEventListener("click", function () {
     drop.classList.add("drop-off-border");
     drop.classList.remove("drop-border");
   }
-})
-
+});
 
 // DARK MODE
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   // seu código aqui
 
   const btnDarkModeToggle = document.getElementById("btn_tema");
@@ -303,8 +300,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Função para definir o tema
   function defineCurrentTheme(theme) {
     document.documentElement.setAttribute("data-theme", theme);
-    btnDarkModeToggle.checked = (theme === "dark");
+    btnDarkModeToggle.checked = theme === "dark";
   }
-
-
 });

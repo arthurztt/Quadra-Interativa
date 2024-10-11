@@ -62,9 +62,10 @@
         border-bottom-right-radius: 20px;
     }
 
-    .resever-main-container {
-        /* position: relative;
-        left: 50px; */
+    /* .resever-main-container {
+         position: relative;
+         position: relative;
+        left: 50px; 
         margin: 50px 0px 65px 0px;
         padding: 30px 50px 50px 50px;
         display: flex;
@@ -76,7 +77,7 @@
         border-radius: 25px;
         box-shadow: 0px 10px 16px -7px #121e09;
 
-    }
+    } */
 
     .drop-horarios {
         display: flex;

@@ -15,7 +15,7 @@
 
 }
 
-* > img {
+*>img {
     user-select: none;
 }
 
@@ -377,7 +377,7 @@ li>span {
 /* ==========Classe da seção da à direita do header.========== #CUIDADO */
 main {
     margin-top: 20px;
-    width: 100%;
+    /* width: 100%; */
     float: right;
     display: flex;
     flex-direction: column;
@@ -390,7 +390,7 @@ main {
 /* Tamanho do header */
 /* Primeira seção do main demoninada home por ser do começo */
 .section-home {
-    width: 100%;
+    margin: auto;
     padding-bottom: 50px;
     border-radius: 10px;
     display: flex;
@@ -411,7 +411,7 @@ main {
     justify-content: center;
     align-items: center;
     border-radius: 25px;
-    box-shadow: -1px 8px 5px 0px rgba(0,0,0,0.39);
+    box-shadow: -1px 8px 5px 0px rgba(0, 0, 0, 0.39);
 }
 
 .slider {
@@ -651,16 +651,18 @@ main {
 }
 
 .section-calendar {
-    width: 95%;
-    height: auto;
+    margin: auto;
+    padding-bottom: 50px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .calendar-main {
-    width: 60%;
+    width: 95%;
     height: 100%;
     border-left: 20px solid #446724;
     border-radius: 15px;
@@ -679,7 +681,8 @@ main {
     align-items: stretch;
 }
 
-.semana, .dias > li {
+.semana,
+.dias>li {
     list-style-type: none;
 }
 
@@ -691,7 +694,7 @@ main {
 }
 
 .sports-calendar {
-    width: 60%;
+    width: 95%;
     height: auto;
     padding: 30px;
     background: #4c7130;
@@ -784,12 +787,14 @@ main {
 
 /* Seção do horarios de reservar */
 .section-reserves {
-    width: 100%;
-    background: #3E5E27;
+    margin: auto;
+    padding-bottom: 50px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* Caixinha de cada horarío um pouco estilizada de acordo com a do carrossel  */
@@ -797,12 +802,12 @@ main {
     margin: 50px 10px 65px 10px;
     padding: 30px 30px 50px 30px;
     display: flex;
-    width: 70%;
+    width: 43.75rem;
     background-color: #37561eaf;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 25px;    
+    border-radius: 25px;
     box-shadow: 0px 10px 16px -7px #121e09;
     outline: 1px solid #1b38046e;
 
@@ -810,6 +815,10 @@ main {
 
 .resever-main-container h2 {
     color: white;
+}
+
+.reserv {
+    width: 95%;
 }
 
 /* Div dos horarios que sera clicada */
@@ -876,7 +885,7 @@ main {
     transform: rotate(180deg);
 }
 
-.seta-dropwdown:hover{
+.seta-dropwdown:hover {
     filter: brightness(0) saturate(100%) invert(13%) sepia(0%) saturate(11%) hue-rotate(155deg) brightness(99%) contrast(80%);
     cursor: pointer;
     transition: 0.2s;
@@ -939,7 +948,7 @@ input[type="checkbox"] {
     gap: 25px;
 }
 
-.checks > input {
+.checks>input {
     margin-bottom: 10px;
 }
 
@@ -956,7 +965,7 @@ input[type="checkbox"] {
     padding-right: 10px;
 }
 
-.vest > span {
+.vest>span {
     padding-right: 20px;
 }
 
@@ -992,12 +1001,13 @@ input[type="checkbox"] {
     border: none;
     user-select: none;
 }
-    /* Estilização do input text  */
-    #observ {
-        width: 300px;
-        height: auto;
-        padding-bottom: 50px;
-    }
+
+/* Estilização do input text  */
+#observ {
+    width: 300px;
+    height: auto;
+    padding-bottom: 50px;
+}
 
 
 
@@ -1005,12 +1015,14 @@ input[type="checkbox"] {
 /* Fim da seção dos horarios da reserva */
 /* Inicio da seção das duvidas */
 .section-questions {
-    width: 95%;
-    height: 750px;
-    margin-top: 0;
+    margin: auto;
+    padding-bottom: 50px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .coments-main-container {
@@ -1030,7 +1042,7 @@ input[type="checkbox"] {
     left: 50px;
 }
 
-.coments-main-container > .div-questions > h2 {
+.coments-main-container>.div-questions>h2 {
     padding-bottom: 30px;
 }
 
@@ -1045,7 +1057,7 @@ input[type="checkbox"] {
     margin: 50px 0px 50px 25px;
 }
 
-.div-questions > .li-prgts {
+.div-questions>.li-prgts {
     margin-left: 30px;
 }
 
@@ -1069,10 +1081,9 @@ input[type="checkbox"] {
 }
 
 /* Classe da li das respostas das perguntas frequentes */
-ul > li > .li-prgts {
-} 
+ul>li>.li-prgts {}
 
-.li-prgts > em {
+.li-prgts>em {
     margin-left: 35px;
     font-size: 23px;
 }
