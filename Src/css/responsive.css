@@ -84,7 +84,6 @@
         justify-content: space-around;
         align-items: center;
         margin: 20px 0px 0px 0px;
-        width: 80%;
         height: 87px;
         background: #D9D9D9;
         opacity: 60%;
@@ -92,7 +91,7 @@
     }
 
     .reserv-open {
-        width: 80%;
+        width: 600px;
         height: 400px;
         background-color: #f7f7f7;
         margin-top: 0;
@@ -277,6 +276,9 @@
         border-radius: 20px;
         background-color: #426724af;
         box-shadow: 0px 10px 16px -7px #121e09;
+    }
+    .calendar-main {
+        width: 95%;
     }
 
 }
